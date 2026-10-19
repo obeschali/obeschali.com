@@ -2,12 +2,13 @@
   "id": "putin-2005-konstitutsiya",
   "lang": "en",
   "source_hash": "6de72025d6ec",
-  "status": "draft",
+  "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
     "imported_at": "2026-10-19",
     "file": "stories-batch-01.json",
-    "reason": "new"
+    "reason": "new",
+    "reviewed_at": "2026-10-19"
   },
   "en": {
     "who": "Vladimir Putin",

@@ -2,12 +2,13 @@
   "id": "er-2006-dtp",
   "lang": "en",
   "source_hash": "3b8387e334ba",
-  "status": "draft",
+  "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
     "imported_at": "2026-10-19",
     "file": "stories-batch-08.json",
-    "reason": "new"
+    "reason": "new",
+    "reviewed_at": "2026-10-19"
   },
   "en": {
     "who": "United Russia",

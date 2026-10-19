@@ -21,10 +21,3 @@
 
 ## Ссылки
 - Общий: `/`  · на историю: `/#id`  · для шеринга: `/s/<id>/` (с превью).
-
-## Публикация (GitHub Pages, домен obeschali.com)
-Репозиторий `evangulov/obeschali.com`, Settings → Pages → Deploy from a branch → `main` / root. Файл `CNAME` уже лежит в корне.
-DNS у регистратора: четыре A-записи для `@` на `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` и CNAME `www` → `evangulov.github.io`. После проверки домена включить Enforce HTTPS.
-
-## Английская версия
-Переводы лежат в `i18n/en/` со статусом `draft` и на сайт не попадают. Чтобы опубликовать историю: `python3 i18n/i18n.py approve ID`, затем `python3 build.py` и коммит. Подробности в `i18n/README.md`.

@@ -2,12 +2,13 @@
   "id": "putin-2012-vuzy-5-100",
   "lang": "en",
   "source_hash": "8b97d0036475",
-  "status": "draft",
+  "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
     "imported_at": "2026-10-19",
     "file": "stories-batch-07.json",
-    "reason": "new"
+    "reason": "new",
+    "reviewed_at": "2026-10-19"
   },
   "en": {
     "who": "Vladimir Putin",

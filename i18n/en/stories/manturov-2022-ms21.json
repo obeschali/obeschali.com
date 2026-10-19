@@ -2,12 +2,13 @@
   "id": "manturov-2022-ms21",
   "lang": "en",
   "source_hash": "1722859e85e4",
-  "status": "draft",
+  "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
     "imported_at": "2026-10-19",
     "file": "stories-batch-05.json",
-    "reason": "new"
+    "reason": "new",
+    "reviewed_at": "2026-10-19"
   },
   "en": {
     "who": "Denis Manturov",

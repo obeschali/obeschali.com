@@ -2,12 +2,13 @@
   "id": "putin-2012-investitsii",
   "lang": "en",
   "source_hash": "90ae17f5647f",
-  "status": "draft",
+  "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
     "imported_at": "2026-10-19",
     "file": "stories-batch-07.json",
-    "reason": "new"
+    "reason": "new",
+    "reviewed_at": "2026-10-19"
   },
   "en": {
     "who": "Vladimir Putin",

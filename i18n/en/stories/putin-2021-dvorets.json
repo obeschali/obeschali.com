@@ -2,12 +2,13 @@
   "id": "putin-2021-dvorets",
   "lang": "en",
   "source_hash": "5ad90e44b418",
-  "status": "draft",
+  "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
     "imported_at": "2026-10-19",
     "file": "stories-batch-03.json",
-    "reason": "new"
+    "reason": "new",
+    "reviewed_at": "2026-10-19"
   },
   "en": {
     "who": "Vladimir Putin",

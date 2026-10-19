@@ -2,12 +2,13 @@
   "id": "putin-2020-navalny",
   "lang": "en",
   "source_hash": "24fbe10eeedd",
-  "status": "draft",
+  "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
     "imported_at": "2026-10-19",
     "file": "stories-batch-03.json",
-    "reason": "new"
+    "reason": "new",
+    "reviewed_at": "2026-10-19"
   },
   "en": {
     "who": "Vladimir Putin",
