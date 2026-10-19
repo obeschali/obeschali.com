@@ -213,11 +213,21 @@ a{color:inherit}
 .ab-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:0 clamp(24px,3.4vw,56px);margin-top:clamp(24px,5vh,52px)}
 .abc{border-top:1.5px solid #14130F;padding-top:16px}
 .abc .no{display:block;font:600 12px var(--mono);letter-spacing:.14em;margin-bottom:14px;opacity:.7}
-.abc p{margin:0;font-size:18px;line-height:1.5;max-width:44ch}
+.abc p{margin:0;font-size:clamp(19px,1.7vw,26px);line-height:1.3;letter-spacing:-.015em;max-width:22em}
 .ab-foot{margin-top:auto;padding:28px 0 clamp(24px,4vh,40px);display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
 .ab-foot .fl{display:flex;flex-direction:column;gap:12px;max-width:680px}
 .ab-foot b{font-weight:700;font-size:24px;line-height:1.12;letter-spacing:-.03em;text-wrap:balance}
 .ab-foot .pr{font-size:14px;line-height:1.4;opacity:.7}
+.ab-foot .fr{display:flex;flex-direction:column;align-items:flex-end;gap:20px}
+.ab-foot .fb{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+.sup{width:min(560px,100%);background:#14130F;color:#E4E0D5;padding:20px 22px}
+.sup[hidden]{display:none}
+.sup p{margin:0 0 14px;font-size:15px;line-height:1.35}
+.sup .w{display:flex;align-items:center;gap:14px;border-top:1px solid rgba(228,224,213,.25);padding:12px 0 0;margin-top:12px}
+.sup .w .cn{font:600 12px var(--mono);letter-spacing:.14em;text-transform:uppercase;opacity:.7;flex:none;min-width:84px}
+.sup .w code{font:500 13px var(--mono);word-break:break-all;flex:1}
+.sup .w button{flex:none;font:600 12px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#14130F;background:#E4E0D5;padding:9px 12px;transition:background .18s,color .18s}
+.sup .w button:hover{background:#fff}
 .ab-foot .btn{flex:none;box-shadow:inset 0 0 0 2px #14130F;color:#14130F;height:52px}
 .ab-foot .btn .c{background:#14130F;color:#E4E0D5;width:52px}
 .ab-foot .btn:hover{background:#14130F;color:#E4E0D5}
@@ -319,6 +329,8 @@ a{color:inherit}
   .abc p{font-size:16px;line-height:1.45}
   .ab-foot{flex-direction:column;align-items:stretch;gap:20px;padding:28px 0 32px;margin-top:0}
   .ab-foot b{font-size:21px}
+  .sup .w{flex-wrap:wrap}.sup .w code{flex:1 1 100%;order:3}
+  .ab-foot .fr{align-items:stretch}.ab-foot .fb{justify-content:stretch}.ab-foot .fb .btn{flex:1}
   .ov .hd .nav{right:20px}
   .ov .cl{height:44px}
   .al{display:none}
@@ -457,13 +469,19 @@ a{color:inherit}
     <div class="abs">
       <div class="ab-top"><div class="lab rv" data-t="about.label">О проекте</div><h1 class="rv" style="--d:1" data-t="about.title">Власть многое обещает. Здесь&nbsp;— о&nbsp;том, что было дальше.</h1></div>
       <div class="ab-cols">
-        <div class="abc rv" style="--d:2"><span class="no" aria-hidden="true">01</span><p data-t="about.p1">«Обещали.» — проект Романа Евангулова о публичных словах и реальных последствиях. В каждой истории сначала звучит обещание, прогноз или заверение, а потом мы смотрим, что произошло.</p></div>
+        <div class="abc rv" style="--d:2"><span class="no" aria-hidden="true">01</span><p data-t="about.p1">«Обещали.» — проект о публичных словах и реальных последствиях. В каждой истории сначала звучит обещание, прогноз или заверение, а потом мы смотрим, что произошло.</p></div>
         <div class="abc rv" style="--d:3"><span class="no" aria-hidden="true">02</span><p data-t="about.p2">Одни заявления легко проверить по документам и цифрам. Другие требуют контекста. Поэтому рядом с историями есть источники: можно самому посмотреть, кто и что сказал, и с чем мы это сравниваем.</p></div>
         <div class="abc rv" style="--d:4"><span class="no" aria-hidden="true">03</span><p data-t="about.p3">Это авторская подборка, а не полный каталог всех обещаний. Здесь собраны истории, которые показались важными и которые можно подтвердить. Если мы ошиблись или упустили контекст — об этом можно написать.</p></div>
       </div>
       <div class="ab-foot rv" style="--d:5">
         <div class="fl"><b data-t="about.footer">«Обещали.» — посмотреть, что стало со словами.</b><span class="pr" data-t="about.privacy">Здесь нет cookies, счётчиков и рекламы. Сайт ничего не собирает о тех, кто его читает.</span></div>
-        <a class="btn" href="@@CONTACT@@" id="contact"><span class="t" data-t="about.contact_button">Написать автору</span><span class="c"><span>↗</span></span></a>
+        <div class="fr">
+          <!--SUP--><div class="sup" id="sup" hidden><p data-t="about.support_text">Проект без рекламы. Если он вам нужен, можно помочь криптовалютой.</p>@@SUPPORT@@</div><!--/SUP-->
+          <div class="fb">
+            <!--SUPB--><button class="btn" type="button" id="supBtn" aria-expanded="false"><span class="t" data-t="about.support_button">Поддержать проект</span><span class="c"><span>+</span></span></button><!--/SUPB-->
+            <a class="btn" href="@@CONTACT@@" id="contact"><span class="t" data-t="about.contact_button">Написать</span><span class="c"><span>↗</span></span></a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -726,6 +744,10 @@ document.addEventListener('keydown', (e) => {
   else if ((e.key === ' ' || e.key === 'Enter') && !e.target.closest('a,button')) { e.preventDefault(); setFlip(!flipped); }
 });
 let wt = 0;
+(function () { const b = $('#supBtn'), p = $('#sup'); if (!b || !p) return;
+  b.addEventListener('click', () => { const o = p.hidden; p.hidden = !o; b.setAttribute('aria-expanded', String(o)); });
+  p.addEventListener('click', (e) => { const x = e.target.closest('.cp'); if (!x) return; const a = x.getAttribute('data-a'); const done = () => { const t = x.textContent; x.textContent = T['about.copied']; setTimeout(() => { x.textContent = T['about.copy']; }, 1500); };
+    if (navigator.clipboard) navigator.clipboard.writeText(a).then(done, () => {}); }); })();
 document.addEventListener('wheel', (e) => { if (anyOpen()) return; const now = Date.now(); if (Math.abs(e.deltaY) < 30 || now - wt < 800) return; wt = now; if (e.deltaY > 0) next(); else prev(); }, { passive: true });
 let ty = 0, tx = 0;
 document.addEventListener('touchstart', (e) => { ty = e.touches[0].clientY; tx = e.touches[0].clientX; }, { passive: true });

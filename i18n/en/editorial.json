@@ -16,8 +16,8 @@
       "translator": "ChatGPT"
     },
     "about.p1": {
-      "source_hash": "92b3acb7c796",
-      "en": "Promised. is a project by Roman Evangulov about public statements and their real-world consequences. Each story begins with a promise, forecast, or assurance; then we look at what happened.",
+      "source_hash": "fb85b8528f55",
+      "en": "Promised. is a project about public statements and their real-world consequences. Each story begins with a promise, forecast, or assurance; then we look at what happened.",
       "status": "draft",
       "imported_at": "2026-10-19",
       "translator": "ChatGPT"
@@ -44,8 +44,8 @@
       "translator": "ChatGPT"
     },
     "about.contact_button": {
-      "source_hash": "e1271289b6dc",
-      "en": "Contact the author",
+      "source_hash": "032d4ccbfa95",
+      "en": "Write to us",
       "status": "draft",
       "imported_at": "2026-10-19",
       "translator": "ChatGPT"
@@ -56,6 +56,34 @@
       "status": "draft",
       "imported_at": "2026-10-19",
       "translator": "Claude (временный перевод, на проверку ChatGPT)"
+    },
+    "about.support_button": {
+      "source_hash": "e469d42a24e8",
+      "en": "Support the project",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "about.support_text": {
+      "source_hash": "bb5ef7a101f6",
+      "en": "No ads. If this project matters to you, you can support it with crypto.",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "about.copy": {
+      "source_hash": "98a97395acca",
+      "en": "Copy",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "about.copied": {
+      "source_hash": "f8d2ed9e13de",
+      "en": "Copied",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
     }
   },
   "new_strings": {}
