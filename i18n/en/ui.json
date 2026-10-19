@@ -441,6 +441,13 @@
       "status": "draft",
       "imported_at": "2026-10-19",
       "translator": "ChatGPT"
+    },
+    "label.sources": {
+      "source_hash": "3ef9800fe3be",
+      "en": "Sources",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
     }
   },
   "new_strings": {
