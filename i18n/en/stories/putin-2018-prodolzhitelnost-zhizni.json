@@ -1,7 +1,7 @@
 {
   "id": "putin-2018-prodolzhitelnost-zhizni",
   "lang": "en",
-  "source_hash": "1a2750309ad3",
+  "source_hash": "8f9cdfcdccbc",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
@@ -26,10 +26,6 @@
     "osrc": [
       {
         "i": 0,
-        "t": "The Moscow Times"
-      },
-      {
-        "i": 1,
         "t": "Interfax"
       }
     ]

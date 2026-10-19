@@ -49,6 +49,13 @@
       "status": "draft",
       "imported_at": "2026-10-19",
       "translator": "ChatGPT"
+    },
+    "about.privacy": {
+      "source_hash": "46cf3f70b59c",
+      "en": "No cookies, counters or ads. The site collects nothing about the people who read it.",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "Claude (временный перевод, на проверку ChatGPT)"
     }
   },
   "new_strings": {}

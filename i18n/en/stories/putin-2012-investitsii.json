@@ -1,7 +1,7 @@
 {
   "id": "putin-2012-investitsii",
   "lang": "en",
-  "source_hash": "90ae17f5647f",
+  "source_hash": "3f5823db18f3",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
@@ -26,7 +26,7 @@
     "osrc": [
       {
         "i": 0,
-        "t": "The Insider"
+        "t": "RBC"
       }
     ]
   },
