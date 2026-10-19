@@ -55,6 +55,12 @@ a{color:inherit}
 .tl::after{content:'';position:absolute;left:0;right:0;bottom:9px;height:2px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .32s cubic-bezier(.7,0,.2,1)}
 .tl:hover::after{transform:scaleX(1)}
 .tl i{display:inline-block;font-style:normal;margin-left:10px;transition:transform .25s cubic-bezier(.7,0,.2,1)}
+.pos{position:absolute;left:calc(var(--px) + 220px);top:0;height:var(--hd);display:flex;align-items:center;gap:10px;font:500 13px var(--mono);letter-spacing:.14em;text-transform:uppercase;font-variant-numeric:tabular-nums;color:#E4E0D5}
+.pos .pa{opacity:.55}.pos b{font-weight:700}
+.hd>.pl{position:absolute;left:0;bottom:0;height:3px;width:0;background:#E4E0D5;transition:width .5s cubic-bezier(.7,0,.2,1)}
+.hd::after{content:'';position:absolute;left:0;right:0;bottom:0;height:3px;background:#E4E0D5;opacity:.18;pointer-events:none}
+@media (min-width:761px){.hd .nav .sq{display:none}}
+@media (max-width:760px){.pos,.hd>.pl,.hd::after{display:none}}
 .cnt{font:500 18px var(--mono);letter-spacing:.06em;font-variant-numeric:tabular-nums;white-space:nowrap;margin-right:14px}
 .cnt b{font-weight:700}.cnt i{font-style:normal;opacity:.55}
 .sq{width:48px;height:48px;display:grid;place-items:center;background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink);transition:background .18s,color .18s,box-shadow .5s}
@@ -227,7 +233,7 @@ a{color:inherit}
   #app.on ~ .cur{background:#E4E0D5;color:#0C0C0A}
   .cur.inv{background:#E4E0D5;color:#0C0C0A}
   #app.on ~ .cur.inv{background:#0C0C0A;color:#E4E0D5}
-  .arr{display:block;position:fixed;left:0;top:0;width:22px;height:28px;pointer-events:none;z-index:99;transform:translate(-100px,-100px);opacity:0;fill:#0C0C0A;stroke:#E4E0D5;stroke-width:1.5;stroke-linejoin:round;overflow:visible}
+  .arr{display:block;position:fixed;left:0;top:0;width:18px;height:24px;pointer-events:none;z-index:99;transform:translate(-100px,-100px);opacity:0;fill:#0C0C0A;stroke:#E4E0D5;stroke-width:1.5;stroke-linejoin:round;overflow:visible}
   .arr.hd{fill:#E4E0D5;stroke:#0C0C0A}
   .cur svg{width:24px;height:24px;opacity:0;transform:scale(.4);transition:opacity .15s,transform .2s cubic-bezier(.2,.7,.2,1)}
   .cur.go{width:52px;height:52px}
@@ -370,9 +376,10 @@ a{color:inherit}
 <div id="app" aria-live="off">
   <header class="hd">
     <a class="logo" href="./" id="logo">Обещали.</a>
+    <div class="pos" aria-hidden="true"><span class="pa" data-t="nav.pos_a">Обещание</span><b data-n>1</b><span class="pa" data-t="nav.pos_b">из</span><span class="pa" data-k>81</span></div>
+    <div class="pl" id="pl"></div>
     <div class="nav" role="group" aria-label="Переключение историй" data-ta="nav.group_aria">
       @@SWITCH@@
-      <span class="cnt"><b data-cur>01</b><i> / <span data-total>00</span></i></span>
       <button class="sq p" type="button" aria-label="Предыдущая история" data-ta="nav.prev_aria" data-prev><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M20 12H4M11 5l-7 7 7 7"/></svg></button>
       <button class="sq n" type="button" aria-label="Следующая история" data-ta="nav.next_aria" data-next><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M4 12h16M13 5l7 7-7 7"/></svg></button>
       <button class="mb" type="button" aria-label="Все обещания" data-ta="nav.all" id="openMenu"><span class="t" data-t="nav.all">Все обещания</span><span class="c"><i></i><i></i></span></button>
@@ -461,7 +468,7 @@ a{color:inherit}
   </div>
 </div>
 <div class="cur" id="cur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M4 12h16M13 5l7 7-7 7"/></svg></div>
-<svg class="arr" id="arr" viewBox="0 0 22 28" aria-hidden="true"><path d="M1 1v21l5.4-5 4.1 9.4 3.6-1.6-4.1-9.2H18z"/></svg>
+<svg class="arr" id="arr" viewBox="0 0 16 22" aria-hidden="true"><path d="M1.2 1.2v17.6l4.2-4.1 2.9 6.6 2.5-1.1-2.9-6.5h5.9z"/></svg>
 <div class="tag" id="tag"></div>
 
 <script>
@@ -590,6 +597,9 @@ function render(i, instant) {
   app.style.setProperty('--sb', COLS[cur % 4]);
   $$('[data-cur]').forEach((e) => { e.textContent = pad(cur + 1); });
   $$('[data-total]').forEach((e) => { e.textContent = pad(K); });
+  $$('[data-n]').forEach((e) => { e.textContent = String(cur + 1); });
+  $$('[data-k]').forEach((e) => { e.textContent = String(K); });
+  const plE = document.getElementById('pl'); if (plE) plE.style.width = ((cur + 1) / K * 100).toFixed(2) + '%';
   const mt = metaOf(s);
   const ctx = EN ? [ru(s.date)].concat(s.mt !== 'quote' ? [docLabel(s)] : [], s.mc ? [s.mc] : []).join(', ') + '.' : ru(s.date) + (s.place ? ', ' + s.place : '') + '.';
   $('#ctx').textContent = ctx;
