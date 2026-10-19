@@ -1,0 +1,41 @@
+{
+  "id": "putin-2012-doing-business",
+  "lang": "en",
+  "source_hash": "5c49a4939f67",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-07.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Vladimir Putin",
+    "role": "President of Russia",
+    "quote": "…improve Russia’s position in the World Bank’s ease-of-doing-business ranking from 120th in 2011 to 50th in 2015 and 20th in 2018.",
+    "head": "By 2018 Russia ranked 31st out of 190, not 20th",
+    "body": "In its report published on October 31, 2018, the World Bank ranked Russia 31st, four places higher than the previous year. Russia ranked 28th in October 2019. The target of reaching the top 20 was moved to 2024.",
+    "meta_context": "Decree No. 596, “On Long-Term State Economic Policy”",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Text of Decree No. 596"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Inc. Russia"
+      },
+      {
+        "i": 1,
+        "t": "Snob"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": ""
+}

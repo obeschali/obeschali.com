@@ -1,0 +1,45 @@
+{
+  "id": "peskov-2024-youtube",
+  "lang": "en",
+  "source_hash": "298f7b43a3c0",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-06.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Dmitry Peskov",
+    "role": "Presidential Press Secretary",
+    "quote": "No, there were no such plans [to block YouTube].",
+    "head": "Slowdown announced; eight months later Roskomnadzor said the service was unavailable",
+    "body": "In July 2024, Khinshtein said a decision had been made to slow YouTube; Roskomnadzor said it had concerns about the service. Peskov attributed outages to Google equipment. On March 1, 2025, Roskomnadzor said YouTube was unavailable in Russia. Slowing a service is not the same as blocking it.",
+    "meta_context": "Response to reporters",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "RBC"
+      },
+      {
+        "i": 1,
+        "t": "Kommersant"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Interfax"
+      },
+      {
+        "i": 1,
+        "t": "Lenta.ru"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "Transliterate Хинштейн as Khinshtein? Correct English transliteration is Khinshtein/Khinshtein; editorial check name romanization."
+}

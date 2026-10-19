@@ -1,0 +1,41 @@
+{
+  "id": "er-2006-dtp",
+  "lang": "en",
+  "source_hash": "3b8387e334ba",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-08.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "United Russia",
+    "role": "political party",
+    "quote": "…reduce the number of people killed or injured in road crashes to two-thirds of the 2004 level by 2012.",
+    "head": "By 2012, road deaths had fallen by about one-fifth",
+    "body": "More than 34,000 people died on Russian roads in 2004, compared with 27,991 in 2012. That was a decrease of about 18%, not one-third.",
+    "meta_context": "Program statement “The Russia We Choose”",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Oryol Pravda, December 7, 2006"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Amic.ru"
+      },
+      {
+        "i": 1,
+        "t": "Amic.ru"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "English wording clarifies the intended 1.5-fold reduction (to two-thirds of the baseline), avoiding the ambiguous phrase “1.5 times fewer.”"
+}

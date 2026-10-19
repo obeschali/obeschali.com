@@ -1,0 +1,41 @@
+{
+  "id": "rogozin-2014-batut",
+  "lang": "en",
+  "source_hash": "5a6f419061b9",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-01.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Dmitry Rogozin",
+    "role": "Deputy Prime Minister",
+    "quote": "Having analyzed the sanctions against our space industry, I suggest that the United States use a trampoline to get its astronauts to the ISS.",
+    "head": "“The trampoline is working.”",
+    "body": "On May 30, 2020, a Falcon 9 rocket carrying the Crew Dragon spacecraft launched from Cape Canaveral. It was the first crewed flight from US soil aboard an American spacecraft in nine years. At a press conference, Elon Musk recalled Rogozin’s joke and said: “The trampoline is working.”",
+    "meta_context": "Twitter",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Lenta.ru"
+      },
+      {
+        "i": 1,
+        "t": "RBC, report on Rogozin’s Twitter post"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "TASS"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "“Space industry” is a concise rendering of космопром; review the quote against Rogozin’s original post if a verbatim English quotation is required."
+}

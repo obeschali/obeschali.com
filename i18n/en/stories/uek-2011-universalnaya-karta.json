@@ -1,0 +1,41 @@
+{
+  "id": "uek-2011-universalnaya-karta",
+  "lang": "en",
+  "source_hash": "7beb111d17bd",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-01.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "OJSC Universal Electronic Card",
+    "role": "Universal Electronic Card operator",
+    "quote": "…[the universal electronic card] will be issued from January 1, 2012 through December 31, 2013, inclusive, upon citizens’ applications.",
+    "head": "The card program was shut down in 2017.",
+    "body": "Issuance and distribution of the Universal Electronic Card ended on January 1, 2017 (under a law dated December 28, 2016, No. 471-FZ). The planned issuance of 120 million cards “never materialized.” The card also ceased to serve as a compulsory medical insurance policy or an SNILS certificate.",
+    "meta_context": "Operator’s official website",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "RIA Novosti"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "RIA Novosti"
+      },
+      {
+        "i": 1,
+        "t": "Law No. 210-FZ, Chapter 6 repealed effective January 1, 2017"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "“SNILS” is retained as the Russian pension insurance account identifier; consider adding an explanatory gloss for English readers."
+}

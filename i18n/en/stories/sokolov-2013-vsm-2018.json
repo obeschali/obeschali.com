@@ -1,0 +1,37 @@
+{
+  "id": "sokolov-2013-vsm-2018",
+  "lang": "en",
+  "source_hash": "54eb96794026",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-08.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Maxim Sokolov",
+    "role": "Transport Minister of Russia",
+    "quote": "If we start preparing the project documentation this year, then, in theory, we can complete the project by the 2018 FIFA World Cup.",
+    "head": "In 2026, the Transport Ministry said it hoped to “decide” on the project by 2028–29",
+    "body": "The high-speed line was not built for the 2018 World Cup. On June 15, 2026, Transport Minister Andrey Nikitin told Putin that, for the high-speed line to Kazan, “it would be good if by 2028–2029 we had decided, put the financial model together, and started moving forward.”",
+    "meta_context": "Meeting with the president in Sochi, on the Moscow–Kazan high-speed line",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Interfax"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Interfax"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "The quoted 2026 statement is kept distinct from Sokolov’s 2013 pledge."
+}

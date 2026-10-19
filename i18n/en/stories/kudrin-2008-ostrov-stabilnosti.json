@@ -1,0 +1,41 @@
+{
+  "id": "kudrin-2008-ostrov-stabilnosti",
+  "lang": "en",
+  "source_hash": "60e5f8175302",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-01.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Alexei Kudrin",
+    "role": "Deputy Prime Minister and Minister of Finance",
+    "quote": "…Russia will soon attract heightened investor attention as an island of stability.",
+    "head": "The RTS index fell 19% in one day.",
+    "body": "On October 6, 2008, the RTS and MICEX indices fell by 19% and 18%. Russia’s GDP contracted by 7.9% in 2009, according to Rosstat. The dollar rose from 25.4 rubles in September 2008 to 34.8 in March 2009. Medvedev had earlier spoken of an “island of stability.”",
+    "meta_context": "Davos, World Economic Forum",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Kommersant"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Lenta.ru"
+      },
+      {
+        "i": 1,
+        "t": "Vedomosti"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "“Heightened investor attention” preserves the forecast’s sense without strengthening it; “island of stability” is rendered literally."
+}

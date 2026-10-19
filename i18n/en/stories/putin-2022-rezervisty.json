@@ -1,0 +1,41 @@
+{
+  "id": "putin-2022-rezervisty",
+  "lang": "en",
+  "source_hash": "447c656723ff",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-02.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Vladimir Putin",
+    "role": "President of Russia",
+    "quote": "There will be no additional call-up of reservists [for the operation in Ukraine].",
+    "head": "Partial mobilization",
+    "body": "A decree on partial mobilization was issued on September 21, 2022. Shoigu said on November 1, 2022: “300,000 people were called up.”",
+    "meta_context": "Address to women",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "RBC"
+      },
+      {
+        "i": 1,
+        "t": "TASS"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Interfax"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "Preserve the distinction between reservists and conscripts."
+}

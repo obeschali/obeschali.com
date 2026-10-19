@@ -1,0 +1,41 @@
+{
+  "id": "manturov-2021-zetta",
+  "lang": "en",
+  "source_hash": "585557d4b0d9",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-06.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Denis Manturov",
+    "role": "Minister of Industry and Trade",
+    "quote": "[Serial production of the Zetta electric car] will begin by the end of the year. It will all depend on completion of development work.",
+    "head": "On December 30, 2021, Manturov gave a different timeline: “the first mass-produced electric car will appear in Russia in the next year or two.”",
+    "body": "Manturov had expected Zetta production in 2021. In March 2025, Interfax reported that Russia’s overall electric-car production plan for 2024 had been met by roughly a quarter. Those are industry-wide figures, not figures for Zetta; the fate of this specific project is not confirmed here.",
+    "meta_context": "Response to reporters",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "TASS"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "RIA Novosti"
+      },
+      {
+        "i": 1,
+        "t": "Interfax"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "The outcome does not claim the industry-wide figure is evidence about Zetta."
+}

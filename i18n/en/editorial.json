@@ -1,0 +1,55 @@
+{
+  "format": "obeschali-editorial-en/1",
+  "strings": {
+    "about.label": {
+      "source_hash": "b059cdc54325",
+      "en": "About",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "about.title": {
+      "source_hash": "08e22b11a84d",
+      "en": "The authorities make many promises. Here’s what happened next.",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "about.p1": {
+      "source_hash": "92b3acb7c796",
+      "en": "Promised. is a project by Roman Evangulov about public statements and their real-world consequences. Each story begins with a promise, forecast, or assurance; then we look at what happened.",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "about.p2": {
+      "source_hash": "4c910f190878",
+      "en": "Some statements can be checked against documents and figures. Others need context. That is why each story includes sources: you can see for yourself who said what, and what we compare it with.",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "about.p3": {
+      "source_hash": "0d23b7070575",
+      "en": "This is an author-curated selection, not a complete catalogue of every promise. It brings together stories that seemed important and can be documented. If we got something wrong or missed context, you can write to us.",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "about.footer": {
+      "source_hash": "8f6d2de0ba56",
+      "en": "Promised. — see what became of those words.",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "about.contact_button": {
+      "source_hash": "e1271289b6dc",
+      "en": "Contact the author",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    }
+  },
+  "new_strings": {}
+}

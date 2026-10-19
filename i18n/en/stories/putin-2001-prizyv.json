@@ -1,0 +1,41 @@
+{
+  "id": "putin-2001-prizyv",
+  "lang": "en",
+  "source_hash": "ab692c68edaf",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-07.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Vladimir Putin",
+    "role": "President",
+    "quote": "Mandatory conscription into military service will be abolished in Russia in 2010.",
+    "head": "Conscription was not abolished: in 2023 Putin signed a law setting the draft age at 18 to 30",
+    "body": "The law raised the upper conscription age from 27 to 30 and took effect on January 1, 2024. A transition to an all-contract force had been promised again: on October 24, 2017, Putin said, “We should keep in mind that we are gradually moving away from conscript service altogether” (Lenta.ru).",
+    "meta_context": "Meeting with Kasyanov",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Kommersant-Vlast"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "RBC"
+      },
+      {
+        "i": 1,
+        "t": "Rossiyskaya Gazeta"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": ""
+}

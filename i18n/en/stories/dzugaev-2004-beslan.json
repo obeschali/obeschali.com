@@ -1,0 +1,37 @@
+{
+  "id": "dzugaev-2004-beslan",
+  "lang": "en",
+  "source_hash": "d9ba0f1fa433",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-07.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Lev Dzugayev",
+    "role": "Head of the Information and Analysis Directorate under the President of North Ossetia",
+    "quote": "According to revised figures, 354 people have been taken hostage in Beslan.",
+    "head": "The hostage count was revised to 1,128",
+    "body": "According to an RIA Novosti backgrounder, the initial figure of 354 was later revised to 1,128 people.",
+    "meta_context": "RBC report",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "RBC"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "RIA Novosti"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": ""
+}

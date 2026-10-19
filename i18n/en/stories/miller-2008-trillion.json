@@ -1,0 +1,41 @@
+{
+  "id": "miller-2008-trillion",
+  "lang": "en",
+  "source_hash": "9117979f58b5",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-08.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Alexei Miller",
+    "role": "Chairman of Gazprom’s Management Board",
+    "quote": "Our market capitalization will reach $1 trillion, and we will become the world’s largest company.",
+    "head": "About $92 billion in 2013; $56 billion in 2016",
+    "body": "Vedomosti recorded the timeframe as “in seven to ten years.” In May 2013, Gazprom’s market capitalization was about $92 billion, its lowest since 2009. According to Lenta.ru, by May 2016 it had fallen from $369 billion to $56 billion.",
+    "meta_context": "European Business Congress",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Vedomosti"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "BFM.ru, May 2013"
+      },
+      {
+        "i": 1,
+        "t": "Lenta.ru, May 2016"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": ""
+}

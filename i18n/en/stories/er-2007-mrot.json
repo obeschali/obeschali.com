@@ -1,0 +1,37 @@
+{
+  "id": "er-2007-mrot",
+  "lang": "en",
+  "source_hash": "ff928ac21afa",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-07.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "United Russia",
+    "role": "political party; platform for the State Duma election",
+    "quote": "By 2008, Russia’s minimum wage will reach the subsistence minimum.",
+    "head": "Not until May 1, 2018",
+    "body": "The minimum wage reached the subsistence minimum only on May 1, 2018, at 11,163 rubles. Before then it was 9,489 rubles, about 85% of the subsistence minimum. The State Duma passed the law at third reading on February 16, 2018; the equalization had initially been planned for January 1, 2019.",
+    "meta_context": "United Russia congress, election platform",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Rossiyskaya Gazeta"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Interfax"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "“Subsistence minimum” is the official policy benchmark."
+}

@@ -1,0 +1,41 @@
+{
+  "id": "putin-2022-wagner",
+  "lang": "en",
+  "source_hash": "5f14defbb8ff",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-01.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Vladimir Putin",
+    "role": "President of Russia",
+    "quote": "The Russian government, the Russian state, has nothing to do with companies operating in Mali.",
+    "head": "The state paid Wagner 86 billion rubles.",
+    "body": "On June 27, 2023, Putin said that from May 2022 to May 2023 the state had paid Wagner 86.262 billion rubles for salaries and other payments. The February question concerned Wagner in Mali, so these figures do not establish that it was funded specifically there.",
+    "meta_context": "Press conference after talks with Macron",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Interfax"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "RIA Novosti"
+      },
+      {
+        "i": 1,
+        "t": "Vedomosti"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "The Russian original says “companies operating in Mali” without naming Wagner in the quote; the story’s framing identifies Wagner. Keep this distinction explicit."
+}

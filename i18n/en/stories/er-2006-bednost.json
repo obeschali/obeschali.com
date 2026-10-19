@@ -1,0 +1,37 @@
+{
+  "id": "er-2006-bednost",
+  "lang": "en",
+  "source_hash": "04b9d4a134f2",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-08.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "United Russia",
+    "role": "political party",
+    "quote": "A radical improvement in the quality and standard of living of Russian citizens, and the eradication of poverty as a social phenomenon.",
+    "head": "19.8 million people in poverty",
+    "body": "The statement said: “Our renewal strategy is designed for the next ten years.” According to Rosstat, the number of people in poverty rose by 300,000 in 2016 to 19.8 million, or 13.5% of the population.",
+    "meta_context": "Program statement “The Russia We Choose”",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Oryol Pravda, December 7, 2006"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Kommersant"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": ""
+}

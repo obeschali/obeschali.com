@@ -1,0 +1,574 @@
+{
+  "format": "obeschali-glossary/1",
+  "readme": "Справочник повторяющихся значений для единообразия. Заполните en один раз и держитесь этих форм во всех историях. Вспомогательный файл: при импорте не читается.",
+  "who": {
+    "«Единая Россия»": {
+      "count": 4,
+      "en": "United Russia"
+    },
+    "Александр Беглов": {
+      "count": 1,
+      "en": "Alexander Beglov"
+    },
+    "Александр Новак": {
+      "count": 1,
+      "en": "Alexander Novak"
+    },
+    "Алексей Ведев": {
+      "count": 1,
+      "en": "Alexei Vedev"
+    },
+    "Алексей Кудрин": {
+      "count": 2,
+      "en": "Alexei Kudrin"
+    },
+    "Алексей Миллер": {
+      "count": 3,
+      "en": "Alexei Miller"
+    },
+    "Алексей Улюкаев": {
+      "count": 1,
+      "en": "Alexei Ulyukayev"
+    },
+    "Анатолий Антонов": {
+      "count": 1,
+      "en": "Anatoly Antonov"
+    },
+    "Анатолий Перминов": {
+      "count": 1,
+      "en": "Anatoly Perminov"
+    },
+    "Анатолий Чубайс": {
+      "count": 1,
+      "en": "Anatoly Chubais"
+    },
+    "Антон Силуанов": {
+      "count": 3,
+      "en": "Anton Siluanov"
+    },
+    "Аркадий Дворкович": {
+      "count": 2,
+      "en": "Arkady Dvorkovich"
+    },
+    "Банк России": {
+      "count": 1,
+      "en": "Bank of Russia"
+    },
+    "Банк России (совет директоров)": {
+      "count": 1,
+      "en": "Bank of Russia (Board of Directors)"
+    },
+    "Виктор Зубков": {
+      "count": 1,
+      "en": "Viktor Zubkov"
+    },
+    "Виталий Мутко": {
+      "count": 2,
+      "en": "Vitaly Mutko"
+    },
+    "Владимир Путин": {
+      "count": 27,
+      "en": "Vladimir Putin"
+    },
+    "Герман Греф": {
+      "count": 1,
+      "en": "German Gref"
+    },
+    "Денис Мантуров": {
+      "count": 2,
+      "en": "Denis Manturov"
+    },
+    "Дмитрий Медведев": {
+      "count": 4,
+      "en": "Dmitry Medvedev"
+    },
+    "Дмитрий Песков": {
+      "count": 5,
+      "en": "Dmitry Peskov"
+    },
+    "Дмитрий Рогозин": {
+      "count": 3,
+      "en": "Dmitry Rogozin"
+    },
+    "Лев Дзугаев": {
+      "count": 1,
+      "en": "Lev Dzugayev"
+    },
+    "Максим Решетников": {
+      "count": 1,
+      "en": "Maxim Reshetnikov"
+    },
+    "Максим Соколов": {
+      "count": 1,
+      "en": "Maxim Sokolov"
+    },
+    "ОАО «УЭК»": {
+      "count": 1,
+      "en": "OJSC Universal Electronic Card"
+    },
+    "Олег Сиенко": {
+      "count": 1,
+      "en": "Oleg Sienko"
+    },
+    "Правительство России": {
+      "count": 2,
+      "en": "Government of Russia"
+    },
+    "Сергей Лавров": {
+      "count": 1,
+      "en": "Sergey Lavrov"
+    },
+    "Сергей Чемезов": {
+      "count": 1,
+      "en": "Sergey Chemezov"
+    },
+    "Татьяна Голикова": {
+      "count": 1,
+      "en": "Tatyana Golikova"
+    },
+    "Эдуард Батанов": {
+      "count": 1,
+      "en": "Eduard Batanov"
+    },
+    "Юрий Слюсарь": {
+      "count": 1,
+      "en": "Yury Slyusar"
+    },
+    "пресс-служба Роскомнадзора": {
+      "count": 1,
+      "en": "Roskomnadzor press service"
+    }
+  },
+  "role": {
+    "Концепция долгосрочного социально-экономического развития до 2020 года": {
+      "count": 1,
+      "en": "Concept for Long-Term Socioeconomic Development Through 2020"
+    },
+    "Президент России": {
+      "count": 1,
+      "en": "President of Russia"
+    },
+    "Стратегия инновационного развития до 2020 года": {
+      "count": 1,
+      "en": "Strategy for Innovative Development Through 2020"
+    },
+    "вице-премьер": {
+      "count": 4,
+      "en": "Deputy Prime Minister"
+    },
+    "вице-премьер по вопросам спорта, туризма и молодёжной политики": {
+      "count": 1,
+      "en": "Deputy Prime Minister for Sports, Tourism, and Youth Policy"
+    },
+    "вице-премьер, глава Минпромторга": {
+      "count": 1,
+      "en": "Deputy Prime Minister and Minister of Industry and Trade"
+    },
+    "вице-премьер, министр финансов": {
+      "count": 2,
+      "en": "Deputy Prime Minister and Minister of Finance"
+    },
+    "врио губернатора Санкт-Петербурга": {
+      "count": 1,
+      "en": "Acting Governor of St. Petersburg"
+    },
+    "генеральный директор «Уралвагонзавода»": {
+      "count": 1,
+      "en": "CEO of Uralvagonzavod"
+    },
+    "генеральный директор Роскосмоса": {
+      "count": 1,
+      "en": "Director General of Roscosmos"
+    },
+    "глава «Ростеха»": {
+      "count": 1,
+      "en": "Head of Rostec"
+    },
+    "заместитель министра экономического развития": {
+      "count": 1,
+      "en": "Deputy Minister of Economic Development"
+    },
+    "заместитель председателя правительства": {
+      "count": 1,
+      "en": "Deputy Prime Minister"
+    },
+    "кандидат в президенты": {
+      "count": 1,
+      "en": "Presidential candidate"
+    },
+    "министр иностранных дел": {
+      "count": 1,
+      "en": "Minister of Foreign Affairs"
+    },
+    "министр промышленности и торговли": {
+      "count": 1,
+      "en": "Minister of Industry and Trade"
+    },
+    "министр транспорта России": {
+      "count": 1,
+      "en": "Transport Minister of Russia"
+    },
+    "министр финансов": {
+      "count": 3,
+      "en": "Minister of Finance"
+    },
+    "министр экономического развития": {
+      "count": 2,
+      "en": "Minister of Economic Development"
+    },
+    "министр экономического развития и торговли": {
+      "count": 1,
+      "en": "Minister of Economic Development and Trade"
+    },
+    "министр энергетики": {
+      "count": 1,
+      "en": "Minister of Energy"
+    },
+    "начальник информационно-аналитического управления при президенте Северной Осетии": {
+      "count": 1,
+      "en": "Head of the Information and Analysis Directorate under the President of North Ossetia"
+    },
+    "оператор универсальной электронной карты": {
+      "count": 1,
+      "en": "Universal Electronic Card operator"
+    },
+    "партия": {
+      "count": 2,
+      "en": "political party"
+    },
+    "партия, программа к выборам в Госдуму": {
+      "count": 2,
+      "en": "political party; platform for the State Duma election"
+    },
+    "первый вице-премьер, председатель совета директоров «Газпрома»": {
+      "count": 1,
+      "en": "First Deputy Prime Minister and Chairman of Gazprom’s Board of Directors"
+    },
+    "посол России в США": {
+      "count": 1,
+      "en": "Russian Ambassador to the United States"
+    },
+    "председатель комитета финансов правительства Санкт-Петербурга": {
+      "count": 1,
+      "en": "Chair of the Finance Committee of the St. Petersburg government"
+    },
+    "председатель правительства": {
+      "count": 3,
+      "en": "Prime Minister"
+    },
+    "председатель правления «Газпрома»": {
+      "count": 3,
+      "en": "Chairman of Gazprom’s Management Board"
+    },
+    "председатель правления «Роснано»": {
+      "count": 1,
+      "en": "Chairman of the Management Board of Rusnano"
+    },
+    "президент": {
+      "count": 6,
+      "en": "President"
+    },
+    "президент Объединённой авиастроительной корпорации": {
+      "count": 1,
+      "en": "President of the United Aircraft Corporation"
+    },
+    "президент России": {
+      "count": 20,
+      "en": "President of Russia"
+    },
+    "пресс-секретарь президента": {
+      "count": 5,
+      "en": "Presidential Press Secretary"
+    },
+    "прогноз по итогам заседания совета директоров": {
+      "count": 1,
+      "en": "Forecast following a Board of Directors meeting"
+    },
+    "руководитель Роскосмоса": {
+      "count": 1,
+      "en": "Head of Roscosmos"
+    },
+    "федеральная служба по надзору в сфере связи": {
+      "count": 1,
+      "en": "Federal Service for Supervision of Communications"
+    },
+    "центральный банк": {
+      "count": 1,
+      "en": "central bank"
+    },
+    "экономический советник президента": {
+      "count": 1,
+      "en": "Economic Adviser to the President"
+    }
+  },
+  "source_titles": {
+    "BFM.ru": {
+      "count": 1,
+      "en": "BFM.ru"
+    },
+    "BFM.ru, май 2013": {
+      "count": 1,
+      "en": "BFM.ru, May 2013"
+    },
+    "Inc. Russia": {
+      "count": 1,
+      "en": "Inc. Russia"
+    },
+    "Lenta.ru": {
+      "count": 17,
+      "en": "Lenta.ru"
+    },
+    "News.ru, по данным Росстата": {
+      "count": 1,
+      "en": "News.ru, citing Rosstat"
+    },
+    "Reuters о решении CAS отменить запрет для Мутко, 11 июля 2019 года": {
+      "count": 2,
+      "en": "Reuters on CAS lifting Mutko’s ban, July 11, 2019"
+    },
+    "SberCIB: курс рубля, динамика за 2023 год": {
+      "count": 1,
+      "en": "SberCIB: ruble exchange rate, 2023 trend"
+    },
+    "Sostav": {
+      "count": 1,
+      "en": "Sostav"
+    },
+    "The Insider": {
+      "count": 1,
+      "en": "The Insider"
+    },
+    "The Moscow Times": {
+      "count": 1,
+      "en": "The Moscow Times"
+    },
+    "«Орловская правда» от 7 декабря 2006 года": {
+      "count": 2,
+      "en": "Oryol Pravda, December 7, 2006"
+    },
+    "Амител": {
+      "count": 2,
+      "en": "Amic.ru"
+    },
+    "Банк России, «Инфляция в России», ноябрь 2025 года, таблица ИПЦ": {
+      "count": 2,
+      "en": "Bank of Russia, “Inflation in Russia,” November 2025, CPI table"
+    },
+    "Ведомости": {
+      "count": 16,
+      "en": "Vedomosti"
+    },
+    "Ведомости. Северо-Запад": {
+      "count": 1,
+      "en": "Vedomosti. Northwest"
+    },
+    "Годовой отчёт Банка России за 2015 год, утверждён 29 апреля 2016 года": {
+      "count": 1,
+      "en": "Bank of Russia Annual Report for 2015, approved April 29, 2016"
+    },
+    "Деловой Петербург": {
+      "count": 2,
+      "en": "Delovoy Peterburg"
+    },
+    "Деловой Петербург, по данным Росстата": {
+      "count": 1,
+      "en": "Delovoy Peterburg, citing Rosstat"
+    },
+    "Деловой Петербург, по докладу Минэкономразвития": {
+      "count": 1,
+      "en": "Delovoy Peterburg, citing a Ministry of Economic Development report"
+    },
+    "Деловой Петербург, сообщение о приостановке проекта": {
+      "count": 1,
+      "en": "Delovoy Peterburg, report on the project suspension"
+    },
+    "Демоскоп Weekly": {
+      "count": 1,
+      "en": "Demoscope Weekly"
+    },
+    "Закон № 210-ФЗ, глава 6 утратила силу с 1 января 2017 года": {
+      "count": 1,
+      "en": "Law No. 210-FZ, Chapter 6 repealed effective January 1, 2017"
+    },
+    "ИСИЭЗ НИУ ВШЭ": {
+      "count": 1,
+      "en": "Institute for Statistical Studies and Economics of Knowledge, HSE University"
+    },
+    "Известия": {
+      "count": 1,
+      "en": "Izvestia"
+    },
+    "Интерфакс": {
+      "count": 33,
+      "en": "Interfax"
+    },
+    "Интерфакс, вступление России в ВТО 22 августа 2012 года": {
+      "count": 1,
+      "en": "Interfax, Russia joins WTO, August 22, 2012"
+    },
+    "Интерфакс, изложение интервью Путина о решении 23 февраля": {
+      "count": 1,
+      "en": "Interfax, summary of Putin interview on the decision, February 23"
+    },
+    "Интерфакс, ответ Пескова журналистам": {
+      "count": 1,
+      "en": "Interfax, Peskov’s response to reporters"
+    },
+    "Интерфакс, послание президента 15 января 2020 года": {
+      "count": 1,
+      "en": "Interfax, Presidential Address, January 15, 2020"
+    },
+    "Коммерсантъ": {
+      "count": 15,
+      "en": "Kommersant"
+    },
+    "Коммерсантъ, репортаж о встрече 5 марта 2022 года": {
+      "count": 1,
+      "en": "Kommersant, report on the meeting, March 5, 2022"
+    },
+    "Коммерсантъ-Власть": {
+      "count": 1,
+      "en": "Kommersant-Vlast"
+    },
+    "КонсультантПлюс, обзор вступления в силу закона № 139-ФЗ": {
+      "count": 1,
+      "en": "ConsultantPlus, overview of Law No. 139-FZ entering into force"
+    },
+    "Лента.ру, май 2016": {
+      "count": 1,
+      "en": "Lenta.ru, May 2016"
+    },
+    "Лента.ру, по данным ВШЭ и «Коммерсанта»": {
+      "count": 1,
+      "en": "Lenta.ru, citing HSE University and Kommersant"
+    },
+    "Официальные курсы доллара ЦБ РФ по месяцам, 2023": {
+      "count": 1,
+      "en": "Official monthly US dollar exchange rates, Bank of Russia, 2023"
+    },
+    "Письмо ФНС о применении ставки НДС 20% с 1 января 2019 года": {
+      "count": 1,
+      "en": "Federal Tax Service letter on applying the 20% VAT rate from January 1, 2019"
+    },
+    "Постановление главного санитарного врача Москвы от 15 июня 2021 года": {
+      "count": 1,
+      "en": "Order of Moscow’s Chief Sanitary Doctor, June 15, 2021"
+    },
+    "РБК": {
+      "count": 31,
+      "en": "RBC"
+    },
+    "РБК, о законе о ратификации соглашения по Тартусу": {
+      "count": 1,
+      "en": "RBC, on the law ratifying the Tartus agreement"
+    },
+    "РБК, по данным Росстата о ценах за 2018 год": {
+      "count": 1,
+      "en": "RBC, citing Rosstat data on 2018 prices"
+    },
+    "РБК, репортаж о встрече в Феодосии": {
+      "count": 1,
+      "en": "RBC, report on the meeting in Feodosia"
+    },
+    "РБК, репортаж с «Прямой линии» 17 апреля 2014 года": {
+      "count": 1,
+      "en": "RBC, report from the Direct Line, April 17, 2014"
+    },
+    "РБК, репортаж с пресс-конференции": {
+      "count": 1,
+      "en": "RBC, report from the press conference"
+    },
+    "РБК, сообщение о записи Рогозина в Twitter": {
+      "count": 1,
+      "en": "RBC, report on Rogozin’s Twitter post"
+    },
+    "РИА Новости": {
+      "count": 44,
+      "en": "RIA Novosti"
+    },
+    "РИА Новости Крым": {
+      "count": 1,
+      "en": "RIA Novosti Crimea"
+    },
+    "РИА Новости. Недвижимость": {
+      "count": 1,
+      "en": "RIA Novosti Real Estate"
+    },
+    "РИА Спорт": {
+      "count": 1,
+      "en": "RIA Sport"
+    },
+    "РИАМО, со ссылкой на «Известия»": {
+      "count": 1,
+      "en": "RIAMO, citing Izvestia"
+    },
+    "Распоряжение № 2227-р (rulaws.ru)": {
+      "count": 1,
+      "en": "Order No. 2227-r (rulaws.ru)"
+    },
+    "Решение исполкома МОК от 5 декабря 2017 года": {
+      "count": 2,
+      "en": "IOC Executive Board decision, December 5, 2017"
+    },
+    "Российская газета": {
+      "count": 10,
+      "en": "Rossiyskaya Gazeta"
+    },
+    "Сноб": {
+      "count": 1,
+      "en": "Snob"
+    },
+    "ТАСС": {
+      "count": 10,
+      "en": "TASS"
+    },
+    "Текст обращения 24 февраля 2022 года, Параграф": {
+      "count": 1,
+      "en": "Text of the February 24, 2022 address, Paragraph"
+    },
+    "Текст распоряжения № 1662-р": {
+      "count": 1,
+      "en": "Text of Order No. 1662-r"
+    },
+    "Текст указа № 120": {
+      "count": 1,
+      "en": "Text of Decree No. 120"
+    },
+    "Текст указа № 204": {
+      "count": 1,
+      "en": "Text of Decree No. 204"
+    },
+    "Текст указа № 596": {
+      "count": 2,
+      "en": "Text of Decree No. 596"
+    },
+    "Текст указа № 596 (rulaws.ru)": {
+      "count": 1,
+      "en": "Text of Decree No. 596 (rulaws.ru)"
+    },
+    "Текст указа № 599": {
+      "count": 1,
+      "en": "Text of Decree No. 599"
+    },
+    "Текст указа № 606": {
+      "count": 1,
+      "en": "Text of Decree No. 606"
+    },
+    "Текст указа № 889": {
+      "count": 1,
+      "en": "Text of Decree No. 889"
+    },
+    "Указ президента № 756 от 19 октября 2022 года": {
+      "count": 1,
+      "en": "Presidential Decree No. 756, October 19, 2022"
+    },
+    "Федеральный закон № 350-ФЗ, текст на сайте Социального фонда России": {
+      "count": 1,
+      "en": "Federal Law No. 350-FZ, text on the Social Fund of Russia website"
+    },
+    "Фонтанка": {
+      "count": 1,
+      "en": "Fontanka"
+    }
+  }
+}

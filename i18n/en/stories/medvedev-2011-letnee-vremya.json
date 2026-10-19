@@ -1,0 +1,41 @@
+{
+  "id": "medvedev-2011-letnee-vremya",
+  "lang": "en",
+  "source_hash": "e251fe33290c",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-01.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Dmitry Medvedev",
+    "role": "President of Russia",
+    "quote": "…that means losing an hour of sleep, but after that the problems will be over.",
+    "head": "The clocks were turned back.",
+    "body": "Medvedev announced that in spring 2011 the clocks would be changed for the last time and the country would remain on summer time. But on July 22, 2014, Putin signed a law restoring standard time from October 26. In February 2013, Medvedev had proposed keeping the arrangement.",
+    "meta_context": "Meeting with young scientists",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Sostav"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Rossiyskaya Gazeta"
+      },
+      {
+        "i": 1,
+        "t": "Interfax"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "The source quote begins mid-sentence, marked by an ellipsis in Russian; retain it. Terminology edited: “standard time” is the natural English equivalent in this context for Russia’s return from permanent summer time; “winter time” would sound literal and unclear."
+}

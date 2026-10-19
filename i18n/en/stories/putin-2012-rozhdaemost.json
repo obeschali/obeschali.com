@@ -1,0 +1,37 @@
+{
+  "id": "putin-2012-rozhdaemost",
+  "lang": "en",
+  "source_hash": "f9ebf4a761ee",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-07.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Vladimir Putin",
+    "role": "President of Russia",
+    "quote": "…raise the total fertility rate to 1.753 by 2018.",
+    "head": "The rate was 1.579 in 2018 and 1.410 in 2023",
+    "body": "According to Rosstat, the total fertility rate was 1.579 in 2018 and 1.410 in 2023. The new target in the 2018 decree, 1.7, was also missed.",
+    "meta_context": "Decree No. 606, “On Measures to Implement the Demographic Policy of the Russian Federation”",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Text of Decree No. 606"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Demoscope Weekly"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": ""
+}

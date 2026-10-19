@@ -1,0 +1,45 @@
+{
+  "id": "putin-2014-krym-samooborona",
+  "lang": "en",
+  "source_hash": "79c237bbce1d",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-01.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Vladimir Putin",
+    "role": "President of Russia",
+    "quote": "These were local self-defense forces [in Crimea].",
+    "head": "“Our servicemen stepped in.”",
+    "body": "On April 17, 2014, during the Direct Line, Putin said: “Behind the Crimea self-defense forces, of course, stood our servicemen.” On March 4, he had said that the question of Crimea’s accession was “not being considered.” On March 18, Putin signed a treaty on Crimea and Sevastopol joining Russia.",
+    "meta_context": "Press conference",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Vedomosti"
+      },
+      {
+        "i": 1,
+        "t": "RIA Novosti"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Interfax"
+      },
+      {
+        "i": 1,
+        "t": "RBC"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "The bracketed “[in Crimea]” is an editorial clarification in the Russian quote; retain as an insertion. The wording “local self-defense forces” follows the Russian phrasing; review against the original recording if exact terminology matters."
+}

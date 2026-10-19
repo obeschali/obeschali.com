@@ -1,0 +1,37 @@
+{
+  "id": "chubays-2012-devalvatsiya",
+  "lang": "en",
+  "source_hash": "351601f4a499",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-04.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Anatoly Chubais",
+    "role": "Chairman of the Management Board of Rusnano",
+    "quote": "There is no issue of ruble devaluation; it does not exist.",
+    "head": "The dollar reached 62 rubles",
+    "body": "On December 16, 2014, the Bank of Russia raised its key rate from 10.5% to 17% a year, the second increase that week. At 10:17 a.m. Moscow time, the dollar traded at 62.15 rubles on the Moscow Exchange, after falling as low as 58.15 that morning. The official rate on January 23, 2014, had been 33.87 rubles.",
+    "meta_context": "Interview with Business FM",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "BFM.ru"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Interfax"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": ""
+}

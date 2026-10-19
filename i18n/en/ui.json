@@ -1,0 +1,490 @@
+{
+  "format": "obeschali-ui-en/1",
+  "strings": {
+    "nav.about": {
+      "source_hash": "b059cdc54325",
+      "en": "About",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "nav.all": {
+      "source_hash": "6baa0b722b77",
+      "en": "All stories",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "nav.close": {
+      "source_hash": "3bd03e2d1208",
+      "en": "Close",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "nav.prev_aria": {
+      "source_hash": "9993430ad5b9",
+      "en": "Previous story",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "nav.next_aria": {
+      "source_hash": "208e45ac3ff1",
+      "en": "Next story",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "nav.group_aria": {
+      "source_hash": "7b8bde278990",
+      "en": "Story navigation",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "menu.aria": {
+      "source_hash": "6baa0b722b77",
+      "en": "All stories",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "about.aria": {
+      "source_hash": "b059cdc54325",
+      "en": "About",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "hint.desktop": {
+      "source_hash": "b1f96ce194b4",
+      "en": "Click the page to see what happened next",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "hint.mobile": {
+      "source_hash": "1fead29c25b7",
+      "en": "Tap the screen to see what happened next",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "cursor.first": {
+      "source_hash": "2974b4c199da",
+      "en": "Click to see what happened next →",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "cursor.next": {
+      "source_hash": "fb16be8a2194",
+      "en": "What happened next →",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "cursor.back": {
+      "source_hash": "40dc9fc03829",
+      "en": "← The promise",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "label.context": {
+      "source_hash": "067f855e90bf",
+      "en": "Context",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "label.confirmation": {
+      "source_hash": "e2fafe56fd5e",
+      "en": "What happened",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "label.source": {
+      "source_hash": "5af9ad68ecd7",
+      "en": "Source",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "kind.promise": {
+      "source_hash": "96da72fd7f72",
+      "en": "Promise",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "kind.forecast": {
+      "source_hash": "46c5847785fa",
+      "en": "Forecast",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "kind.denial": {
+      "source_hash": "39542c71851a",
+      "en": "Denial",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "kind.irony": {
+      "source_hash": "80c483f3f124",
+      "en": "Irony",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "doctype.quote": {
+      "source_hash": "59bb2efca343",
+      "en": "Statement",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "doctype.decree": {
+      "source_hash": "97e818f25490",
+      "en": "Decree",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "doctype.decree_numbered": {
+      "source_hash": "6ffab77d6fcb",
+      "en": "Decree No. {number}",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "doctype.government_order": {
+      "source_hash": "6c7f94a1a1df",
+      "en": "Government Order",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "doctype.government_order_numbered": {
+      "source_hash": "b13782460673",
+      "en": "Government Order No. {number}",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "doctype.election_program": {
+      "source_hash": "06a7459641de",
+      "en": "Election platform",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "doctype.program_statement": {
+      "source_hash": "3a4d11757c9b",
+      "en": "Platform statement",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "doctype.address": {
+      "source_hash": "2e16f98bb7d9",
+      "en": "Address",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "doctype.official_statement": {
+      "source_hash": "282e9d4821c4",
+      "en": "Official statement",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "doctype.instruction": {
+      "source_hash": "fcf5d315bc22",
+      "en": "Directive",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "doctype.legislative_initiative": {
+      "source_hash": "8a0d7473c371",
+      "en": "Legislative initiative",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "result.elapsed.one": {
+      "source_hash": "8e972521e59c",
+      "en": "{n} {unit} later",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "result.elapsed.other": {
+      "source_hash": "ed983796fe69",
+      "en": "{n} {unit} later",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "unit.day.one": {
+      "source_hash": "e4acd1ca457f",
+      "en": "day",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "unit.day.few": {
+      "source_hash": "78ec82bf4e3d",
+      "en": "",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "unit.day.many": {
+      "source_hash": "2ec49b6fabd3",
+      "en": "days",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "unit.month.one": {
+      "source_hash": "cbcb9172fe49",
+      "en": "month",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "unit.month.few": {
+      "source_hash": "4ff79db5f724",
+      "en": "",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "unit.month.many": {
+      "source_hash": "0022bb7f11e9",
+      "en": "months",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "unit.year.one": {
+      "source_hash": "87295e826ee1",
+      "en": "year",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "unit.year.few": {
+      "source_hash": "7d4aed414cc3",
+      "en": "",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "unit.year.many": {
+      "source_hash": "f0ae8c35c00a",
+      "en": "years",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "menu.preview.year": {
+      "source_hash": "d5b3d67284db",
+      "en": "Promised · {year}",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "menu.preview.elapsed.one": {
+      "source_hash": "3887cd0c8cb4",
+      "en": "What happened next · {n} {unit} later",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "menu.preview.elapsed.other": {
+      "source_hash": "450758a17a4b",
+      "en": "What happened next · {n} {unit} later",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "share.button": {
+      "source_hash": "14e58a4bb961",
+      "en": "Share",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "share.copied": {
+      "source_hash": "b6db22ec4862",
+      "en": "Link copied",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "share.copy_fallback": {
+      "source_hash": "30d903a560a1",
+      "en": "Copy the link from the address bar",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "share.text": {
+      "source_hash": "8bcae1a2d5fe",
+      "en": "{who}: “{quote}”",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "page.title.default": {
+      "source_hash": "7094a4cfd266",
+      "en": "Promised.",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "page.title.story": {
+      "source_hash": "cac82307f8f4",
+      "en": "{who}: “{quote}” — Promised.",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "page.description": {
+      "source_hash": "d7bf3603fe3d",
+      "en": "Public statements and what happened next.",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "page.description.story_prefix": {
+      "source_hash": "8b565847c851",
+      "en": "What happened next — read the story.",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "page.story_link": {
+      "source_hash": "781281698107",
+      "en": "Open story",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "og.tag_more": {
+      "source_hash": "fb16be8a2194",
+      "en": "What happened next →",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "og.default_sub": {
+      "source_hash": "d7bf3603fe3d",
+      "en": "Public statements and what happened next.",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "og.default_role": {
+      "source_hash": "9c1a5311766f",
+      "en": "A documentary archive of public statements and their outcomes",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "og.default_open": {
+      "source_hash": "64231a678ef8",
+      "en": "Open →",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "noscript": {
+      "source_hash": "5ce73f124bd9",
+      "en": "Promised. — public statements and what happened next. JavaScript is required to use this site.",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    }
+  },
+  "new_strings": {
+    "lang.switch_aria": {
+      "source_hash": "1b3aed977a7b",
+      "en": "Switch language",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "lang.ru": {
+      "source_hash": "d6497017bfbd",
+      "en": "RU",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "lang.en": {
+      "source_hash": "ed3ca519f615",
+      "en": "EN",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "quote.show_original": {
+      "source_hash": "18677b1ab986",
+      "en": "Show original quote",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "quote.hide_original": {
+      "source_hash": "7ee918752826",
+      "en": "Hide original quote",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "quote.original_label": {
+      "source_hash": "48de3800d39f",
+      "en": "Original in Russian",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "source.lang_ru": {
+      "source_hash": "f98ded91c767",
+      "en": "Source in Russian",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "source.lang_en": {
+      "source_hash": "9f8a7d033016",
+      "en": "Source in English",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "story.not_translated": {
+      "source_hash": "d45a76a0667d",
+      "en": "This story is available in Russian only. View the Russian version.",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "story.translation_note": {
+      "source_hash": "f0dc102c1a0d",
+      "en": "Translated from Russian.",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    }
+  }
+}

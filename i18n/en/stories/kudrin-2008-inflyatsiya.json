@@ -1,0 +1,41 @@
+{
+  "id": "kudrin-2008-inflyatsiya",
+  "lang": "en",
+  "source_hash": "d9f58aba587f",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-04.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Alexei Kudrin",
+    "role": "Deputy Prime Minister and Minister of Finance",
+    "quote": "The latest forecast from all three leading agencies—the Central Bank, the Finance Ministry, and the Economic Development Ministry—is that inflation this year will be around 10%.",
+    "head": "Inflation reached 13.3% in 2008",
+    "body": "According to Rosstat, this was 1.4 percentage points above 2007 (11.9%) and higher than the government forecast, which had not expected inflation to exceed 11.8%. Inflation in 2008 was the highest since 2002.",
+    "meta_context": "NTV broadcast",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Interfax"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "RIA Novosti"
+      },
+      {
+        "i": 1,
+        "t": "Kommersant"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": ""
+}

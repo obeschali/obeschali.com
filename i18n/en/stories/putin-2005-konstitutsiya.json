@@ -1,0 +1,37 @@
+{
+  "id": "putin-2005-konstitutsiya",
+  "lang": "en",
+  "source_hash": "6de72025d6ec",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-01.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Vladimir Putin",
+    "role": "President of Russia",
+    "quote": "Therefore, under no circumstances do I intend to change the Constitution.",
+    "head": "The presidential term was extended to six years.",
+    "body": "On December 30, 2008, a law was signed changing the terms of office: six years for the president and five for the State Duma. Previously, both terms were four years. The law applies to those elected after it entered into force.",
+    "meta_context": "Fox News interview",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "RIA Novosti"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Rossiyskaya Gazeta"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": ""
+}

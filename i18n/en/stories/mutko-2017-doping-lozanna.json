@@ -1,0 +1,49 @@
+{
+  "id": "mutko-2017-doping-lozanna",
+  "lang": "en",
+  "source_hash": "aff0362f5f2a",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-07.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Vitaly Mutko",
+    "role": "Deputy Prime Minister for Sports, Tourism, and Youth Policy",
+    "quote": "We never had a national doping system.",
+    "head": "On December 5, 2017, the IOC suspended the Russian Olympic Committee from the Games and banned Mutko from the Olympics for life.",
+    "body": "RIA also mentions a lifetime ban for former deputy sports minister Yuri Nagornykh. In 2019, CAS overturned Mutko’s lifetime Olympic ban (RIA Sport, July 11, 2019).",
+    "meta_context": "Conversation with reporters in Lausanne",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "RIA Novosti"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "RIA Novosti"
+      },
+      {
+        "i": 1,
+        "t": "RIA Sport"
+      },
+      {
+        "i": 2,
+        "t": "IOC Executive Board decision, December 5, 2017"
+      },
+      {
+        "i": 3,
+        "t": "Reuters on CAS lifting Mutko’s ban, July 11, 2019"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "The institutional sanction on the Russian Olympic Committee and Mutko’s personal ban are distinct."
+}

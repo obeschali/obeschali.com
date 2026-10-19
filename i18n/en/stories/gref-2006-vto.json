@@ -1,0 +1,45 @@
+{
+  "id": "gref-2006-vto",
+  "lang": "en",
+  "source_hash": "9ce342b708e8",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-05.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "German Gref",
+    "role": "Minister of Economic Development and Trade",
+    "quote": "We believe we have a good chance of completing the process of joining the WTO by the end of this year.",
+    "head": "Russia became a full WTO member on August 22, 2012—six and a half years later",
+    "body": "RIA Novosti reported on November 9, 2011, that negotiations had begun in 1995 (not to be confused with Russia’s 1993 application to GATT). Gref said “a good chance,” not that membership was guaranteed; the accession process became one of the longest-running stories on the newswire.",
+    "meta_context": "World Economic Forum in Davos",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "RIA Novosti"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Rossiyskaya Gazeta"
+      },
+      {
+        "i": 1,
+        "t": "RIA Novosti"
+      },
+      {
+        "i": 2,
+        "t": "Interfax, Russia joins WTO, August 22, 2012"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "The cautious wording “good chance” is preserved."
+}

@@ -1,0 +1,41 @@
+{
+  "id": "press-sluzhb-telegram",
+  "lang": "en",
+  "source_hash": "9347df3de983",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-06.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Roskomnadzor press service",
+    "role": "Federal Service for Supervision of Communications",
+    "quote": "We confirm that at present there is no need to restrict Telegram’s operation in Russia.",
+    "head": "Telegram calls were restricted; 22 months later, all traffic was slowed",
+    "body": "In August 2025, Roskomnadzor restricted calls on Telegram and WhatsApp, citing fraud. In February 2026, RBC reported, citing government agencies, that Telegram was being slowed. The original statement concerned the need for restrictions at that time, not the future.",
+    "meta_context": "Response to TASS",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "RBC"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "RBC"
+      },
+      {
+        "i": 1,
+        "t": "RIA Novosti"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "“At present” is essential to the scope of the denial."
+}

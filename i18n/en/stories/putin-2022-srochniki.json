@@ -1,0 +1,45 @@
+{
+  "id": "putin-2022-srochniki",
+  "lang": "en",
+  "source_hash": "bf0226f91ba1",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-05.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Vladimir Putin",
+    "role": "President",
+    "quote": "There are no conscripts [among those taking part in the operation], and we do not plan to send them; we have no intention of doing so.",
+    "head": "The Defense Ministry acknowledged conscripts were in the units",
+    "body": "On March 9, 2022, the Defense Ministry acknowledged that conscripts were present in units involved in the operation and that several had been captured. The ministry said almost all conscripts had been returned to Russia. Peskov said Putin had instructed the military prosecutor’s office to investigate.",
+    "meta_context": "Meeting with flight crews",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "RBC"
+      },
+      {
+        "i": 1,
+        "t": "Kommersant, report on the meeting, March 5, 2022"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "RIA Novosti Crimea"
+      },
+      {
+        "i": 1,
+        "t": "Kommersant"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "The source quotation’s scope is limited to participants in the operation."
+}

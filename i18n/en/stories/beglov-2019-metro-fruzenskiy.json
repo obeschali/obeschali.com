@@ -1,0 +1,41 @@
+{
+  "id": "beglov-2019-metro-fruzenskiy",
+  "lang": "en",
+  "source_hash": "549326866bda",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-06.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Alexander Beglov",
+    "role": "Acting Governor of St. Petersburg",
+    "quote": "…we do not need the metro by a particular date if we end up opening it a month later.",
+    "head": "Passengers entered the stations on October 3, 2019, a month after the “hard deadline” of September 1.",
+    "body": "In April 2019, Beglov called September 1 a hard deadline for opening three stations. A ceremony took place on September 5, but the stations did not open to passengers because work remained unfinished. They actually entered service on October 3; that day, a leak was found at Dunayskaya.",
+    "meta_context": "Interview with Channel 78",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Interfax"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "RIA Novosti Real Estate"
+      },
+      {
+        "i": 1,
+        "t": "Interfax"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "The source quote is an excerpt; retain its ellipsis."
+}

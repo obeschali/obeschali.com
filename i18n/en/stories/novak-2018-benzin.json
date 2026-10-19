@@ -1,0 +1,41 @@
+{
+  "id": "novak-2018-benzin",
+  "lang": "en",
+  "source_hash": "89976914d2e8",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-04.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Alexander Novak",
+    "role": "Minister of Energy",
+    "quote": "…by the end of the year, fuel price increases should be roughly in line with inflation.",
+    "head": "Gasoline rose 9.4% in 2018, while annual inflation was 4.3%",
+    "body": "These are Rosstat figures reported by TASS on January 10, 2019. In summer 2018, gas station prices rose much faster than overall inflation.",
+    "meta_context": "Statement",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "TASS"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "TASS"
+      },
+      {
+        "i": 1,
+        "t": "RBC, citing Rosstat data on 2018 prices"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "“Gasoline” is used for the consumer fuel price."
+}

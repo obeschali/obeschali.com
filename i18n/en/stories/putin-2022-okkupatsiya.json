@@ -1,0 +1,41 @@
+{
+  "id": "putin-2022-okkupatsiya",
+  "lang": "en",
+  "source_hash": "8034c14a9bb5",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-03.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Vladimir Putin",
+    "role": "President of Russia",
+    "quote": "The occupation of Ukrainian territory is not part of our plans. We have no intention of imposing anything on anyone by force.",
+    "head": "Treaties on incorporating four regions",
+    "body": "On September 30, 2022, treaties were signed at the Kremlin to incorporate the Donetsk and Luhansk “people’s republics” and the Zaporizhzhia and Kherson regions into Russia. Ukraine and other countries did not recognize the referendums held in these territories. Media reports said Russian forces did not fully control the regions.",
+    "meta_context": "Address announcing the start of the operation",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "RIA Novosti"
+      },
+      {
+        "i": 1,
+        "t": "Text of the February 24, 2022 address, Paragraph"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "RIA Novosti"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "The quoted term “people’s republics” reflects the entities’ self-designation."
+}

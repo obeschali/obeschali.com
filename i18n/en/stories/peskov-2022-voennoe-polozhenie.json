@@ -1,0 +1,45 @@
+{
+  "id": "peskov-2022-voennoe-polozhenie",
+  "lang": "en",
+  "source_hash": "8de352e51cb6",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-03.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Dmitry Peskov",
+    "role": "Presidential Press Secretary",
+    "quote": "No, imposing martial law is not in the plans.",
+    "head": "Martial law in four regions",
+    "body": "On October 19, 2022, Putin signed a decree imposing martial law in the Donetsk and Luhansk “people’s republics” and the Kherson and Zaporizhzhia regions.",
+    "meta_context": "Response to reporters, on martial law",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "RIA Novosti"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "RIA Novosti"
+      },
+      {
+        "i": 1,
+        "t": "RBC"
+      },
+      {
+        "i": 2,
+        "t": "Presidential Decree No. 756, October 19, 2022"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": ""
+}

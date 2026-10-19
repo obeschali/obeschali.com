@@ -1,0 +1,37 @@
+{
+  "id": "rogozin-2021-luna",
+  "lang": "en",
+  "source_hash": "54b2a4d84d43",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-05.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Dmitry Rogozin",
+    "role": "Director General of Roscosmos",
+    "quote": "Luna 25, the first lunar lander, will launch from Vostochny in October [2021].",
+    "head": "The launch slipped by 22 months; the landing failed",
+    "body": "Luna 25 launched on August 11, 2023. Contact was lost on August 19, and on August 20 Roscosmos said the spacecraft had crashed into the Moon after entering an off-design orbit. The mission launched later than promised and did not achieve a landing.",
+    "meta_context": "Briefing to Putin",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Kommersant"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Lenta.ru"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": ""
+}

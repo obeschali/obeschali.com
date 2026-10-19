@@ -1,0 +1,45 @@
+{
+  "id": "siluanov-2017-nalogi",
+  "lang": "en",
+  "source_hash": "1f4193b350c8",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-05.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Anton Siluanov",
+    "role": "Minister of Finance",
+    "quote": "…[the Finance Ministry] does not envisage tax increases when preparing the draft federal budget for 2018–2020.",
+    "head": "VAT rose from 18% to 20% on January 1, 2019",
+    "body": "The State Duma passed the VAT increase in July 2018; Putin signed it that autumn. The increase took effect in the second year of the 2018–2020 three-year budget period under discussion.",
+    "meta_context": "Tripartite commission",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "TASS"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "TASS"
+      },
+      {
+        "i": 1,
+        "t": "RIA Novosti"
+      },
+      {
+        "i": 2,
+        "t": "Federal Tax Service letter on applying the 20% VAT rate from January 1, 2019"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "The qualification “when preparing the draft budget” is retained."
+}

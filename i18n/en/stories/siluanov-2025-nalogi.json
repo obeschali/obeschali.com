@@ -1,0 +1,41 @@
+{
+  "id": "siluanov-2025-nalogi",
+  "lang": "en",
+  "source_hash": "7ac8acb73e61",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-02.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Anton Siluanov",
+    "role": "Minister of Finance",
+    "quote": "…on taxes, we discussed the issue last year [in 2024] and agreed that, as a baseline, we would leave taxes unchanged.",
+    "head": "VAT at 22%",
+    "body": "On November 28, 2025, Putin signed a law raising VAT from 20% to 22% from January 1, 2026. According to the Federal Tax Service, the increase brought 426 billion rubles to the budget in the first half of 2026.",
+    "meta_context": "St. Petersburg International Economic Forum, Sberbank breakfast",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "RBC"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "RIA Novosti"
+      },
+      {
+        "i": 1,
+        "t": "Vedomosti"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "Keep “as a baseline” to reflect базово rather than an unconditional pledge."
+}

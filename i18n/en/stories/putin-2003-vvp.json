@@ -1,0 +1,37 @@
+{
+  "id": "putin-2003-vvp",
+  "lang": "en",
+  "source_hash": "ed4b891562a9",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-05.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Vladimir Putin",
+    "role": "President of Russia",
+    "quote": "“Over the next decade, we must at least double the country’s GDP.”",
+    "head": "The target was missed by the 2013 deadline; in 2015 Peskov called it “effectively achieved,” citing Kudrin’s estimate of roughly 94% growth in 2000–2014.",
+    "body": "In March 2015, Peskov said the GDP-doubling target had effectively been achieved. Kudrin said the country had come close over 15 years, after growth in 2000–2007. The result depends on the baseline: those estimates start in 2000, while the pledge was made in 2003.",
+    "meta_context": "Address to the Federal Assembly",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "RIA Novosti"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "TASS"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "Distinguish the original ten-year deadline from later claims using a 2000 baseline."
+}

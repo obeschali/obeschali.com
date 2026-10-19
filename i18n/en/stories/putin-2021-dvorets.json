@@ -1,0 +1,41 @@
+{
+  "id": "putin-2021-dvorets",
+  "lang": "en",
+  "source_hash": "5ad90e44b418",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-03.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Vladimir Putin",
+    "role": "President of Russia",
+    "quote": "Nothing identified in that film as my property belongs, or has ever belonged, to me or my close relatives.",
+    "head": "On January 30, 2021, businessman Arkady Rotenberg told Interfax through his press service that he was the complex’s beneficiary.",
+    "body": "Five days after Putin’s statement, Arkady Rotenberg identified himself as the complex’s beneficiary and said he planned to open a hotel there. Putin denied that he or his family owned it; he did not claim that the complex had no owner. The two statements are not a direct contradiction.",
+    "meta_context": "Video conference with students",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Interfax"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Interfax"
+      },
+      {
+        "i": 1,
+        "t": "RIA Novosti"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "“Beneficiary” is retained because the story concerns the stated beneficial interest, not necessarily legal title."
+}

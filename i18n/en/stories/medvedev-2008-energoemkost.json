@@ -1,0 +1,37 @@
+{
+  "id": "medvedev-2008-energoemkost",
+  "lang": "en",
+  "source_hash": "d0e3b8e47766",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-08.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Dmitry Medvedev",
+    "role": "President of Russia",
+    "quote": "…to reduce the energy intensity of the Russian Federation’s GDP by at least 40 percent by 2020 compared with 2007…",
+    "head": "By 2019, it was down 9%, not 40%",
+    "body": "According to an Economic Development Ministry report on energy efficiency released in late 2019, GDP energy intensity had fallen by about 9% since 2007. At that pace, the target would be reached only in 2043.",
+    "meta_context": "Decree No. 889, “On Measures to Improve Energy and Environmental Efficiency…”",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Text of Decree No. 889"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Delovoy Peterburg, citing a Ministry of Economic Development report"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": ""
+}

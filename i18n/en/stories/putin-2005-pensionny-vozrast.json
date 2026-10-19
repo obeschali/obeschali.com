@@ -1,0 +1,49 @@
+{
+  "id": "putin-2005-pensionny-vozrast",
+  "lang": "en",
+  "source_hash": "8c9438b759d1",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-01.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Vladimir Putin",
+    "role": "President of Russia",
+    "quote": "I oppose raising the retirement age. And as long as I am president, no such decision will be made.",
+    "head": "The law raised it to 65 for men and 60 for women.",
+    "body": "On October 3, 2018, Putin signed a law setting the retirement age at 65 for men (up from 60) and 60 for women (up from 55). In June 2018, when reporters reminded Peskov of the promise, he replied that 13 years had passed since 2005 and that demographics, the economy, and the international situation had changed.",
+    "meta_context": "Direct Line",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Vedomosti"
+      },
+      {
+        "i": 1,
+        "t": "RBC"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Vedomosti"
+      },
+      {
+        "i": 1,
+        "t": "RBC"
+      },
+      {
+        "i": 2,
+        "t": "Federal Law No. 350-FZ, text on the Social Fund of Russia website"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "“Retirement age” is used consistently for пенсионный возраст."
+}

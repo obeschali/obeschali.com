@@ -1,0 +1,37 @@
+{
+  "id": "ulyukaev-2015-dollar",
+  "lang": "en",
+  "source_hash": "4f6a33cdcfc2",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-04.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Alexei Ulyukayev",
+    "role": "Minister of Economic Development",
+    "quote": "No, [the dollar exchange rate] will not reach 70 rubles.",
+    "head": "The official rate exceeded 70",
+    "body": "On August 24, 2015, the Bank of Russia set the official rate for August 25 at 70.7465 rubles per dollar. The previous record, 69.6640, had been set on February 3, 2015. In the interview, Ulyukayev described the fundamental rate as “a little over fifty.”",
+    "meta_context": "Interview with Channel One",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Vedomosti"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "RBC"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "The bracket clarifies the omitted subject; “fundamental rate” follows the source terminology."
+}

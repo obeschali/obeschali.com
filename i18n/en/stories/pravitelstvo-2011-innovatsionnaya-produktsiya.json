@@ -1,0 +1,37 @@
+{
+  "id": "pravitelstvo-2011-innovatsionnaya-produktsiya",
+  "lang": "en",
+  "source_hash": "2b5e8fca2f96",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-08.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Government of Russia",
+    "role": "Strategy for Innovative Development Through 2020",
+    "quote": "Increase the share of innovative products in total industrial output to 25–35 percent by 2020 (from 4.9 percent in 2010).",
+    "head": "6.1% in 2019; the share had fallen since 2015",
+    "body": "According to HSE University’s Institute for Statistical Studies and Economics of Knowledge, innovative products accounted for 6.1% of industrial shipments in 2019, 1.8 percentage points less than in 2015. The strategy’s target was 25–35% by 2020.",
+    "meta_context": "Government Order No. 2227-r",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Order No. 2227-r (rulaws.ru)"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Institute for Statistical Studies and Economics of Knowledge, HSE University"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": ""
+}

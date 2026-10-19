@@ -1,0 +1,37 @@
+{
+  "id": "manturov-2022-ms21",
+  "lang": "en",
+  "source_hash": "1722859e85e4",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-05.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Denis Manturov",
+    "role": "Deputy Prime Minister and Minister of Industry and Trade",
+    "quote": "Commercial deliveries of the fully Russianized aircraft [the MC-21] will also begin in 2025.",
+    "head": "Series production was pushed to 2026",
+    "body": "The 2022 aviation development program envisaged the first MC-21 deliveries in 2024. In January 2025, Rostec head Chemezov said serial production would begin in 2026. These are different milestones: starting production is not the same as deliveries to airlines.",
+    "meta_context": "Eastern Economic Forum",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Kommersant"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Lenta.ru"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "“Fully Russianized” is retained as the speaker’s term; review for a reader-facing explanatory gloss."
+}

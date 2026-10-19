@@ -1,0 +1,45 @@
+{
+  "id": "cbr-2024-inflyatsiya",
+  "lang": "en",
+  "source_hash": "f06219f1d07c",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-03.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Bank of Russia",
+    "role": "Forecast following a Board of Directors meeting",
+    "quote": "…[inflation] will fall to 4–4.5% in 2024.",
+    "head": "The year ended at 9.52%",
+    "body": "Rosstat estimated that prices rose 9.52% in 2024. That was more than twice the forecast the Bank of Russia reaffirmed in February, when annual inflation was already 7.4%.",
+    "meta_context": "Decision on the key rate",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Interfax"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Interfax"
+      },
+      {
+        "i": 1,
+        "t": "RBC"
+      },
+      {
+        "i": 2,
+        "t": "Bank of Russia, “Inflation in Russia,” November 2025, CPI table"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": ""
+}

@@ -1,0 +1,49 @@
+{
+  "id": "reshetnikov-2023-rubl",
+  "lang": "en",
+  "source_hash": "f12c58aafb22",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-04.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Maxim Reshetnikov",
+    "role": "Minister of Economic Development",
+    "quote": "Given the decline in the trade balance, we estimate the ruble’s average rate for 2023 at 76.5 to the dollar.",
+    "head": "The 2023 average was about 85.4 rubles per dollar, not the forecast 76.5",
+    "body": "In April 2023, the Economic Development Ministry estimated an average rate of 76.5 rubles for the year. It raised the estimate to 85.2 in September. SberCIB data put the actual 2023 average at 85.4 rubles.",
+    "meta_context": "Forecast presentation",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Interfax"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "SberCIB: ruble exchange rate, 2023 trend"
+      },
+      {
+        "i": 1,
+        "t": "Official monthly US dollar exchange rates, Bank of Russia, 2023"
+      },
+      {
+        "i": 2,
+        "t": "RIA Novosti"
+      },
+      {
+        "i": 3,
+        "t": "Interfax"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": ""
+}

@@ -1,0 +1,41 @@
+{
+  "id": "sienko-2015-armata",
+  "lang": "en",
+  "source_hash": "98ca366bd746",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-05.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Oleg Sienko",
+    "role": "CEO of Uralvagonzavod",
+    "quote": "…2,300 units [of equipment on the Armata platform] by 2020.",
+    "head": "Deputy prime minister: “Why flood the army with Armatas?”",
+    "body": "In July 2018, Deputy Prime Minister Borisov called the Armata expensive and asked why the army should be equipped with it in large numbers when upgraded T-72s were sufficient. In March 2024, Rostec head Chemezov also called the tank expensive and said the military was unlikely to use it.",
+    "meta_context": "Interview with Echo of Moscow",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Interfax"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "TASS"
+      },
+      {
+        "i": 1,
+        "t": "Lenta.ru"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "The object and platform are editorial clarifications in brackets."
+}

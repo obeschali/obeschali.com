@@ -1,0 +1,45 @@
+{
+  "id": "peskov-2021-vaktsinatsiya",
+  "lang": "en",
+  "source_hash": "8d750bcb2994",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-07.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Dmitry Peskov",
+    "role": "Presidential Press Secretary",
+    "quote": "De jure and de facto, there is no mandatory coronavirus vaccination in Russia.",
+    "head": "By then, 23 regions had introduced mandatory vaccination for the general public or selected groups",
+    "body": "On May 26, 2021, Putin said: “In my view, introducing mandatory vaccination is inadvisable and impermissible” (RIA Novosti, May 26, 2021). Moscow’s rule did not cover everyone, but workers in specified sectors; regions introduced requirements under their own regulations.",
+    "meta_context": "Comment to reporters",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "RIA Novosti"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "RIA Novosti"
+      },
+      {
+        "i": 1,
+        "t": "RIA Novosti"
+      },
+      {
+        "i": 2,
+        "t": "Order of Moscow’s Chief Sanitary Doctor, June 15, 2021"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "Scope matters: regional mandates applied to the public or defined groups, not necessarily everyone."
+}

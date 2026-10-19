@@ -1,0 +1,37 @@
+{
+  "id": "golikova-2021-immunitet",
+  "lang": "en",
+  "source_hash": "103ebdcadd1b",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-07.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Tatyana Golikova",
+    "role": "Deputy Prime Minister",
+    "quote": "…[if vaccination rates continue] the country will achieve herd immunity in August 2021.",
+    "head": "In December 2021, Golikova put the immunity level at 53.7%",
+    "body": "In September 2021, Golikova said herd immunity required at least 80% of people to be vaccinated or have recovered, with the target set for autumn 2021. According to the task force, the level was 53.7% on December 3, 2021. In November, Golikova said 80% was not enough and 90–95% would be better.",
+    "meta_context": "TASS interview",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Kommersant"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "RBC"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "“Herd immunity” is the established public-health term; the quote’s bracketed condition is editorial."
+}

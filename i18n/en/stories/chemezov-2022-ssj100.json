@@ -1,0 +1,37 @@
+{
+  "id": "chemezov-2022-ssj100",
+  "lang": "en",
+  "source_hash": "5a11fa1ccc32",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-06.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Sergey Chemezov",
+    "role": "Head of Rostec",
+    "quote": "In 2024, we plan to launch production of 20 import-substituted [SSJ100] aircraft a year, with domestically made PD-8 engines.",
+    "head": "In April 2025, the industry minister said first SJ-100 deliveries with PD-8 engines were scheduled for early 2026.",
+    "body": "Interfax reported that the start of deliveries had been “repeatedly postponed”; serial production of the SSJ100 with foreign components stopped in 2022. Whether aircraft had been delivered by autumn 2026 has not been checked for this entry.",
+    "meta_context": "Address to the Federation Council",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "RIA Novosti"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Interfax"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": "Preserve the difference between SSJ100 and SJ-100 model naming as used in each source."
+}

@@ -1,0 +1,45 @@
+{
+  "id": "zubkov-2009-shtokman",
+  "lang": "en",
+  "source_hash": "7ffd103f075a",
+  "status": "draft",
+  "provenance": {
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-19",
+    "file": "stories-batch-06.json",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Viktor Zubkov",
+    "role": "First Deputy Prime Minister and Chairman of Gazprom’s Board of Directors",
+    "quote": "The [Shtokman field] project is being pushed back somewhat, but it will nevertheless go ahead.",
+    "head": "Gazprom froze the project in August 2012",
+    "body": "Gazprom board member Vsevolod Cherepanov said the costs were “too high.” The investment decision was deferred indefinitely; Vedomosti noted that production had originally been expected to start in 2013.",
+    "meta_context": "Lenta.ru review",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Lenta.ru"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Lenta.ru"
+      },
+      {
+        "i": 1,
+        "t": "Vedomosti"
+      },
+      {
+        "i": 2,
+        "t": "Delovoy Peterburg, report on the project suspension"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": ""
+}
