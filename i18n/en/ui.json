@@ -427,6 +427,20 @@
       "status": "draft",
       "imported_at": "2026-10-19",
       "translator": "ChatGPT"
+    },
+    "cursor.prev_story": {
+      "source_hash": "09d604ea1eea",
+      "en": "← Previous promise",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "cursor.next_story": {
+      "source_hash": "20223eaa26b3",
+      "en": "Next promise →",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
     }
   },
   "new_strings": {
