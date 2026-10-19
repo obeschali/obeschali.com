@@ -13,6 +13,7 @@ import i18n as I
 cfg = json.load(open(ROOT / 'site.config.json', encoding='utf8'))
 SITE = cfg.get('site', '').rstrip('/')
 CONTACT = cfg.get('contact', '')
+CRYPTO = cfg.get('crypto', [])
 EN_STATUSES = cfg.get('en_statuses', ['reviewed', 'approved'])
 FIRST = ['putin-2005-pensionny-vozrast', 'rogozin-2014-batut', 'chubays-2012-devalvatsiya', 'mutko-2017-doping',
          'medvedev-2016-deneg-net', 'putin-2011-internet', 'peskov-2022-mobilizatsiya']
@@ -120,6 +121,11 @@ def build_lang(lang, data, T, outdir):
     idx = idx.replace('@@UI@@', json.dumps(T, ensure_ascii=False)).replace('@@ALT@@', json.dumps(ALT, ensure_ascii=False))
     idx = idx.replace('@@DATA@@', json.dumps(data, ensure_ascii=False)).replace('@@SITE@@', SITE)
     idx = idx.replace('@@NOSCRIPT@@', html.escape(T['noscript']))
+    if CRYPTO:
+        rows = ''.join('<div class="w"><span class="cn">%s</span><code>%s</code><button type="button" class="cp" data-a="%s" data-t="about.copy">Скопировать</button></div>' % (html.escape(c['name']), html.escape(c['addr']), html.escape(c['addr'], quote=True)) for c in CRYPTO)
+        idx = idx.replace('@@SUPPORT@@', rows)
+    else:
+        idx = re.sub(r'<!--SUP-->.*?<!--/SUP-->|<!--SUPB-->.*?<!--/SUPB-->', '', idx, flags=re.S)
     if CONTACT: idx = idx.replace('@@CONTACT@@', html.escape(CONTACT, quote=True))
     else: idx = re.sub(r'\s*<a class="btn" href="@@CONTACT@@".*?</a>', '', idx, flags=re.S)
     outdir.mkdir(parents=True, exist_ok=True)
