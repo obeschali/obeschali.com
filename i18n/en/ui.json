@@ -413,6 +413,20 @@
       "status": "draft",
       "imported_at": "2026-10-19",
       "translator": "ChatGPT"
+    },
+    "nav.pos_a": {
+      "source_hash": "96da72fd7f72",
+      "en": "Promise",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
+    },
+    "nav.pos_b": {
+      "source_hash": "426403ec0141",
+      "en": "of",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "ChatGPT"
     }
   },
   "new_strings": {
