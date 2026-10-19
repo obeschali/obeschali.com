@@ -234,17 +234,21 @@ a{color:inherit}
 .open .rv{opacity:1;transform:none;transition-delay:calc(.25s + var(--d,0) * .1s)}
 
 /* курсор: квадрат на сцене, обычная стрелка в шапке и на оверлеях */
-.cur,.tag{display:none}
+.cur,.tag,.arr{display:none}
 @media (hover:hover) and (pointer:fine){
   #app,#app *{cursor:none}
-  #app .hd,#app .hd *,#app .ov,#app .ov *{cursor:default}
-  .cur{display:grid;place-items:center;position:fixed;left:0;top:0;width:14px;height:14px;background:#0C0C0A;color:#E4E0D5;pointer-events:none;z-index:99;transform:translate(-100px,-100px);opacity:0;transition:width .2s cubic-bezier(.2,.7,.2,1),height .2s cubic-bezier(.2,.7,.2,1)}
+  .cur{display:grid;place-items:center;position:fixed;left:0;top:0;width:14px;height:14px;background:#0C0C0A;color:#E4E0D5;pointer-events:none;z-index:99;transform:translate(-100px,-100px);opacity:0;transition:width .2s cubic-bezier(.2,.7,.2,1),height .2s cubic-bezier(.2,.7,.2,1),background .5s ease,color .5s ease}
+  #app.on ~ .cur{background:#E4E0D5;color:#0C0C0A}
+  .cur.inv{background:#E4E0D5;color:#0C0C0A}
+  #app.on ~ .cur.inv{background:#0C0C0A;color:#E4E0D5}
+  .arr{display:block;position:fixed;left:0;top:0;width:22px;height:28px;pointer-events:none;z-index:99;transform:translate(-100px,-100px);opacity:0;fill:#0C0C0A;stroke:#E4E0D5;stroke-width:1.5;stroke-linejoin:round;overflow:visible}
+  .arr.hd{fill:#E4E0D5;stroke:#0C0C0A}
   .cur svg{width:24px;height:24px;opacity:0;transform:scale(.4);transition:opacity .15s,transform .2s cubic-bezier(.2,.7,.2,1)}
   .cur.go{width:52px;height:52px}
   .cur.go svg{opacity:1;transform:none}
   .cur.go.p svg{transform:scaleX(-1)}
-  .tag{display:block;position:fixed;left:0;top:0;z-index:98;pointer-events:none;padding:12px 14px;font:600 14px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;background:var(--ink0);color:#E4E0D5;white-space:nowrap;transform:translate(-200px,-200px);opacity:0;transition:opacity .15s}
-  #app.on ~ .tag{background:#E4E0D5;color:var(--ink0)}
+  .tag{display:block;position:fixed;left:0;top:0;z-index:98;pointer-events:none;padding:12px 14px;font:600 14px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;background:#0C0C0A;color:#E4E0D5;white-space:nowrap;transform:translate(-200px,-200px);opacity:0;transition:opacity .15s,background .5s ease,color .5s ease}
+  #app.on ~ .tag{background:#E4E0D5;color:#0C0C0A}
 }
 
 /* нижняя строка (телефон) */
@@ -470,6 +474,7 @@ a{color:inherit}
   </div>
 </div>
 <div class="cur" id="cur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M4 12h16M13 5l7 7-7 7"/></svg></div>
+<svg class="arr" id="arr" viewBox="0 0 22 28" aria-hidden="true"><path d="M1 1v21l5.4-5 4.1 9.4 3.6-1.6-4.1-9.2H18z"/></svg>
 <div class="tag" id="tag"></div>
 
 <script>
@@ -684,7 +689,7 @@ function openOv(id) {
   const o = $('#' + id); o.classList.add('open'); o.setAttribute('aria-hidden', 'false');
   if (id === 'menu') { preview(cur); const li = $$('.mi', $('#mlist'))[cur]; if (li) li.scrollIntoView({ block: 'center' }); }
   $('.cl', o).focus({ preventScroll: true });
-  if (fine) { curEl.style.opacity = '0'; tagEl.style.opacity = '0'; }
+  if (fine) { curEl.style.opacity = '0'; tagEl.style.opacity = '0'; arrEl.style.opacity = '1'; }
 }
 function closeOv(id) { const o = $('#' + id); o.classList.remove('open'); o.setAttribute('aria-hidden', 'true'); }
 const anyOpen = () => $('#menu').classList.contains('open') || $('#about').classList.contains('open');
@@ -730,7 +735,7 @@ window.addEventListener('hashchange', () => { const id = location.hash.slice(1);
 let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { fitQuote(); fitResult(); fitReceipt(); }, 120); });
 
 /* курсор */
-const curEl = $('#cur'), tagEl = $('#tag');
+const curEl = $('#cur'), tagEl = $('#tag'), arrEl = $('#arr');
 function updTag() { tagEl.textContent = flipped ? T['cursor.back'] : (seen ? T['cursor.next'] : T['cursor.first']); }
 /* края страницы: слева — назад, справа — вперёд, в середине — «что было дальше» */
 const EDGE = 0.14;
@@ -738,16 +743,21 @@ function edgeOf(e) { if (anyOpen()) return 0; const w = window.innerWidth; retur
 if (fine) {
   document.addEventListener('mousemove', (e) => {
     const t = e.target, c = (q) => !!(t && t.closest && t.closest(q));
-    const zone = !anyOpen() && !c('.hd');
+    const chrome = anyOpen() || c('.hd');
+    const zone = !chrome;
     const over = c('a,button,.mi,.ov');
     const ed = zone && !over ? edgeOf(e) : 0;
+    arrEl.style.opacity = chrome ? '1' : '0'; arrEl.classList.toggle('hd', c('.hd'));
+    arrEl.style.transform = 'translate(' + e.clientX + 'px,' + e.clientY + 'px)';
     curEl.style.opacity = zone ? '1' : '0';
     curEl.classList.toggle('go', ed !== 0); curEl.classList.toggle('p', ed < 0);
-    curEl.style.transform = 'translate(' + e.clientX + 'px,' + e.clientY + 'px) translate(-50%,-50%) scale(' + (ed === 0 && c('a,button') ? 1.7 : 1) + ')';
+    const lnk = ed === 0 && c('a,button');
+    curEl.classList.toggle('inv', lnk);
+    curEl.style.transform = 'translate(' + e.clientX + 'px,' + e.clientY + 'px) translate(-50%,-50%) scale(' + (lnk ? 1.7 : 1) + ')';
     tagEl.style.opacity = zone && !over && ed === 0 ? '1' : '0';
     tagEl.style.transform = 'translate(' + (e.clientX + 18) + 'px,' + (e.clientY + 20) + 'px)';
   });
-  document.addEventListener('mouseleave', () => { tagEl.style.opacity = '0'; curEl.style.opacity = '0'; });
+  document.addEventListener('mouseleave', () => { tagEl.style.opacity = '0'; curEl.style.opacity = '0'; arrEl.style.opacity = '0'; });
 }
 updTag();
 
