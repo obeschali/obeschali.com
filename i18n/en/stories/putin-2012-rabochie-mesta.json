@@ -1,7 +1,7 @@
 {
   "id": "putin-2012-rabochie-mesta",
   "lang": "en",
-  "source_hash": "5b16f517599c",
+  "source_hash": "9448fa2acc55",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
@@ -13,7 +13,7 @@
   "en": {
     "who": "Vladimir Putin",
     "role": "President of Russia",
-    "quote": "a) create and modernize 25 million high-productivity jobs by 2020;",
+    "quote": "Create and modernize 25 million high-productivity jobs by 2020.",
     "head": "19.5 million by 2018. The deadline had not yet passed, but progress was uneven.",
     "body": "According to Rosstat, there were 16.4 million such jobs in 2012, a peak of 18.3 million in 2014, 15.9 million in 2016, and 19.5 million in 2018. This source does not give the 2020 result, so this is an interim figure, not a verdict.",
     "meta_context": "Decree No. 596, “On Long-Term State Economic Policy”",
