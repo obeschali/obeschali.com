@@ -469,6 +469,13 @@
       "status": "draft",
       "imported_at": "2026-10-20",
       "translator": "Claude (draft, ждёт ChatGPT)"
+    },
+    "hint.touch": {
+      "source_hash": "fd9221ce4820",
+      "en": "Tap the screen to see what happened next",
+      "status": "draft",
+      "imported_at": "2026-10-19",
+      "translator": "Claude (временный перевод, на проверку ChatGPT)"
     }
   },
   "new_strings": {
