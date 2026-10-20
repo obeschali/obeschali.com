@@ -1,0 +1,40 @@
+{
+  "id": "beglov-2024-teatralnaya",
+  "lang": "en",
+  "source_hash": "3404ba1ce68b",
+  "status": "draft",
+  "provenance": {
+    "translator": "Claude (draft, ждёт ChatGPT)",
+    "imported_at": "2026-10-20",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Alexander Beglov",
+    "role": "Governor of St. Petersburg",
+    "quote": "As a result, we will not be able to use the Teatralnaya metro station for at least three years.",
+    "head": "The station is still not open: it has no exit to the surface.",
+    "body": "In 2013, according to Fontanka, Smolny promised Teatralnaya by 2018. Trains pass through it without stopping and it takes no passengers. The first exit is now promised for 2029–2030, and the draft investment programme funds it through 2032.",
+    "meta_context": "Live Q&A",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Peterburg2"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Fontanka, 2026"
+      },
+      {
+        "i": 1,
+        "t": "Fontanka, 2013"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": ""
+}
