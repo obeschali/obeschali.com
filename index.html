@@ -667,7 +667,11 @@ let cur = 0, flipped = false, seen = SAVE.get('obesh_seen') === '1', busy = fals
 
 const SHORT_RU = /^(в|во|к|ко|с|со|у|о|об|от|на|за|по|из|до|не|ни|и|а|но|да|же|бы|ли|я|ты|мы|вы|он|без|для|над|под|при|про|что|как|или|чем|там|так|то|все|всё)$/i, SHORT_EN = /^(a|an|the|to|of|in|on|at|by|is|i|or|and|as|if|it|we|my|no)$/i;
 /* телефон: короткие слова и тире не остаются висеть в конце строки */
+function numGlue(t) {
+  return t.replace(/(\d) (?=(?:млн|млрд|трлн|тыс|руб|долл|евро|лет|года|году|годам|г\.|гг|км|кв|м²|т\.|чел|%|million|billion|trillion|thousand|percent|years?)(?![а-яёa-z]))/gi, '$1' + NB).replace(/(№|No\.?) (?=\d)/g, '$1' + NB);
+}
 function wordsM(text) {
+  text = numGlue(text);
   const SH = EN ? SHORT_EN : SHORT_RU, tk = [];
   text.split(' ').forEach((t) => { if ((t === '—' || t === '–') && tk.length) tk[tk.length - 1] += NB + t; else tk.push(t); });
   const out = []; let cur = '';
@@ -686,6 +690,7 @@ function paintQuote() {
   $('#qt').innerHTML = (m ? wordsM : words)(text).map((t) => '<span class="w">' + esc(t) + '</span>').join(' ');
 }
 function words(text) {
+  text = numGlue(text);
   const out = []; text.split(' ').forEach((t) => {
     const prev = out.length ? out[out.length - 1] : null;
     if (t === '—' || t === '–') { if (prev !== null) out[out.length - 1] = prev + NB + t; else out.push(t); }
@@ -701,6 +706,31 @@ function overflows(el, pad) {
   return Array.from(el.children).some((c) => { if (!c.offsetHeight) return false; const r = c.getBoundingClientRect(); return r.top < R.top + 3 || r.bottom > R.bottom - pad; });
 }
 
+function balanceCtx() {
+  const e = document.getElementById('ctx'); if (!e) return;
+  const t = e.dataset.t || ''; e.textContent = t; e.style.textWrap = '';
+  if (!e.offsetParent) return;
+  const lh = parseFloat(getComputedStyle(e).lineHeight) || 30;
+  if (e.getBoundingClientRect().height < lh * 1.5) return;
+  const W = e.clientWidth, w = t.split(' ');
+  let best = -1, bd = 9;
+  for (let i = 1; i < w.length; i++) {
+    const a = w.slice(0, i).join(' '), last = w[i - 1];
+    if (last.length <= 3 || /^\u2116$/.test(last)) continue;
+    const r = a.length / t.length; if (r > 0.5) continue;
+    e.innerHTML = ''; const s1 = document.createElement('span'), s2 = document.createElement('span');
+    [s1, s2].forEach((x) => { x.style.cssText = 'display:block;width:max-content;white-space:nowrap'; e.appendChild(x); });
+    s1.textContent = a; s2.textContent = w.slice(i).join(' ');
+    if (s1.offsetWidth > W || s2.offsetWidth > W) continue;
+    const d = Math.abs(r - 0.42); if (d < bd) { bd = d; best = i; }
+  }
+  e.textContent = t;
+  if (best < 0) { e.style.textWrap = 'balance'; return; }
+  e.innerHTML = ''; const s1 = document.createElement('span'), s2 = document.createElement('span');
+  s1.style.display = s2.style.display = 'block';
+  s1.textContent = w.slice(0, best).join(' '); s2.textContent = w.slice(best).join(' ');
+  e.appendChild(s1); e.appendChild(s2);
+}
 function fitQuote() {
   const L = $('#q'), qt = $('#qt'), m = mob();
   if (qtMob !== m) paintQuote();
@@ -772,7 +802,7 @@ function render(i, instant) {
   const plE = document.getElementById('pl'); if (plE) plE.style.width = ((cur + 1) / K * 100).toFixed(2) + '%';
   const mt = metaOf(s);
   const ctx = EN ? [ru(s.date)].concat(s.mt !== 'quote' ? [docLabel(s)] : [], s.mc ? [s.mc] : []).join(', ') + '.' : ru(s.date) + (s.place ? ', ' + s.place : '') + '.';
-  $('#ctx').textContent = ctx;
+  $('#ctx').dataset.t = ctx; balanceCtx();
   qOrig = false; paintQuote();
   $$('[data-kind]').forEach((e) => { e.textContent = KIND[s.kind] || ''; });
   $$('[data-when]').forEach((e) => { e.textContent = EN ? [ru(s.date)].concat(s.mt !== 'quote' ? [docLabel(s)] : [], s.mc ? [s.mc] : []).join(' · ') : ru(s.date) + (s.place ? ' · ' + s.place : ''); });
@@ -912,7 +942,7 @@ let ty = 0, tx = 0;
 document.addEventListener('touchstart', (e) => { ty = e.touches[0].clientY; tx = e.touches[0].clientX; }, { passive: true });
 document.addEventListener('touchend', (e) => { if (anyOpen()) return; const dy = e.changedTouches[0].clientY - ty, dx = e.changedTouches[0].clientX - tx; if (Math.abs(dy) > 60 && Math.abs(dy) > Math.abs(dx) * 1.4) { if (dy < 0) next(); else prev(); } }, { passive: true });
 window.addEventListener('hashchange', () => { const id = location.hash.slice(1); const i = D.findIndex((s) => s.id === id); if (i >= 0 && i !== cur) { setFlip(false); render(i); } else if (i < 0 && id && EN && ALT && ALT.ru) location.replace(ALT.ru + '#' + id); });
-let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { fitQuote(); fitResult(); fitReceipt(); }, 120); });
+let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { balanceCtx(); fitQuote(); fitResult(); fitReceipt(); }, 120); });
 
 /* курсор */
 const curEl = $('#cur'), tagEl = $('#tag'), arrEl = $('#arr'), etagEl = $('#etag');
@@ -974,7 +1004,7 @@ const h0 = location.hash.slice(1); const i0 = D.findIndex((s) => s.id === h0);
 if (EN && h0 && i0 < 0 && ALT && ALT.ru) location.replace(ALT.ru + '#' + h0);
 render(i0 >= 0 ? i0 : 0); hintUpd();
 try { const f = sessionStorage.getItem('obesh_flip'); if (f) { sessionStorage.removeItem('obesh_flip'); const a = f.split(':'); if (a[1] === '1' && a[0] === D[cur].id) setTimeout(() => setFlip(true), 150); } } catch (e) {}
-(document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(() => { fitQuote(); fitResult(); fitReceipt(); });
+(document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(() => { balanceCtx(); fitQuote(); fitResult(); fitReceipt(); });
 if (document.fonts && document.fonts.addEventListener) document.fonts.addEventListener("loadingdone", () => { fitQuote(); fitResult(); fitReceipt(); });
 </script>
 <noscript><p style="position:fixed;inset:0;padding:40px;background:#E4E0D5;color:#0C0C0A;font:18px Onest,sans-serif">«Обещали.» — публичные слова и то, что было дальше. Для работы сайта нужен JavaScript.</p></noscript>
