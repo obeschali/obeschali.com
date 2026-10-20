@@ -378,6 +378,13 @@ a{color:inherit}
   .ctx{font-size:24px;margin-top:10px}
 }
 @media (max-width:760px) and (max-height:600px){.shr{display:none}.tm{font-size:15px}}
+html.zm{--hd:88px}
+@media (min-width:761px) and (max-width:1100px){.pos .pa:first-child{display:none}}
+@media (min-width:761px) and (hover:none),(min-width:761px) and (pointer:coarse){
+  .hint{bottom:224px;font-size:13px}
+  #q{padding-bottom:52px}
+}
+@media (min-width:761px) and (max-height:800px) and (hover:none),(min-width:761px) and (max-height:800px) and (pointer:coarse){.hint{bottom:194px}}
 @media (prefers-reduced-motion:reduce){*{transition-duration:.01ms!important;animation:none!important}}
 
 /* ===== телефон: экран результата ===== */
@@ -487,6 +494,12 @@ a{color:inherit}
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('js',new Date());gtag('config','G-9YFSQS3QNW',{allow_google_signals:false,allow_ad_personalization_signals:false});
 </script>
+<script>
+/* большие экраны: масштабируем всю страницу, чтобы на 27" и 4K она выглядела так же, как на ноутбуке */
+(function(){var d=document.documentElement;function z(){var w=innerWidth,h=innerHeight,k=Math.max(1,Math.min(w/1600,h/900,3));
+ if(w<1600||k<1.02){d.style.zoom='';d.classList.remove('zm');}else{d.style.zoom=k.toFixed(3);d.classList.add('zm');}}
+ z();addEventListener('resize',z);})();
+</script>
 </head>
 <body>
 <div id="app" aria-live="off">
@@ -581,7 +594,7 @@ gtag('js',new Date());gtag('config','G-9YFSQS3QNW',{allow_google_signals:false,a
         <div class="abc rv" style="--d:4"><span class="no" aria-hidden="true">03</span><p data-t="about.p3">Это авторская подборка, а не полный каталог всех обещаний. Здесь собраны истории, которые показались важными и которые можно подтвердить. Если мы ошиблись или упустили контекст — об этом можно написать.</p></div>
       </div>
       <div class="ab-foot rv" style="--d:5">
-        <div class="fl"><b data-t="about.footer">«Обещали.» — посмотреть, что стало со словами.</b><span class="pr" data-t="about.privacy">Здесь нет cookies, счётчиков и рекламы. Сайт ничего не собирает о тех, кто его читает.</span></div>
+        <div class="fl"><b data-t="about.footer">«Обещали.» — посмотреть, что стало со словами.</b><span class="pr" data-t="about.privacy">Рекламы нет. Визиты считает Google Analytics (с cookies), без рекламных данных и персонализации.</span></div>
         <div class="fr">
           <!--SUP--><div class="sup" id="sup" hidden><p data-t="about.support_text">Проект без рекламы. Если он вам нужен, можно помочь криптовалютой.</p>@@SUPPORT@@</div><!--/SUP-->
           <div class="fb">
@@ -696,10 +709,10 @@ function overflows(el, pad) {
 
 function balanceCtx() {
   const e = document.getElementById('ctx'); if (!e) return;
-  const t = e.dataset.t || ''; e.textContent = t; e.style.textWrap = '';
+  const t = e.dataset.ctx || ''; e.textContent = t; e.style.textWrap = '';
   if (!e.offsetParent) return;
   const lh = parseFloat(getComputedStyle(e).lineHeight) || 30;
-  if (e.getBoundingClientRect().height < lh * 1.5) return;
+  if (e.offsetHeight < lh * 1.5) return;
   const W = e.clientWidth, w = t.split(' ');
   let best = -1, bd = 9;
   for (let i = 1; i < w.length; i++) {
@@ -790,7 +803,7 @@ function render(i, instant) {
   const plE = document.getElementById('pl'); if (plE) plE.style.width = ((cur + 1) / K * 100).toFixed(2) + '%';
   const mt = metaOf(s);
   const ctx = EN ? [ru(s.date)].concat(s.mt !== 'quote' ? [docLabel(s)] : [], s.mc ? [s.mc] : []).join(', ') + '.' : ru(s.date) + (s.place ? ', ' + s.place : '') + '.';
-  $('#ctx').dataset.t = ctx; balanceCtx();
+  $('#ctx').dataset.ctx = ctx; balanceCtx();
   qOrig = false; paintQuote();
   $$('[data-kind]').forEach((e) => { e.textContent = KIND[s.kind] || ''; });
   $$('[data-when]').forEach((e) => { e.textContent = EN ? [ru(s.date)].concat(s.mt !== 'quote' ? [docLabel(s)] : [], s.mc ? [s.mc] : []).join(' · ') : ru(s.date) + (s.place ? ' · ' + s.place : ''); });
@@ -836,6 +849,7 @@ function setFlip(v) {
   updTag(); swUpd(); hintUpd();
 }
 function markSeen() { if (seen) return; seen = true; SAVE.set('obesh_seen', '1'); hintUpd(); updTag(); }
+if (!fine) { const hs = document.querySelector('#hint span'); if (hs && T['hint.touch']) { hs.dataset.t = 'hint.touch'; hs.textContent = T['hint.touch']; } }
 function hintUpd() { const off = seen || flipped; $('#hint').classList.toggle('off', off); $('#fsw').classList.toggle('nd', !seen && !flipped); }
 function swUpd() { $('#fsw').setAttribute('aria-label', flipped ? T['sw.back'] : T['sw.next']); }
 function go(d, to) {
