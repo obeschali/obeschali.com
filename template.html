@@ -392,11 +392,11 @@ html.zm{--hd:88px}
 .rl b{font-weight:700}.rl .n{opacity:.62;font-weight:600}.rl .n[hidden]{display:none}.rl .n:not([hidden])::before{content:" · ";white-space:pre}
 .rl:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 @media (hover:hover){.rl:hover{background:var(--ink);color:var(--bg);padding-left:12px}.rl:hover .ar{transform:translateX(-4px)}}
-.sl{white-space:nowrap;display:inline-flex;align-items:center;gap:10px;padding:8px 2px;font:600 12px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ink);background:linear-gradient(var(--ink),var(--ink)) no-repeat 0 calc(100% - 4px)/100% 1.5px;transition:background .2s,color .2s,padding .2s}
-@media (hover:hover){.sl:hover{background-size:100% 100%;color:var(--bg);padding-left:10px;padding-right:10px}}
-.sl[aria-expanded="true"]{background-size:100% 100%;color:var(--bg);padding-left:10px;padding-right:10px}
-.sl i{font-style:normal;font-size:18px;line-height:1;display:inline-block;width:12px;text-align:center}
-.sl:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.spl{white-space:nowrap;display:inline-flex;align-items:center;gap:10px;padding:8px 2px;font:600 12px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ink);background:linear-gradient(var(--ink),var(--ink)) no-repeat 0 calc(100% - 4px)/100% 1.5px;transition:background .2s,color .2s,padding .2s}
+@media (hover:hover){.spl:hover{background-size:100% 100%;color:var(--bg);padding-left:10px;padding-right:10px}}
+.spl[aria-expanded="true"]{background-size:100% 100%;color:var(--bg);padding-left:10px;padding-right:10px}
+.spl i{font-style:normal;font-size:18px;line-height:1;display:inline-block;width:12px;text-align:center}
+.spl:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 .abret{display:none}
 .mtabs{display:none}
 @media (min-width:761px) and (max-width:1100px){.ha{margin-right:16px}}
@@ -527,6 +527,65 @@ html.zm{--hd:88px}
   .bym .meta{font-size:10px}
   .bar{padding-left:16px}
 }
+.sv{display:contents}.st{display:inline}
+@media (max-width:760px){
+html:root{--kw:92px;--rule:color-mix(in srgb,var(--ink) 26%,transparent)}
+/* служебный стиль: один на весь интерфейс */
+html:root .sl,html:root .conf .lab.ls,html:root .bym .meta .kind,html:root .tm,html:root .od,html:root .bar .cnt,html:root .pgb{font:500 11px/16px var(--mono)!important;letter-spacing:.12em!important;text-transform:uppercase;font-variant-numeric:tabular-nums}
+html:root .tm{font-weight:700!important}
+html:root .od{opacity:.62!important}
+html:root .bar .cnt{font-size:12px!important}
+/* ссылки-источники: один вид везде */
+html:root .src{display:inline;font:500 15px/1.45 var(--sans)!important;letter-spacing:0!important;text-transform:none;margin:0 16px 0 0!important;padding:0!important;background:none!important;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:color-mix(in srgb,currentColor 42%,transparent);color:inherit;transition:background .15s,color .15s}
+html:root .src:active{background:var(--ink)!important;color:var(--bg);text-decoration-color:transparent}
+html:root .src span[aria-hidden]{display:inline-block;font-size:.8em;margin-left:.3em;opacity:.6;text-decoration:none}
+html:root .src .bdg{font-size:9px;margin-left:.5em}
+html:root .sl{margin:0!important;opacity:.62!important}
+/* экран «обещание»: автор → должность → таблица */
+html:root .bym{gap:0;padding-top:20px}
+html:root .bym .who{font-size:26px;line-height:1.06;letter-spacing:-.03em}
+html:root .bym .role{font-size:15px;line-height:1.35;opacity:.72;margin-top:4px}
+html:root .bym .rmetaq{margin-top:18px;display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+html:root .bym .meta{flex:1;display:grid;grid-template-columns:var(--kw) 1fr;align-items:baseline;font:400 15px/1.4 var(--sans);letter-spacing:0;text-transform:none;opacity:1}
+html:root .bym .meta .dash{display:none}
+html:root .bym .meta .kind{opacity:.62;font-weight:500!important}
+html:root .bym .meta [data-when]{opacity:.9}
+html:root .bym .srcs{margin-top:8px;display:grid;grid-template-columns:var(--kw) 1fr;align-items:baseline}
+html:root .bym .sv{display:block}
+html:root .tgq{margin-top:0}
+/* экран «что было дальше» */
+html:root .tm{padding-top:0}
+html:root .hl{font-size:36px;line-height:1.04;margin-top:16px;font-weight:700}
+html:root .body{font-size:17px;line-height:1.5;margin-top:20px;text-wrap:pretty;hyphens:none}
+html:root .conf{margin-top:28px;display:grid;grid-template-columns:var(--kw) 1fr;align-items:baseline}
+html:root .conf .lab.ls{margin:0;opacity:.62}
+html:root .conf .srcs{display:block;margin:0;font-size:inherit;line-height:inherit;opacity:1}
+html:root .conf .sv{display:block}
+html:root .shr{margin-top:28px}
+html:root .shr .btn{font:600 12px var(--mono);letter-spacing:.12em}
+/* линии: только структурные */
+html:root .fsw{border-top-width:1.5px}
+}
+
+.pl::before{content:" · ";white-space:pre}
+@media (max-width:760px){
+html:root .pl::before{content:none}
+html:root .pl{display:block;opacity:.7}
+html:root .src{text-decoration:none!important}
+html:root .st{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:color-mix(in srgb,currentColor 42%,transparent)}
+html:root .src:active .st{text-decoration-color:transparent}
+html:root .src span[aria-hidden]{display:inline;white-space:nowrap;margin-left:0}
+html:root .src span[aria-hidden]::before{content:"\00a0"}
+html:root .src .bdg{white-space:nowrap}
+html:root .bym .rmetaq{display:block}
+html:root .tgq{display:inline-flex;margin:8px 0 0 var(--kw)}
+}
+@media (max-width:360px){html:root{--kw:80px}}
+
+@media (max-width:760px){
+html:root .tgq[hidden]{display:none}
+html:root .src span[aria-hidden]::after{content:"\2060"}
+}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9YFSQS3QNW"></script>
@@ -638,7 +697,7 @@ gtag('js',new Date());gtag('config','G-9YFSQS3QNW',{allow_google_signals:false,a
         <div class="fr">
           <!--SUP--><div class="sup" id="sup" hidden><p data-t="about.support_text">Проект без рекламы. Если он вам нужен, можно помочь криптовалютой.</p>@@SUPPORT@@</div><!--/SUP-->
           <div class="fb">
-            <!--SUPB--><button class="sl" type="button" id="supBtn" aria-expanded="false"><span data-t="about.support_button">Поддержать проект</span><i aria-hidden="true">+</i></button><!--/SUPB-->
+            <!--SUPB--><button class="spl" type="button" id="supBtn" aria-expanded="false"><span data-t="about.support_button">Поддержать проект</span><i aria-hidden="true">+</i></button><!--/SUPB-->
             <a class="btn" href="@@CONTACT@@" id="contact"><span class="t" data-t="about.contact_button">Написать</span><span class="c"><span>↗</span></span></a>
           </div>
         </div>
@@ -705,7 +764,8 @@ function metaOf(s) {
 }
 /* название источника: последнее слово, стрелка и метка языка не разрываются */
 const srcTitle = (t) => { const k = t.lastIndexOf(' '); return k < 0 ? '<span class="nw">' + esc(t) : esc(t.slice(0, k + 1)) + '<span class="nw">' + esc(t.slice(k + 1)); };
-const srcHtml = (list, label, wrap) => (label ? '<small class="sl">' + label + '</small>' : '') + list.slice(0, 4).map((s, i) => '<a class="src" href="' + esc(s.u) + '" target="_blank" rel="noopener noreferrer"' + (EN ? ' hreflang="' + (s.l || 'ru') + '"' : '') + '>' + (wrap ? srcTitle(s.t) : esc(s.t)) + '<span aria-hidden="true">↗</span>' + (EN ? '<span class="bdg">' + (s.l || 'ru').toUpperCase() + '</span>' : '') + (wrap ? '</span>' : '') + '</a>').join('');
+const srcHtml = (list, label, wrap) => (label ? '<small class="sl">' + label + '</small>' : '') + '<span class="sv">' + list.slice(0, 4).map((s, i) => '<a class="src" href="' + esc(s.u) + '" target="_blank" rel="noopener noreferrer"' + (EN ? ' hreflang="' + (s.l || 'ru') + '"' : '') + '><span class="st">' + (wrap ? srcTitle(s.t) : esc(s.t)) + '</span><span aria-hidden="true">↗</span>' + (EN ? '<span class="bdg">' + (s.l || 'ru').toUpperCase() + '</span>' : '') + (wrap ? '</span>' : '') + '</a>').join('') + '</span>';
+const bodyGlue = (t) => numGlue(t).replace(/(^|[\s(«„“])([A-Za-zА-Яа-яЁё]{1,2}) (?=\S)/g, '$1$2' + NB).replace(/ (—|–) /g, NB + '— ');
 const SAVE = { get: (k) => { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} } };
 
 let cur = 0, flipped = false, seen = SAVE.get('obesh_seen') === '1', busy = false, numAnim = 0;
@@ -850,7 +910,7 @@ function render(i, instant) {
   $('#ctx').dataset.ctx = ctx; balanceCtx();
   qOrig = false; paintQuote();
   $$('[data-kind]').forEach((e) => { e.textContent = KIND[s.kind] || ''; });
-  $$('[data-when]').forEach((e) => { e.textContent = EN ? [ru(s.date)].concat(s.mt !== 'quote' ? [docLabel(s)] : [], s.mc ? [s.mc] : []).join(' · ') : ru(s.date) + (s.place ? ' · ' + s.place : ''); });
+  $$('[data-when]').forEach((e) => { const pl = EN ? [].concat(s.mt !== 'quote' ? [docLabel(s)] : [], s.mc ? [s.mc] : []).join(' · ') : (s.place || ''); e.innerHTML = '<span class="dt">' + esc(ru(s.date)) + '</span>' + (pl ? '<span class="pl">' + esc(pl) + '</span>' : ''); });
   $('#rl').textContent = mt.rl; $('#rd').textContent = mt.rd;
   $('#od').textContent = ru(s.odate).toLocaleUpperCase(LANG);
   $('#rwho').textContent = s.who.split(' ').slice(-1)[0].toLocaleUpperCase(LANG) + ', ' + s.date.slice(0, 4);
@@ -868,7 +928,7 @@ function render(i, instant) {
   $$('[data-qsrc]').forEach((e) => { e.innerHTML = srcHtml(s.qsrc, T['label.source']); });
   $$('[data-osrc]').forEach((e) => { e.innerHTML = srcHtml(s.osrc, '', mob()); });
   setHeadWords(s.head);
-  $('#body').textContent = s.body;
+  $('#body').textContent = bodyGlue(s.body);
   $('#tm').dataset.gap = gapDays(s); paintTime(flipped ? gapDays(s) : 0);
   langLinks(s);
   if (ROUTE === 'story') {
