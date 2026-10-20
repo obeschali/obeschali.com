@@ -477,10 +477,12 @@ html.zm{--hd:88px}
 @media (max-width:360px){.by{padding:10px 16px 12px}.br .rq{font-size:13px}}
 
 /* ===== телефон: первый экран, кнопка «Что было дальше», тихое листание ===== */
-.fsw,.tgq{display:none}
-@keyframes nd{0%,55%,100%{transform:translateX(0)}65%{transform:translateX(6px)}78%{transform:translateX(0)}88%{transform:translateX(5px)}}
+.fsw,.tgq,.bgl{display:none}
+.nt,.nt *{transition:none!important}
 @media (max-width:760px){
-  :root{--fsw:76px;--bar:52px}
+  :root{--fsw:76px;--bar:52px;--fpad:20px}
+  #app{background:#0C0C0A}
+  .bgl{display:block;position:absolute;left:0;right:0;top:var(--hd);bottom:0;background:var(--bg);z-index:0;transition:background .5s ease}
   .stage{bottom:calc(var(--fsw) + var(--bar))}
   #r{bottom:0;padding-bottom:44px}
   .by{display:none}
@@ -492,21 +494,18 @@ html.zm{--hd:88px}
   .pgb:active{background:var(--ink);color:var(--bg)}
   .pgb:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}
   .fsw{display:flex;align-items:stretch;position:absolute;left:0;right:0;bottom:var(--bar);height:var(--fsw);border-top:2px solid var(--ink);background:var(--bg);color:var(--ink);text-align:left;z-index:3;transition:background .5s,color .5s,border-color .5s}
-  .fsw .swt{flex:1;min-width:0;padding:12px 20px;display:flex;flex-direction:column;justify-content:center;gap:4px}
-  .fsw .swm{font-weight:700;font-size:21px;letter-spacing:-.03em;line-height:1.1}
-  .fsw .swq{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:13px;line-height:1.3;opacity:.7}
+  .fsw .swt{flex:1;min-width:0;padding:0 var(--fpad);display:flex;flex-direction:column;justify-content:center}
+  .fsw .swm{font-weight:700;font-size:min(21px,calc((100vw - var(--fsw) - 2 * var(--fpad)) / 11.6));letter-spacing:-.03em;line-height:1.1;white-space:nowrap}
   .fsw .swb,#app.on .fsw .swn{display:none}
   #app.on .fsw .swb{display:block}
   .fsw .swc{flex:none;width:var(--fsw);display:grid;place-items:center;background:var(--ink);color:var(--bg);transition:background .18s,color .18s}
-  #app.on .fsw .swc{order:-1}
   .fsw .swa{display:grid;transition:transform .25s}
-  #app.on .fsw .swa svg{transform:scaleX(-1)}
+  .fsw .ica,#app.on .fsw .icq{display:none}
+  #app.on .fsw .ica{display:block}
   .fsw:active{background:var(--ink);color:var(--bg)}
   .fsw:active .swc{background:var(--bg);color:var(--ink)}
-  .fsw:active .swa{transform:translateX(4px)}
-  #app.on .fsw:active .swa{transform:translateX(-4px)}
+  #app.on .fsw:active .swa{transform:translateX(4px)}
   .fsw:focus-visible{outline:3px solid var(--ink);outline-offset:-6px}
-  .fsw.nd .swa{animation:nd 2.4s ease-in-out infinite}
   #q{justify-content:flex-start;padding:20px var(--px) 16px}
   #q .lab,#q .ctx{display:none}
   .mark{margin:0 0 10px}
@@ -523,8 +522,7 @@ html.zm{--hd:88px}
 @media (hover:hover) and (max-width:760px){
   .fsw:hover{background:var(--ink);color:var(--bg)}
   .fsw:hover .swc{background:var(--bg);color:var(--ink)}
-  .fsw:hover .swa{animation:none;transform:translateX(4px)}
-  #app.on .fsw:hover .swa{transform:translateX(-4px)}
+  #app.on .fsw:hover .swa{transform:translateX(4px)}
   .pgb:hover{background:var(--ink);color:var(--bg)}
   .pgb.n:hover i{transform:translateX(3px)}.pgb.p:hover i{transform:translateX(-3px)}
 }
@@ -533,8 +531,7 @@ html.zm{--hd:88px}
 }
 @media (max-width:360px),(max-width:760px) and (max-height:600px){
   :root{--fsw:64px}
-  .fsw .swt{padding:10px 14px;gap:3px}
-  .fsw .swm{font-size:18px}.fsw .swq{font-size:12px}
+  :root{--fpad:14px}
   #q{padding:14px 16px 12px}
   .bym{padding-top:20px}
   .bym .who{font-size:24px}.bym .role{font-size:13px}
@@ -616,6 +613,7 @@ gtag('js',new Date());gtag('config','G-9YFSQS3QNW',{allow_google_signals:false,a
 </head>
 <body data-route="story">
 <div id="app" aria-live="off">
+  <div class="bgl" id="bgl" aria-hidden="true"></div>
   <header class="hd">
     <a class="logo" href="/en/" id="logo">Promised.</a>
     <div class="pos" aria-hidden="true"><span class="pa" data-t="nav.pos_a">Обещание</span><b data-n>1</b><span class="pa" data-t="nav.pos_b">из</span><span class="pa" data-k>81</span></div>
@@ -672,15 +670,14 @@ gtag('js',new Date());gtag('config','G-9YFSQS3QNW',{allow_google_signals:false,a
   <div class="hint" id="hint"><i></i><span data-t="hint.desktop">Кликни по странице — что было дальше</span></div>
 
   <button class="fsw" id="fsw" type="button" aria-label="Что было дальше" data-ta="sw.next">
-    <span class="swt"><span class="swm swn" data-t="sw.next">Что было дальше</span><span class="swm swb" data-t="sw.back">К обещанию</span><span class="swq swb" id="swq"></span></span>
-    <span class="swc"><span class="swa"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M4 12h16M13 5l7 7-7 7"/></svg></span></span>
+    <span class="swt"><span class="swm swn" data-t="sw.next">Что было дальше</span><span class="swm swb" data-t="sw.nextp">Следующее обещание</span></span>
+    <span class="swc"><span class="swa"><svg class="icq" width="32" height="32" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M196,96c0,29.47-24.21,54.05-56,59.06V156a12,12,0,0,1-24,0V144a12,12,0,0,1,12-12c24.26,0,44-16.15,44-36s-19.74-36-44-36S84,76.15,84,96a12,12,0,0,1-24,0c0-33.08,30.5-60,68-60S196,62.92,196,96Zm-68,92a20,20,0,1,0,20,20A20,20,0,0,0,128,188Z"/></svg><svg class="ica" width="32" height="32" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"/></svg></span></span>
   </button>
 
   <div class="bar">
     <span class="cnt"><b data-cur>01</b><i> / <span data-total>00</span></i></span>
     <span class="pair">
-      <button class="pgb p" type="button" aria-label="Предыдущая история" data-ta="nav.prev_aria" data-prev><i aria-hidden="true">‹</i><span data-t="nav.prev_short">Пред.</span></button>
-      <button class="pgb n" type="button" aria-label="Следующая история" data-ta="nav.next_aria" data-next><span data-t="nav.next_short">След.</span><i aria-hidden="true">›</i></button>
+      <button class="pgb p" type="button" aria-label="Назад" data-ta="nav.back" data-back><i aria-hidden="true">‹</i><span data-t="nav.back">Назад</span></button>
     </span>
   </div>
 
@@ -728,7 +725,7 @@ gtag('js',new Date());gtag('config','G-9YFSQS3QNW',{allow_google_signals:false,a
 <script>
 const SITE = "https://obeschali.com";
 const LANG = "en";
-const T = {"nav.about": "About", "nav.all": "All stories", "nav.pos_a": "Promise", "nav.pos_b": "of", "nav.close": "Close", "nav.prev_aria": "Previous story", "nav.next_aria": "Next story", "nav.group_aria": "Story navigation", "menu.aria": "All stories", "about.aria": "About", "hint.desktop": "Click the page to see what happened next", "hint.touch": "Tap the screen to see what happened next", "about.back_story": "Back to the story", "about.back_start": "Browse the stories", "about.back_n": "No. {n}", "menu.tab_stories": "Stories", "page.title.about": "About — Promised.", "page.description.about": "What «Promised.» is: a project about public words and what happened next.", "sw.next": "What happened next", "sw.back": "Back to the promise", "nav.prev_short": "Prev", "nav.next_short": "Next", "cursor.first": "Click to see what happened next →", "cursor.next": "What happened next →", "cursor.prev_story": "← Previous promise", "cursor.next_story": "Next promise →", "cursor.back": "← The promise", "label.context": "Context", "label.confirmation": "What happened", "label.sources": "Sources", "label.source": "Source", "kind.promise": "Promise", "kind.forecast": "Forecast", "kind.denial": "Denial", "kind.irony": "Irony", "doctype.quote": "Statement", "doctype.decree": "Decree", "doctype.decree_numbered": "Decree No. {number}", "doctype.government_order": "Government Order", "doctype.government_order_numbered": "Government Order No. {number}", "doctype.election_program": "Election platform", "doctype.program_statement": "Platform statement", "doctype.address": "Address", "doctype.official_statement": "Official statement", "doctype.instruction": "Directive", "doctype.legislative_initiative": "Legislative initiative", "result.elapsed.one": "{n} {unit} later", "result.elapsed.other": "{n} {unit} later", "unit.day.one": "day", "unit.day.few": "", "unit.day.many": "days", "unit.month.one": "month", "unit.month.few": "", "unit.month.many": "months", "unit.year.one": "year", "unit.year.few": "", "unit.year.many": "years", "menu.preview.year": "Promised · {year}", "menu.preview.elapsed.one": "What happened next · {n} {unit} later", "menu.preview.elapsed.other": "What happened next · {n} {unit} later", "share.button": "Share", "share.copied": "Link copied", "share.copy_fallback": "Copy the link from the address bar", "share.text": "{who}: “{quote}”", "page.title.default": "Promised.", "page.title.story": "Promised. — {who}: “{quote}”", "page.description": "Public statements and what happened next.", "page.description.story_prefix": "What happened next — read the story.", "page.story_link": "Open story", "og.tag_more": "What happened next →", "og.default_sub": "Public statements and what happened next.", "og.default_role": "A documentary archive of public statements and their outcomes", "og.default_open": "Open →", "og.label_next": "What happened next", "og.after": "{n} {unit} later", "noscript": "Promised. — public statements and what happened next. JavaScript is required to use this site.", "lang.switch_aria": "Switch language", "lang.ru": "RU", "lang.en": "EN", "quote.show_original": "Show original quote", "quote.hide_original": "Hide original quote", "quote.original_label": "Original in Russian", "source.lang_ru": "Source in Russian", "source.lang_en": "Source in English", "story.not_translated": "This story is available in Russian only. View the Russian version.", "story.translation_note": "Translated from Russian.", "about.label": "About", "about.title": "The authorities make many promises. Here’s what happened next.", "about.p1": "Promised. is a project about public statements and their real-world consequences. Each story begins with a promise, forecast, or assurance; then we look at what happened.", "about.p2": "Some statements can be checked against documents and figures. Others need context. That is why each story includes sources: you can see for yourself who said what, and what we compare it with.", "about.p3": "This is an author-curated selection, not a complete catalogue of every promise. It brings together stories that seemed important and can be documented. If we got something wrong or missed context, you can write to us.", "about.footer": "Promised. — see what became of those words.", "about.contact_button": "Write to us", "about.privacy": "No ads. Visits are counted with Google Analytics (it uses cookies), with no advertising data or personalization.", "about.support_button": "Support the project", "about.support_text": "No ads. If this project matters to you, you can support it with crypto.", "about.copy": "Copy", "about.copied": "Copied"};
+const T = {"nav.about": "About", "nav.all": "All stories", "nav.pos_a": "Promise", "nav.pos_b": "of", "nav.close": "Close", "nav.prev_aria": "Previous story", "nav.next_aria": "Next story", "nav.group_aria": "Story navigation", "menu.aria": "All stories", "about.aria": "About", "hint.desktop": "Click the page to see what happened next", "hint.touch": "Tap the screen to see what happened next", "about.back_story": "Back to the story", "about.back_start": "Browse the stories", "about.back_n": "No. {n}", "menu.tab_stories": "Stories", "page.title.about": "About — Promised.", "page.description.about": "What «Promised.» is: a project about public words and what happened next.", "sw.next": "What happened next", "sw.nextp": "Next promise", "nav.back": "Back", "cursor.first": "Click to see what happened next →", "cursor.next": "What happened next →", "cursor.prev_story": "← Previous promise", "cursor.next_story": "Next promise →", "cursor.back": "← The promise", "label.context": "Context", "label.confirmation": "What happened", "label.sources": "Sources", "label.source": "Source", "kind.promise": "Promise", "kind.forecast": "Forecast", "kind.denial": "Denial", "kind.irony": "Irony", "doctype.quote": "Statement", "doctype.decree": "Decree", "doctype.decree_numbered": "Decree No. {number}", "doctype.government_order": "Government Order", "doctype.government_order_numbered": "Government Order No. {number}", "doctype.election_program": "Election platform", "doctype.program_statement": "Platform statement", "doctype.address": "Address", "doctype.official_statement": "Official statement", "doctype.instruction": "Directive", "doctype.legislative_initiative": "Legislative initiative", "result.elapsed.one": "{n} {unit} later", "result.elapsed.other": "{n} {unit} later", "unit.day.one": "day", "unit.day.few": "", "unit.day.many": "days", "unit.month.one": "month", "unit.month.few": "", "unit.month.many": "months", "unit.year.one": "year", "unit.year.few": "", "unit.year.many": "years", "menu.preview.year": "Promised · {year}", "menu.preview.elapsed.one": "What happened next · {n} {unit} later", "menu.preview.elapsed.other": "What happened next · {n} {unit} later", "share.button": "Share", "share.copied": "Link copied", "share.copy_fallback": "Copy the link from the address bar", "share.text": "{who}: “{quote}”", "page.title.default": "Promised.", "page.title.story": "Promised. — {who}: “{quote}”", "page.description": "Public statements and what happened next.", "page.description.story_prefix": "What happened next — read the story.", "page.story_link": "Open story", "og.tag_more": "What happened next →", "og.default_sub": "Public statements and what happened next.", "og.default_role": "A documentary archive of public statements and their outcomes", "og.default_open": "Open →", "og.label_next": "What happened next", "og.after": "{n} {unit} later", "noscript": "Promised. — public statements and what happened next. JavaScript is required to use this site.", "lang.switch_aria": "Switch language", "lang.ru": "RU", "lang.en": "EN", "quote.show_original": "Show original quote", "quote.hide_original": "Hide original quote", "quote.original_label": "Original in Russian", "source.lang_ru": "Source in Russian", "source.lang_en": "Source in English", "story.not_translated": "This story is available in Russian only. View the Russian version.", "story.translation_note": "Translated from Russian.", "about.label": "About", "about.title": "The authorities make many promises. Here’s what happened next.", "about.p1": "Promised. is a project about public statements and their real-world consequences. Each story begins with a promise, forecast, or assurance; then we look at what happened.", "about.p2": "Some statements can be checked against documents and figures. Others need context. That is why each story includes sources: you can see for yourself who said what, and what we compare it with.", "about.p3": "This is an author-curated selection, not a complete catalogue of every promise. It brings together stories that seemed important and can be documented. If we got something wrong or missed context, you can write to us.", "about.footer": "Promised. — see what became of those words.", "about.contact_button": "Write to us", "about.privacy": "No ads. Visits are counted with Google Analytics (it uses cookies), with no advertising data or personalization.", "about.support_button": "Support the project", "about.support_text": "No ads. If this project matters to you, you can support it with crypto.", "about.copy": "Copy", "about.copied": "Copied"};
 const ALT = {"ru": "/", "en": "/en/", "aboutRu": "/about/", "aboutEn": "/en/about/", "enIds": ["putin-2005-pensionny-vozrast", "rogozin-2014-batut", "chubays-2012-devalvatsiya", "mutko-2017-doping", "medvedev-2016-deneg-net", "putin-2011-internet", "peskov-2022-mobilizatsiya", "putin-2014-krym-samooborona", "medvedev-2011-letnee-vremya", "antonov-2022-ne-planiruetsya", "uek-2011-universalnaya-karta", "putin-2005-konstitutsiya", "putin-2022-wagner", "kudrin-2008-ostrov-stabilnosti", "putin-2012-nalogi", "miller-2016-severny-potok-2", "putin-2018-konstitutsiya-nbc", "putin-2015-siriya", "putin-2022-rezervisty", "putin-2014-donbass", "siluanov-2025-nalogi", "rogozin-2014-vostochny", "putin-2022-okkupatsiya", "putin-2019-konstitutsiya-neprikosnovenna", "peskov-2022-voennoe-polozhenie", "miller-2025-sila-sibiri-2", "cbr-2024-inflyatsiya", "putin-2014-krym", "putin-2014-krym-akvarium", "putin-2021-dvorets", "putin-2020-navalny", "dvorkovich-2008-devalvatsiya", "dvorkovich-2014-tsenyi", "putin-2011-top5", "ulyukaev-2015-dollar", "kudrin-2008-inflyatsiya", "siluanov-2016-pensii", "vedev-2014-rubl", "novak-2018-benzin", "reshetnikov-2023-rubl", "siluanov-2017-nalogi", "bank-rossii-inflyatsiya", "putin-2003-vvp", "lavrov-2022-voyna", "putin-2022-srochniki", "peskov-2022-vtorzhenie", "gref-2006-vto", "rogozin-2021-luna", "manturov-2022-ms21", "sienko-2015-armata", "peskov-2024-youtube", "press-sluzhb-telegram", "perminov-2006-glonass", "manturov-2021-zetta", "slyusar-2019-su57", "chemezov-2022-ssj100", "putin-2007-sochi", "zubkov-2009-shtokman", "batanov-2013-metro", "beglov-2019-metro-fruzenskiy", "dzugaev-2004-beslan", "golikova-2021-immunitet", "putin-2001-prizyv", "peskov-2021-vaktsinatsiya", "mutko-2017-doping-lozanna", "putin-2012-doing-business", "putin-2012-investitsii", "putin-2012-vuzy-5-100", "putin-2012-rozhdaemost", "er-2007-mrot", "er-2006-bednost", "er-2006-dtp", "putin-2018-prodolzhitelnost-zhizni", "medvedev-2010-doktrina-prodbezopasnosti", "er-2007-inflyatsiya", "miller-2008-trillion", "sokolov-2013-vsm-2018", "pravitelstvo-2008-niokr", "medvedev-2008-energoemkost", "pravitelstvo-2011-innovatsionnaya-produktsiya", "putin-2012-rabochie-mesta"]};
 let ROUTE = document.body.dataset.route === 'about' ? 'about' : 'story';
 let visited = false;
@@ -906,7 +903,7 @@ function fitReceipt() {
   if (m) { const by = $('#by'); const was = by.style.opacity; by.style.opacity = '0'; app.style.setProperty('--rch', (by.offsetHeight + 64 - 64) + 'px'); by.style.opacity = was; }
 }
 function setHeadWords(head) {
-  const hw = []; head.split(' ').forEach((t) => { if ((t === '—' || t === '–') && hw.length) hw[hw.length - 1] += NB + t; else hw.push(t); });
+  const hw = []; bodyGlue(head).split(' ').forEach((t) => { if ((t === '—' || t === '–') && hw.length) hw[hw.length - 1] += NB + t; else hw.push(t); });
   const hl = $('#hl'); hl.style.setProperty('--st', Math.max(14, Math.min(40, Math.round(700 / hw.length))) + 'ms');
   hl.innerHTML = hw.map((t, i) => '<span class="m"><span style="--i:' + i + '">' + esc(t) + '</span></span>').join(' ');
 }
@@ -924,7 +921,7 @@ function render(i, instant) {
   $('#ctx').dataset.ctx = ctx; balanceCtx();
   qOrig = false; paintQuote();
   $$('[data-kind]').forEach((e) => { e.textContent = KIND[s.kind] || ''; });
-  $$('[data-when]').forEach((e) => { const pl = EN ? [].concat(s.mt !== 'quote' ? [docLabel(s)] : [], s.mc ? [s.mc] : []).join(' · ') : (s.place || ''); e.innerHTML = '<span class="dt">' + esc(ru(s.date)) + '</span>' + (pl ? '<span class="pl">' + esc(pl) + '</span>' : ''); });
+  $$('[data-when]').forEach((e) => { const pl = EN ? [].concat(s.mt !== 'quote' ? [docLabel(s)] : [], s.mc ? [s.mc] : []).join(' · ') : (s.place || ''); e.innerHTML = '<span class="dt">' + esc(ru(s.date)) + '</span>' + (pl ? '<span class="pl">' + esc(bodyGlue(pl)) + '</span>' : ''); });
   $('#rl').textContent = mt.rl; $('#rd').textContent = mt.rd;
   $('#od').textContent = ru(s.odate).toLocaleUpperCase(LANG);
   $('#rwho').textContent = s.who.split(' ').slice(-1)[0].toLocaleUpperCase(LANG) + ', ' + s.date.slice(0, 4);
@@ -933,12 +930,12 @@ function render(i, instant) {
   const inner = (q) => EN ? q.replace(/\u201C/g, '\u2018').replace(/\u201D/g, '\u2019') : q.replace(/«/g, '„').replace(/»/g, '“');
   $('#rq').textContent = qm[0] + inner(s.quote) + qm[1];
   $('#rrole').textContent = ', ' + (EN ? s.role : s.role.charAt(0).toLowerCase() + s.role.slice(1));
-  $('#swq').textContent = $('#rq').textContent; swUpd();
+  swUpd();
   setOrig(false); const hasO = EN && s.ru && s.ru.quote;
   $('#tgQ').hidden = !hasO; $('#tgQL').textContent = 'RU'; $('#tgQ').setAttribute('aria-pressed', 'false');
   $('#tgOrig').hidden = !hasO; $('#rqoT').textContent = hasO ? '«' + s.ru.quote.replace(/«/g, '„').replace(/»/g, '“') + '»' : '';
   $$('[data-who]').forEach((e) => { e.textContent = s.who; });
-  $$('[data-role]').forEach((e) => { e.textContent = s.role; });
+  $$('[data-role]').forEach((e) => { e.textContent = bodyGlue(s.role); });
   $$('[data-qsrc]').forEach((e) => { e.innerHTML = srcHtml(s.qsrc, T['label.source']); });
   $$('[data-osrc]').forEach((e) => { e.innerHTML = srcHtml(s.osrc, '', mob()); });
   setHeadWords(s.head);
@@ -969,10 +966,31 @@ function setFlip(v) {
 }
 function markSeen() { if (seen) return; seen = true; SAVE.set('obesh_seen', '1'); hintUpd(); updTag(); }
 if (!fine) { const hs = document.querySelector('#hint span'); if (hs && T['hint.touch']) { hs.dataset.t = 'hint.touch'; hs.textContent = T['hint.touch']; } }
-function hintUpd() { const off = seen || flipped; $('#hint').classList.toggle('off', off); $('#fsw').classList.toggle('nd', !seen && !flipped); }
-function swUpd() { $('#fsw').setAttribute('aria-label', flipped ? T['sw.back'] : T['sw.next']); }
-function go(d, to) {
-  if (busy) return; const nx = to !== undefined ? to : (cur + d + K) % K; if (nx === cur) return; busy = true;
+function hintUpd() { const off = seen || flipped; $('#hint').classList.toggle('off', off); }
+function swUpd() { $('#fsw').setAttribute('aria-label', flipped ? T['sw.nextp'] : T['sw.next']); }
+function landResult() { flipped = true; app.classList.add('on'); cancelAnimationFrame(numAnim); paintTime(gapDays(D[cur])); markSeen(); updTag(); swUpd(); hintUpd(); }
+function go(d, to, o) {
+  o = o || {};
+  if (busy) return; const nx = to !== undefined ? to : (cur + d + K) % K; if (nx === cur && !o.land) return; busy = true;
+  if (mob()) {
+    /* телефон: новая история — горизонтальный сдвиг, смена темы без промежуточных анимаций */
+    const dir = o.dir || (d < 0 ? -1 : 1), dist = reduce ? 0 : 30;
+    const L = [$('#bgl'), $('#stage'), $('#fsw'), $('.bar')];
+    const tr = (v) => L.forEach((e) => { e.style.transition = v; });
+    const mv = (v, op) => L.forEach((e) => { e.style.transform = v; e.style.opacity = op; });
+    tr('transform .26s cubic-bezier(.5,0,1,1),opacity .26s ease'); mv('translateX(' + (-dist * dir) + '%)', '0');
+    setTimeout(() => {
+      app.classList.add('nt'); tr('none'); mv('translateX(' + (dist * dir) + '%)', '0');
+      cancelAnimationFrame(numAnim); flipped = false; app.classList.remove('on'); render(nx);
+      if (o.land) landResult(); else hintUpd();
+      void app.offsetWidth;
+      setTimeout(() => {
+        app.classList.remove('nt'); tr('transform .36s cubic-bezier(.2,.7,.2,1),opacity .3s ease'); mv('', '');
+        setTimeout(() => { tr(''); L.forEach((e) => { e.style.transform = ''; e.style.opacity = ''; }); busy = false; }, 400);
+      }, 40);
+    }, reduce ? 0 : 270);
+    return;
+  }
   const L = [$('#q'), $('#r'), $('#by'), $('#bym')];
   const out = (v) => L.forEach((e) => { if (e) { e.style.transition = 'opacity .18s ease'; e.style.opacity = v; } });
   const done = () => { L.forEach((e) => { if (e) { e.style.transition = ''; e.style.opacity = ''; } }); busy = false; };
@@ -984,6 +1002,9 @@ function go(d, to) {
   }, reduce ? 0 : 200);
 }
 const next = () => go(1), prev = () => go(-1);
+/* телефон: одна цепочка «обещание → что было дальше → следующее обещание», «Назад» идёт по ней в обратную сторону */
+const fwd = () => { if (!flipped) setFlip(true); else go(1, undefined, { dir: 1 }); };
+const back = () => { if (flipped) setFlip(false); else go(-1, undefined, { dir: -1, land: true }); };
 
 /* меню */
 let hv = 0;
@@ -992,7 +1013,7 @@ function buildMenu() {
   $$('.mi', $('#mlist')).forEach((b) => {
     b.addEventListener('mouseenter', () => preview(+b.dataset.i));
     b.addEventListener('focus', () => preview(+b.dataset.i));
-    b.addEventListener('click', () => { closeOv('menu'); if (ROUTE === 'about') setRoute('story', true, +b.dataset.i); else go(0, +b.dataset.i); });
+    b.addEventListener('click', () => { closeOv('menu'); if (ROUTE === 'about') setRoute('story', true, +b.dataset.i); else go(0, +b.dataset.i, { dir: +b.dataset.i >= cur ? 1 : -1 }); });
   });
   const toAbout = () => { closeOv('menu'); setRoute('about', true); };
   $('#openAbout').addEventListener('click', toAbout);
@@ -1056,6 +1077,7 @@ async function share() {
 /* события */
 $$('[data-next]').forEach((b) => b.addEventListener('click', (e) => { e.stopPropagation(); next(); }));
 $$('[data-prev]').forEach((b) => b.addEventListener('click', (e) => { e.stopPropagation(); prev(); }));
+$$('[data-back]').forEach((b) => b.addEventListener('click', (e) => { e.stopPropagation(); if (anyOpen()) return; back(); }));
 $('#openMenu').addEventListener('click', (e) => { e.stopPropagation(); openOv('menu'); });
 $('#openMenu2').addEventListener('click', (e) => { e.stopPropagation(); openOv('menu'); });
 $$('[data-close]').forEach((b) => b.addEventListener('click', () => closeOv(b.dataset.close)));
@@ -1064,8 +1086,8 @@ $('#logo').addEventListener('click', (e) => { e.preventDefault(); if (ROUTE === 
 const plain = (e) => !(e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button);
 $('#openAboutH').addEventListener('click', (e) => { if (!plain(e)) return; e.preventDefault(); if (ROUTE !== 'about') setRoute('about', true); });
 $$('.ab-back').forEach((a) => a.addEventListener('click', (e) => { if (!plain(e)) return; e.preventDefault(); setRoute('story', true); }));
-$('#stage').addEventListener('click', (e) => { if (anyOpen() || e.target.closest('a,button')) return; const ed = fine ? edgeOf(e) : 0; if (ed) { ed > 0 ? next() : prev(); return; } setFlip(!flipped); });
-$('#by').addEventListener('click', (e) => { if (anyOpen() || e.target.closest('a,button')) return; const ed = fine ? edgeOf(e) : 0; if (ed) { ed > 0 ? next() : prev(); return; } setFlip(!flipped); });
+$('#stage').addEventListener('click', (e) => { if (anyOpen() || mob() || e.target.closest('a,button')) return; const ed = fine ? edgeOf(e) : 0; if (ed) { ed > 0 ? next() : prev(); return; } setFlip(!flipped); });
+$('#by').addEventListener('click', (e) => { if (anyOpen() || mob() || e.target.closest('a,button')) return; const ed = fine ? edgeOf(e) : 0; if (ed) { ed > 0 ? next() : prev(); return; } setFlip(!flipped); });
 $('#bym').addEventListener('click', (e) => { if (e.target.closest('a,button')) return; });
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') { if ($('#menu').classList.contains('open')) closeOv('menu'); else if (ROUTE === 'about') setRoute('story', true); return; }
@@ -1084,13 +1106,21 @@ let wt = 0;
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !p.hidden) { e.stopImmediatePropagation(); setSup(false); } }, true);
   p.addEventListener('click', (e) => { const x = e.target.closest('.cp'); if (!x) return; const a = x.getAttribute('data-a'); const done = () => { const t = x.textContent; x.textContent = T['about.copied']; setTimeout(() => { x.textContent = T['about.copy']; }, 1500); };
     if (navigator.clipboard) navigator.clipboard.writeText(a).then(done, () => {}); }); })();
-$('#fsw').addEventListener('click', () => { if (anyOpen()) return; setFlip(!flipped); });
+$('#fsw').addEventListener('click', () => { if (anyOpen()) return; fwd(); });
 $('#tgQ').addEventListener('click', (e) => { e.stopPropagation(); qOrig = !qOrig; paintQuote(); $('#tgQL').textContent = qOrig ? 'EN' : 'RU'; $('#tgQ').setAttribute('aria-pressed', qOrig ? 'true' : 'false'); if (T['quote.show_original']) $('#tgQ').setAttribute('aria-label', qOrig ? (T['quote.hide_original'] || '') : T['quote.show_original']); fitQuote(); });
 $('#br').addEventListener('click', (e) => { if (!mob() || e.target.closest('.tg')) return; $('#br').classList.toggle('xp'); setRch(); });
 document.addEventListener('wheel', (e) => { if (anyOpen()) return; const now = Date.now(); if (Math.abs(e.deltaY) < 30 || now - wt < 800) return; wt = now; if (e.deltaY > 0) next(); else prev(); }, { passive: true });
 let ty = 0, tx = 0;
 document.addEventListener('touchstart', (e) => { ty = e.touches[0].clientY; tx = e.touches[0].clientX; }, { passive: true });
-document.addEventListener('touchend', (e) => { if (anyOpen()) return; const dy = e.changedTouches[0].clientY - ty, dx = e.changedTouches[0].clientX - tx; if (Math.abs(dy) > 60 && Math.abs(dy) > Math.abs(dx) * 1.4) { if (dy < 0) next(); else prev(); } }, { passive: true });
+document.addEventListener('touchend', (e) => {
+  if (anyOpen()) return;
+  const dy = e.changedTouches[0].clientY - ty, dx = e.changedTouches[0].clientX - tx;
+  if (mob()) { /* телефон: только горизонтальный свайп, край экрана отдан жесту «назад» iOS */
+    if (tx > 24 && Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.4) { if (dx < 0) go(1, undefined, { dir: 1 }); else go(-1, undefined, { dir: -1 }); }
+    return;
+  }
+  if (Math.abs(dy) > 60 && Math.abs(dy) > Math.abs(dx) * 1.4) { if (dy < 0) next(); else prev(); }
+}, { passive: true });
 window.addEventListener('popstate', () => {
   const r = /\/about\/?$/.test(location.pathname) ? 'about' : 'story';
   const i = D.findIndex((x) => x.id === location.hash.slice(1));

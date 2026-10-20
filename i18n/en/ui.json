@@ -449,27 +449,6 @@
       "imported_at": "2026-10-20",
       "translator": "Claude (draft, ждёт ChatGPT)"
     },
-    "sw.back": {
-      "source_hash": "214af2a8e3f1",
-      "en": "Back to the promise",
-      "status": "draft",
-      "imported_at": "2026-10-20",
-      "translator": "Claude (draft, ждёт ChatGPT)"
-    },
-    "nav.prev_short": {
-      "source_hash": "30e7d30f9bd5",
-      "en": "Prev",
-      "status": "draft",
-      "imported_at": "2026-10-20",
-      "translator": "Claude (draft, ждёт ChatGPT)"
-    },
-    "nav.next_short": {
-      "source_hash": "b2701048b770",
-      "en": "Next",
-      "status": "draft",
-      "imported_at": "2026-10-20",
-      "translator": "Claude (draft, ждёт ChatGPT)"
-    },
     "hint.touch": {
       "source_hash": "fd9221ce4820",
       "en": "Tap the screen to see what happened next",
@@ -532,6 +511,20 @@
       "status": "draft",
       "imported_at": "2026-10-20",
       "translator": "Claude (временный перевод, на проверку ChatGPT)"
+    },
+    "sw.nextp": {
+      "source_hash": "594e17a45a40",
+      "en": "Next promise",
+      "status": "draft",
+      "imported_at": "2026-10-20",
+      "translator": "Claude (draft, ждёт ChatGPT)"
+    },
+    "nav.back": {
+      "source_hash": "ceae102edebb",
+      "en": "Back",
+      "status": "draft",
+      "imported_at": "2026-10-20",
+      "translator": "Claude (draft, ждёт ChatGPT)"
     }
   },
   "new_strings": {
