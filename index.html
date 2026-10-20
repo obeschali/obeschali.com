@@ -121,7 +121,7 @@ a{color:inherit}
 .role{font-size:22px;line-height:1.3;opacity:.9}
 .src{--sp:6px;display:inline-flex;align-items:baseline;gap:.55em;font:600 14px var(--mono);color:inherit;text-decoration:none;margin-left:-8px;margin-right:6px;padding:var(--sp) 8px;background:linear-gradient(var(--ink),var(--ink)) no-repeat 8px 100%/calc(100% - 16px) 2px;transition:background-size .24s cubic-bezier(.6,0,.2,1),background-position .24s cubic-bezier(.6,0,.2,1),color .18s}
 .src:hover{background-position:0 100%;background-size:100% 100%;color:var(--bg)}
-.src small{font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;opacity:.8}
+.sl{font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;opacity:.8;margin-right:12px}
 .srcs{display:flex;flex-wrap:wrap;gap:0;align-items:baseline;margin-top:0}
 .bq .src{--sp:4px;font-size:16px}
 .hint{position:absolute;right:var(--px);bottom:34px;display:flex;align-items:center;gap:12px;font:600 14px var(--mono);letter-spacing:.14em;text-transform:uppercase;z-index:3;transition:opacity .3s}
@@ -312,7 +312,7 @@ a{color:inherit}
   .br.orig .ro{margin-top:10px;padding:10px 0 0;border-top:1px solid color-mix(in srgb,var(--ink) 40%,transparent)}
   .ro{display:none}
   .br.orig .ro{display:block}
-  .br .src small{font-size:11px}
+  .br .sl{font-size:11px}
   .bym{display:flex;flex-direction:column;gap:6px;margin-top:22px;transition:opacity .45s}
   .bym .who{font-size:30px}.bym .role{font-size:16px}
   .bym .src{font-size:14px}
@@ -586,7 +586,7 @@ function metaOf(s) {
   const ctx = s.mc || '';
   return { rl: docLabel(s).toLocaleUpperCase(LANG), rd: (ru(s.date) + (ctx ? ' \u00B7 ' + ctx : '')).toLocaleUpperCase(LANG) };
 }
-const srcHtml = (list, label) => list.slice(0, 4).map((s, i) => '<a class="src" href="' + esc(s.u) + '" target="_blank" rel="noopener noreferrer"' + (EN ? ' hreflang="' + (s.l || 'ru') + '"' : '') + '>' + (label && i === 0 ? '<small>' + label + '</small>' : '') + esc(s.t) + '<span aria-hidden="true">↗</span>' + (EN ? '<span class="bdg">' + (s.l || 'ru').toUpperCase() + '</span>' : '') + '</a>').join('');
+const srcHtml = (list, label) => (label ? '<small class="sl">' + label + '</small>' : '') + list.slice(0, 4).map((s, i) => '<a class="src" href="' + esc(s.u) + '" target="_blank" rel="noopener noreferrer"' + (EN ? ' hreflang="' + (s.l || 'ru') + '"' : '') + '>' + esc(s.t) + '<span aria-hidden="true">↗</span>' + (EN ? '<span class="bdg">' + (s.l || 'ru').toUpperCase() + '</span>' : '') + '</a>').join('');
 const SAVE = { get: (k) => { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} } };
 
 let cur = 0, flipped = false, seen = SAVE.get('obesh_seen') === '1', busy = false, numAnim = 0;
