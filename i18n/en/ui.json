@@ -518,6 +518,20 @@
       "status": "draft",
       "imported_at": "2026-10-20",
       "translator": "Claude (временный перевод, на проверку ChatGPT)"
+    },
+    "og.label_next": {
+      "source_hash": "e5da824b1f0b",
+      "en": "What happened next",
+      "status": "draft",
+      "imported_at": "2026-10-20",
+      "translator": "Claude (временный перевод, на проверку ChatGPT)"
+    },
+    "og.after": {
+      "source_hash": "a52272ffe591",
+      "en": "{n} {unit} later",
+      "status": "draft",
+      "imported_at": "2026-10-20",
+      "translator": "Claude (временный перевод, на проверку ChatGPT)"
     }
   },
   "new_strings": {

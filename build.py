@@ -197,10 +197,11 @@ if SITE:
 if '--no-og' not in sys.argv:
     try:
         import og
-        og.render(data_ru, ROOT / 'og')
-        if HAS_EN:
-            U = {'kind': {k: T_EN['kind.' + k] for k in ('promise', 'forecast', 'denial', 'irony')}, 'logo': T_EN['page.title.default'], 'more': T_EN['og.tag_more'],
-                 'sub': T_EN['og.default_sub'], 'role': T_EN['og.default_role'], 'open': T_EN['og.default_open']}
-            og.render(data_en, en_dir / 'og', U)
+        def mkU(T, lang):
+            return {'lang': lang, 'kind': {k: T['kind.' + k] for k in ('promise', 'forecast', 'denial', 'irony')}, 'logo': T['page.title.default'],
+                    'sub': T['og.default_sub'], 'role': T['og.default_role'], 'open': T['og.default_open'], 'next': T['og.label_next'], 'after': T['og.after'],
+                    'unit': {u: {f: T.get(f'unit.{u}.{f}', '') for f in ('one', 'few', 'many')} for u in ('day', 'month', 'year')}}
+        og.render(data_ru, ROOT / 'og', mkU(T_RU, 'ru'))
+        if HAS_EN: og.render(data_en, en_dir / 'og', mkU(T_EN, 'en'))
     except Exception as e:
         print('Картинки превью не собраны:', e)
