@@ -102,22 +102,27 @@ def switch_html(lang):
     if not HAS_EN: return ''
     aria = html.escape((T_EN if lang == 'en' else T_RU)['lang.switch_aria'], quote=True)
     a = lambda l, href: f'<a href="{href}" data-lang="{l}" hreflang="{l}" lang="{l}"' + (' aria-current="true"' if l == lang else '') + f'>{l.upper()}</a>'
-    return f'<div class="lg" role="group" aria-label="{aria}" data-ta="lang.switch_aria">{a("ru", "./" if lang == "ru" else "../")}{a("en", "en/" if lang == "ru" else "./")}</div>'
+    return f'<div class="lg" role="group" aria-label="{aria}" data-ta="lang.switch_aria">{a("ru", "/" if lang == "ru" else "/")}{a("en", "/en/")}</div>'
 
-def build_lang(lang, data, T, outdir):
-    """Одна языковая версия: outdir/index.html + outdir/s/<id>/index.html. Возвращает список страниц историй."""
-    pre = '' if lang == 'ru' else 'en/'          # префикс адреса
-    root_rel = '../../'                           # со страницы истории — к индексу языка
+def render_index(lang, data, T, route):
+    """Одна и та же страница-приложение: route='story' (корень языка) или 'about' (/about/)."""
+    pre = '' if lang == 'ru' else 'en/'
     loc = 'ru_RU' if lang == 'ru' else 'en_US'
-    other = 'en/' if lang == 'ru' else '../'
-    ALT = {'ru': './' if lang == 'ru' else '../', 'en': 'en/' if lang == 'ru' else './', 'enIds': [x['id'] for x in data_en]} if HAS_EN else None
+    home, about = '/' + pre, '/' + pre + 'about/'
+    ALT = {'ru': '/', 'en': '/en/', 'aboutRu': '/about/', 'aboutEn': '/en/about/', 'enIds': [x['id'] for x in data_en]} if HAS_EN else None
     idx = tpl
     if lang == 'en':
         idx = idx.replace('>Обещали.</a>', '>' + html.escape(T['page.title.default']) + '</a>').replace('pointer-events:none">Обещали.</span>', 'pointer-events:none">' + html.escape(T['page.title.default']) + '</span>')
-    idx = idx.replace('@@LANG@@', lang).replace('@@TITLE@@', html.escape(T['page.title.default'])).replace('@@DESC@@', html.escape(T['page.description'], quote=True))
+    title = T['page.title.default'] if route == 'story' else T['page.title.about']
+    desc = T['page.description'] if route == 'story' else T['page.description.about']
+    own = pre if route == 'story' else pre + 'about/'
+    idx = idx.replace('@@LANG@@', lang).replace('@@TITLE@@', html.escape(title)).replace('@@DESC@@', html.escape(desc, quote=True))
+    idx = idx.replace('@@ROUTE@@', route).replace('@@HOME@@', home).replace('@@ABOUT@@', about)
+    if route == 'about':
+        idx = idx.replace('<div id="app" aria-live="off"', '<div id="app" class="ab" aria-live="off"').replace('class="ov about" id="about"', 'class="ov about open" id="about"').replace('data-ta="about.aria" aria-hidden="true"', 'data-ta="about.aria" aria-hidden="false"')
     idx = idx.replace('@@SWITCH@@', switch_html(lang))
-    idx = idx.replace('@@ALTLINKS@@', alt_links(lang, '', 'en/' if HAS_EN else None))
-    idx = idx.replace('@@OG@@', og_meta(T, loc, T['page.title.default'], T['page.description'], absurl(pre + 'og/default.png'), (SITE + '/' + pre) if SITE else None))
+    idx = idx.replace('@@ALTLINKS@@', alt_links(lang, '' if route == 'story' else 'about/', ('en/' if route == 'story' else 'en/about/') if HAS_EN else None))
+    idx = idx.replace('@@OG@@', og_meta(T, loc, title, desc, absurl(pre + 'og/default.png'), (SITE + '/' + own) if SITE else None))
     idx = idx.replace('@@UI@@', json.dumps(T, ensure_ascii=False)).replace('@@ALT@@', json.dumps(ALT, ensure_ascii=False))
     idx = idx.replace('@@DATA@@', json.dumps(data, ensure_ascii=False)).replace('@@SITE@@', SITE)
     idx = idx.replace('@@NOSCRIPT@@', html.escape(T['noscript']))
@@ -128,8 +133,17 @@ def build_lang(lang, data, T, outdir):
         idx = re.sub(r'<!--SUP-->.*?<!--/SUP-->|<!--SUPB-->.*?<!--/SUPB-->', '', idx, flags=re.S)
     if CONTACT: idx = idx.replace('@@CONTACT@@', html.escape(CONTACT, quote=True))
     else: idx = re.sub(r'\s*<a class="btn" href="@@CONTACT@@".*?</a>', '', idx, flags=re.S)
+    return idx
+
+def build_lang(lang, data, T, outdir):
+    """Одна языковая версия: outdir/index.html + outdir/s/<id>/index.html. Возвращает список страниц историй."""
+    pre = '' if lang == 'ru' else 'en/'          # префикс адреса
+    root_rel = '../../'                           # со страницы истории — к индексу языка
+    loc = 'ru_RU' if lang == 'ru' else 'en_US'
+    other = 'en/' if lang == 'ru' else '../'
     outdir.mkdir(parents=True, exist_ok=True)
-    (outdir / 'index.html').write_text(idx, encoding='utf8')
+    (outdir / 'index.html').write_text(render_index(lang, data, T, 'story'), encoding='utf8')
+    (outdir / 'about').mkdir(exist_ok=True); (outdir / 'about' / 'index.html').write_text(render_index(lang, data, T, 'about'), encoding='utf8')
     for s in data:
         q = s['quote'].lstrip('…')
         qq = ('«' + q[:110] + ('…' if len(q) > 110 else '') + '»') if lang == 'ru' else ('“' + q[:110] + ('…' if len(q) > 110 else '') + '”')
@@ -165,7 +179,7 @@ print('index.html:', len(data_ru), 'историй;', 'EN:', len(data_en) if HAS
 
 # ---------- sitemap и robots (только если известен адрес сайта) ----------
 if SITE:
-    urls = [(SITE + '/', SITE + '/en/' if HAS_EN else None)]
+    urls = [(SITE + '/', SITE + '/en/' if HAS_EN else None), (SITE + '/about/', SITE + '/en/about/' if HAS_EN else None)]
     en_ids = {x['id'] for x in data_en}
     for s in data_ru: urls.append((f"{SITE}/s/{s['id']}/", f"{SITE}/en/s/{s['id']}/" if s['id'] in en_ids else None))
     L = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
@@ -183,10 +197,11 @@ if SITE:
 if '--no-og' not in sys.argv:
     try:
         import og
-        og.render(data_ru, ROOT / 'og')
-        if HAS_EN:
-            U = {'kind': {k: T_EN['kind.' + k] for k in ('promise', 'forecast', 'denial', 'irony')}, 'logo': T_EN['page.title.default'], 'more': T_EN['og.tag_more'],
-                 'sub': T_EN['og.default_sub'], 'role': T_EN['og.default_role'], 'open': T_EN['og.default_open']}
-            og.render(data_en, en_dir / 'og', U)
+        def mkU(T, lang):
+            return {'lang': lang, 'kind': {k: T['kind.' + k] for k in ('promise', 'forecast', 'denial', 'irony')}, 'logo': T['page.title.default'],
+                    'sub': T['og.default_sub'], 'role': T['og.default_role'], 'open': T['og.default_open'], 'next': T['og.label_next'], 'after': T['og.after'],
+                    'unit': {u: {f: T.get(f'unit.{u}.{f}', '') for f in ('one', 'few', 'many')} for u in ('day', 'month', 'year')}}
+        og.render(data_ru, ROOT / 'og', mkU(T_RU, 'ru'))
+        if HAS_EN: og.render(data_en, en_dir / 'og', mkU(T_EN, 'en'))
     except Exception as e:
         print('Картинки превью не собраны:', e)

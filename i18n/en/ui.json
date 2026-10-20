@@ -476,6 +476,62 @@
       "status": "draft",
       "imported_at": "2026-10-19",
       "translator": "Claude (временный перевод, на проверку ChatGPT)"
+    },
+    "about.back_story": {
+      "source_hash": "37614843dec7",
+      "en": "Back to the story",
+      "status": "draft",
+      "imported_at": "2026-10-20",
+      "translator": "Claude (временный перевод, на проверку ChatGPT)"
+    },
+    "about.back_start": {
+      "source_hash": "20ff4bc46980",
+      "en": "Browse the stories",
+      "status": "draft",
+      "imported_at": "2026-10-20",
+      "translator": "Claude (временный перевод, на проверку ChatGPT)"
+    },
+    "about.back_n": {
+      "source_hash": "c284a32772df",
+      "en": "No. {n}",
+      "status": "draft",
+      "imported_at": "2026-10-20",
+      "translator": "Claude (временный перевод, на проверку ChatGPT)"
+    },
+    "menu.tab_stories": {
+      "source_hash": "490da64adc2e",
+      "en": "Stories",
+      "status": "draft",
+      "imported_at": "2026-10-20",
+      "translator": "Claude (временный перевод, на проверку ChatGPT)"
+    },
+    "page.title.about": {
+      "source_hash": "cf046fc721ac",
+      "en": "About — Promised.",
+      "status": "draft",
+      "imported_at": "2026-10-20",
+      "translator": "Claude (временный перевод, на проверку ChatGPT)"
+    },
+    "page.description.about": {
+      "source_hash": "1afd254b92b8",
+      "en": "What «Promised.» is: a project about public words and what happened next.",
+      "status": "draft",
+      "imported_at": "2026-10-20",
+      "translator": "Claude (временный перевод, на проверку ChatGPT)"
+    },
+    "og.label_next": {
+      "source_hash": "e5da824b1f0b",
+      "en": "What happened next",
+      "status": "draft",
+      "imported_at": "2026-10-20",
+      "translator": "Claude (временный перевод, на проверку ChatGPT)"
+    },
+    "og.after": {
+      "source_hash": "a52272ffe591",
+      "en": "{n} {unit} later",
+      "status": "draft",
+      "imported_at": "2026-10-20",
+      "translator": "Claude (временный перевод, на проверку ChatGPT)"
     }
   },
   "new_strings": {
