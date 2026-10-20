@@ -2398,5 +2398,39 @@
     "u": "https://news.ru/economics/rost-proizvoditelnosti-truda-budut-stimulirovat-kreditami"
    }
   ]
+ },
+ {
+  "id": "simonyan-2021-ukraina-za-dva-dnya",
+  "cat": "mir",
+  "kind": "forecast",
+  "w": 5,
+  "who": "Маргарита Симоньян",
+  "role": "главный редактор RT",
+  "date": "2021-04-11",
+  "place": "ток-шоу Владимира Соловьёва",
+  "quote": "В горячей войне мы Украину победим за два дня.",
+  "qsrc": [
+   {
+    "t": "РИА СВ",
+    "u": "https://riasv.ru/politics/2022/06/13/ny-i-kak-pobedili-v-seti-pokazali-chto-simonian-zaiavila-o-voine-s-ykrainoi-god-nazad/"
+   },
+   {
+    "t": "Диалог.UA",
+    "u": "https://www.dialog.ua/russia/253556_1655048780"
+   }
+  ],
+  "head": "Война идёт уже почти 1700 дней.",
+  "body": "Вторжение началось 24 февраля 2022 года. В марте 2023-го Симоньян объяснила в эфире у Соловьёва: «Украину как таковую мы победили в первые 2–3 дня, когда взяли Гостомель».",
+  "odate": "2026-10-20",
+  "osrc": [
+   {
+    "t": "Бизнес-газета",
+    "u": "https://m.business-gazeta.ru/news/586710"
+   },
+   {
+    "t": "The Insider",
+    "u": "https://theins.ru/news/266403"
+   }
+  ]
  }
 ]
