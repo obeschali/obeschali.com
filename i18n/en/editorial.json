@@ -51,8 +51,8 @@
       "translator": "ChatGPT"
     },
     "about.privacy": {
-      "source_hash": "46cf3f70b59c",
-      "en": "No cookies, counters or ads. The site collects nothing about the people who read it.",
+      "source_hash": "d90926422a6c",
+      "en": "No ads. Visits are counted with Google Analytics (it uses cookies), with no advertising data or personalization.",
       "status": "draft",
       "imported_at": "2026-10-19",
       "translator": "Claude (временный перевод, на проверку ChatGPT)"
