@@ -1,1 +1,22 @@
-{"site":"https://obeschali.com","contact":""}
+{
+  "site": "https://obeschali.com",
+  "contact": "",
+  "crypto": [
+    {
+      "name": "USDT · Tron",
+      "addr": "TFVWAXkQL1fd1VMZKy1tR4Gbn8z7tp19tG"
+    },
+    {
+      "name": "Bitcoin",
+      "addr": "bc1qq0ns8c86dzc05as4uq70ndls64ykgv45zkcakw"
+    },
+    {
+      "name": "TON",
+      "addr": "UQCqJJ7QFuMgS1E1Z-F_faR-LLOfHhoaPjJAhyNr4cK-Yi1J"
+    },
+    {
+      "name": "Ethereum",
+      "addr": "0x0FAA85D426aDf0314480049EB122acFE0ee67c07"
+    }
+  ]
+}
