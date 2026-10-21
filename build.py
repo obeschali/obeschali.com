@@ -129,8 +129,8 @@ def render_index(lang, data, T, route):
     idx = tpl
     if lang == 'en':
         idx = idx.replace('>Обещали.</a>', '>' + html.escape(T['page.title.default']) + '</a>').replace('pointer-events:none">Обещали.</span>', 'pointer-events:none">' + html.escape(T['page.title.default']) + '</span>')
-    title = T['page.title.default'] if route == 'story' else T['page.title.about']
-    desc = T['page.description'] if route == 'story' else T['page.description.about']
+    title = T['page.title.home'] if route == 'story' else T['page.title.about']
+    desc = T['page.description.home'] if route == 'story' else T['page.description.about']
     own = pre if route == 'story' else pre + 'about/'
     idx = idx.replace('@@LANG@@', lang).replace('@@TITLE@@', html.escape(title)).replace('@@DESC@@', html.escape(desc, quote=True))
     idx = idx.replace('@@ROUTE@@', route).replace('@@HOME@@', home).replace('@@ABOUT@@', about)

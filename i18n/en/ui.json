@@ -595,6 +595,20 @@
       "status": "draft",
       "imported_at": "2026-10-21",
       "translator": "Claude (draft, ждёт ChatGPT)"
+    },
+    "page.title.home": {
+      "source_hash": "c17a47b9bd5e",
+      "en": "Promised. — Russian officials' promises and what happened next",
+      "status": "draft",
+      "imported_at": "2026-10-22",
+      "translator": "Claude (draft, ждёт ChatGPT)"
+    },
+    "page.description.home": {
+      "source_hash": "30723e60b1cf",
+      "en": "An archive of public promises and statements by Russian officials: the quote, the date, the source, and what happened next, with checkable links.",
+      "status": "draft",
+      "imported_at": "2026-10-22",
+      "translator": "Claude (draft, ждёт ChatGPT)"
     }
   },
   "new_strings": {
