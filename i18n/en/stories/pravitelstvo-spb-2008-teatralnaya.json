@@ -1,0 +1,48 @@
+{
+  "id": "pravitelstvo-spb-2008-teatralnaya",
+  "lang": "en",
+  "source_hash": "23abd8559378",
+  "status": "draft",
+  "provenance": {
+    "translator": "Claude (draft, ждёт ChatGPT)",
+    "imported_at": "2026-10-20",
+    "reason": "new"
+  },
+  "en": {
+    "who": "Government of St. Petersburg",
+    "role": "under Governor Valentina Matvienko",
+    "quote": "From 2013 to 2015, it is planned to commission… Line 4 (Pravoberezhnaya), the section from Sennaya Square to Teatralnaya Square.",
+    "head": "The station is still not open: it has no exit to the surface.",
+    "body": "The deadline kept slipping: in 2011 to 2015, and in 2013 Poltavchenko approved 2018. In December 2024, Beglov said the station would not be usable for “at least three years.” Now the first exit is promised for 2029–2030, and the draft investment programme funds it through 2032.",
+    "meta_context": "Resolution No. 44, concept for metro development to 2020",
+    "qsrc": [
+      {
+        "i": 0,
+        "t": "Resolution No. 44 of the Government of St. Petersburg"
+      }
+    ],
+    "osrc": [
+      {
+        "i": 0,
+        "t": "Fontanka, 2022"
+      },
+      {
+        "i": 1,
+        "t": "Fontanka, 2013"
+      },
+      {
+        "i": 2,
+        "t": "Peterburg2, 2024"
+      },
+      {
+        "i": 3,
+        "t": "Fontanka, 2026"
+      }
+    ]
+  },
+  "en_extra_sources": {
+    "quote": [],
+    "outcome": []
+  },
+  "notes": ""
+}
