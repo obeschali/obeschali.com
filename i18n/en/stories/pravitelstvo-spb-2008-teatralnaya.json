@@ -1,42 +1,40 @@
 {
   "id": "pravitelstvo-spb-2008-teatralnaya",
   "lang": "en",
-  "source_hash": "23abd8559378",
-  "status": "draft",
+  "source_hash": "cbd11123f416",
+  "status": "reviewed",
   "provenance": {
-    "translator": "Claude (draft, ждёт ChatGPT)",
-    "imported_at": "2026-10-20",
-    "reason": "new"
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Government of St. Petersburg",
     "role": "under Governor Valentina Matvienko",
-    "quote": "From 2013 to 2015, it is planned to commission… Line 4 (Pravoberezhnaya), the section from Sennaya Square to Teatralnaya Square.",
-    "head": "The station is still not open: it has no exit to the surface.",
-    "body": "The deadline kept slipping: in 2011 to 2015, and in 2013 Poltavchenko approved 2018. In December 2024, Beglov said the station would not be usable for “at least three years.” Now the first exit is promised for 2029–2030, and the draft investment programme funds it through 2032.",
+    "quote": "The following metro lines and sections are planned to enter service in 2013–15: … Line 4 (Pravoberezhnaya), from Sennaya Square (Sadovaya station) to Teatralnaya Square (Teatralnaya station).",
+    "head": "Teatralnaya did not open to passengers.",
+    "body": "The original plan called for the section to open by 2015. The city later said the underground station was under construction, but passengers would need a surface entrance. In March 2026, a St Petersburg deputy governor spoke of opening the station by 2030. It did not open to passengers in the promised 2013–15 period.",
     "meta_context": "Resolution No. 44, concept for metro development to 2020",
     "qsrc": [
       {
         "i": 0,
-        "t": "Resolution No. 44 of the Government of St. Petersburg"
+        "t": "Resolution No. 44, text at Seychas.ru"
+      },
+      {
+        "i": 1,
+        "t": "Garant, annex to Resolution No. 44"
       }
     ],
     "osrc": [
       {
         "i": 0,
-        "t": "Fontanka, 2022"
+        "t": "St Petersburg administration, station and entrance plans"
       },
       {
         "i": 1,
-        "t": "Fontanka, 2013"
-      },
-      {
-        "i": 2,
-        "t": "Peterburg2, 2024"
-      },
-      {
-        "i": 3,
-        "t": "Fontanka, 2026"
+        "t": "Delovoy Peterburg, deputy governor’s March 2026 statement"
       }
     ]
   },

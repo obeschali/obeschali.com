@@ -18,6 +18,7 @@ EN_STATUSES = cfg.get('en_statuses', ['reviewed', 'approved'])
 FIRST = ['putin-2005-pensionny-vozrast', 'rogozin-2014-batut', 'chubays-2012-devalvatsiya', 'mutko-2017-doping',
          'medvedev-2016-deneg-net', 'putin-2011-internet', 'peskov-2022-mobilizatsiya']
 stories = json.load(open(ROOT / 'stories.json', encoding='utf8'))
+ctx_src = json.load(open(ROOT / 'context.json', encoding='utf8')) if (ROOT / 'context.json').exists() else {}  # пояснение над цитатой: {id: {ru, en}}
 by = {s['id']: s for s in stories}
 order = [by[i] for i in FIRST if i in by] + [s for s in stories if s['id'] not in FIRST]
 keys = ['id', 'who', 'role', 'date', 'place', 'kind', 'quote', 'qsrc', 'head', 'body', 'odate', 'osrc']
@@ -38,7 +39,7 @@ _miss = sorted({s['who'] for s in stories if s['who'] not in OF_RU})
 if _miss: sys.exit('Нет формы «о ком» (OF_RU в build.py) для: ' + ', '.join(_miss))
 def _ru_rec(s):
     r = {k: s.get(k, '') for k in keys}; dt, num, ctx = I.doctype_of(s.get('place', ''))
-    r.update({'mt': dt, 'mn': num or '', 'mc': ctx, 'of': OF_RU[s['who']]}); return r
+    r.update({'mt': dt, 'mn': num or '', 'mc': ctx, 'of': OF_RU[s['who']], 'cx': (ctx_src.get(s['id']) or {}).get('ru', '')}); return r
 data_ru = [_ru_rec(s) for s in order]
 tpl = (ROOT / 'template.html').read_text(encoding='utf8')
 
@@ -80,7 +81,7 @@ def en_story(s):
     return {'id': s['id'], 'who': en['who'], 'role': en['role'], 'date': s['date'], 'place': '', 'kind': s['kind'],
             'quote': en['quote'], 'qsrc': srcs(s['qsrc'], en['qsrc'], ex.get('quote')), 'head': en['head'], 'body': en['body'],
             'odate': s['odate'], 'osrc': srcs(s['osrc'], en['osrc'], ex.get('outcome')),
-            'mt': dt, 'mn': num or '', 'mc': en['meta_context'], 'of': en['who'], 'ru': {'quote': s['quote']}}
+            'mt': dt, 'mn': num or '', 'mc': en['meta_context'], 'of': en['who'], 'cx': (ctx_src.get(s['id']) or {}).get('en', ''), 'ru': {'quote': s['quote']}}
 
 data_en = [x for x in (en_story(s) for s in data_ru) if x]
 T_EN, miss = load_en_ui() if data_en else (None, [])

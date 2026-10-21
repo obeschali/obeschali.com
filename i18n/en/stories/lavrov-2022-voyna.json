@@ -1,21 +1,21 @@
 {
   "id": "lavrov-2022-voyna",
   "lang": "en",
-  "source_hash": "916e7e9f2d61",
+  "source_hash": "69ca3691131a",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-05.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Sergey Lavrov",
     "role": "Minister of Foreign Affairs",
     "quote": "If it depends on the Russian Federation, there will be no war [with Ukraine].",
-    "head": "The military operation began",
-    "body": "On February 24, 2022, Putin announced in a televised address the decision to conduct what he called a “special military operation” in Ukraine. Interfax published its report at 7:19 a.m. Moscow time.",
+    "head": "Russia invaded Ukraine the following month.",
+    "body": "On February 24, 2022, Putin announced what he called a “special military operation” in Ukraine. Lavrov’s answer was conditional — “if it depends on the Russian Federation.” Russia’s subsequent decision to invade bears directly on that condition.",
     "meta_context": "Interview with radio stations",
     "qsrc": [
       {
@@ -38,5 +38,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "The English rendering preserves Lavrov’s conditional and the bracketed clarification."
+  "notes": ""
 }

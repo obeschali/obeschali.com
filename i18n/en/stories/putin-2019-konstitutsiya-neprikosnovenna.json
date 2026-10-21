@@ -1,21 +1,21 @@
 {
   "id": "putin-2019-konstitutsiya-neprikosnovenna",
   "lang": "en",
-  "source_hash": "806a064dc694",
+  "source_hash": "75c198905723",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-03.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Vladimir Putin",
     "role": "President of Russia",
     "quote": "It [the Constitution], in my view, is inviolable.",
-    "head": "A package of amendments",
-    "body": "On January 15, 2020, Putin proposed constitutional amendments concerning appointment of the prime minister, the status of the State Council, pension indexation, and eligibility requirements for presidential candidates. On July 1, 77.92% of voters supported the amendments, on turnout of 67.97%.",
+    "head": "Constitutional amendments were proposed less than a month later.",
+    "body": "On 15 January 2020, Putin proposed a broad package of constitutional amendments. The amendment law was signed in March, and the changes took effect that summer. “Inviolable” was an assessment, not a pledge never to amend the text, but the subsequent initiative sits uneasily with that public characterisation.",
     "meta_context": "Annual press conference, on the Constitution",
     "qsrc": [
       {

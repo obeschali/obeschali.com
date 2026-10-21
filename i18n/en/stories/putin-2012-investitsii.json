@@ -1,26 +1,30 @@
 {
   "id": "putin-2012-investitsii",
   "lang": "en",
-  "source_hash": "3f5823db18f3",
+  "source_hash": "4486430e603d",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-07.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Vladimir Putin",
     "role": "President of Russia",
     "quote": "…increase investment to at least 25% of GDP by 2015 and 27% by 2018.",
-    "head": "In 2018, investment was 20.6% of GDP, not 27%",
-    "body": "According to Rosstat, fixed capital investment was 20.6% of GDP in 2018 and 21.4% in 2017. That was below the 2011 level of 20.7%.",
+    "head": "Investment was 20.6% of GDP in 2018.",
+    "body": "Rosstat reported fixed-capital investment at 20.6% of GDP in 2018, against the decree’s target of at least 27% for that year. The figures concern the same measure.",
     "meta_context": "Decree No. 596, “On Long-Term State Economic Policy”",
     "qsrc": [
       {
         "i": 0,
         "t": "Text of Decree No. 596"
+      },
+      {
+        "i": 1,
+        "t": "Decree No. 596, ConsultantPlus text"
       }
     ],
     "osrc": [

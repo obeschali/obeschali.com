@@ -1,21 +1,21 @@
 {
   "id": "dvorkovich-2008-devalvatsiya",
   "lang": "en",
-  "source_hash": "f14f8a164309",
+  "source_hash": "f9984d70f981",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-04.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Arkady Dvorkovich",
     "role": "Economic Adviser to the President",
     "quote": "There will be no [ruble] devaluation. The central bank has the currency market fully under control.",
-    "head": "The basket rose by 7 rubles",
-    "body": "On January 22, 2009, the Bank of Russia set the upper limit for the dual-currency basket (0.55 US dollars and 0.45 euros) at 41 rubles. In November 2008, the basket had cost just over 30 rubles; on January 22, 2009, it stood at 37.22 rubles. This marked the end of the “gradual devaluation” phase.",
+    "head": "The ruble was subsequently devalued.",
+    "body": "The Bank of Russia gradually widened its currency corridor in late 2008. By January 22, 2009, the dollar-euro basket cost 37.22 rubles, up from just over 30 in November. This measures the same currency movement Dvorkovich had addressed.",
     "meta_context": "",
     "qsrc": [
       {
@@ -34,5 +34,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "The source text gives the announced ceiling and the actual basket rate; keep those distinct. The Russian source provides no place or event context; meta_context is therefore blank, matching the source."
+  "notes": ""
 }

@@ -1,32 +1,40 @@
 {
   "id": "pravitelstvo-2008-niokr",
   "lang": "en",
-  "source_hash": "65df1b1a903b",
+  "source_hash": "16824015057e",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-08.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Government of Russia",
     "role": "Concept for Long-Term Socioeconomic Development Through 2020",
     "quote": "…R&D spending (private and public) [should reach] 3 percent of gross domestic product.",
-    "head": "1.09% of GDP in 2020; 0.99% in 2021",
-    "body": "This was a 2020 target. HSE University estimates based on Rosstat data show research and development spending fell from 1.09% of GDP in 2020 to 0.99% in 2021. Russia ranked 37th worldwide on this measure.",
+    "head": "Research spending reached 1.09% of GDP in 2020.",
+    "body": "Rosstat data analyzed by HSE put domestic research and development spending at 1.09% of GDP in 2020. The government concept set a 3% target for that year. Both figures measure the same share in the target year.",
     "meta_context": "Government Order No. 1662-r",
     "qsrc": [
       {
         "i": 0,
         "t": "Text of Order No. 1662-r"
+      },
+      {
+        "i": 1,
+        "t": "Government 2020 strategy, copy hosted by Moscow city"
       }
     ],
     "osrc": [
       {
         "i": 0,
         "t": "Lenta.ru, citing HSE University and Kommersant"
+      },
+      {
+        "i": 1,
+        "t": "HSE analysis of Rosstat R&D figures"
       }
     ]
   },

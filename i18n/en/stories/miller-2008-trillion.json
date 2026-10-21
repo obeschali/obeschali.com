@@ -1,21 +1,21 @@
 {
   "id": "miller-2008-trillion",
   "lang": "en",
-  "source_hash": "9117979f58b5",
+  "source_hash": "5bc5fa909143",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-08.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Alexei Miller",
     "role": "Chairman of Gazprom’s Management Board",
     "quote": "Our market capitalization will reach $1 trillion, and we will become the world’s largest company.",
-    "head": "About $92 billion in 2013; $56 billion in 2016",
-    "body": "Vedomosti recorded the timeframe as “in seven to ten years.” In May 2013, Gazprom’s market capitalization was about $92 billion, its lowest since 2009. According to Lenta.ru, by May 2016 it had fallen from $369 billion to $56 billion.",
+    "head": "Gazprom’s market value remained far below $1 trillion.",
+    "body": "Miller gave a seven-to-ten-year horizon. Gazprom’s report put market capitalization at $53.11 billion on December 31, 2017, nine and a half years after the forecast, and at $52.3 billion at the end of 2018. Both dated snapshots are far below the stated $1 trillion; market value fluctuated between them.",
     "meta_context": "European Business Congress",
     "qsrc": [
       {
@@ -26,11 +26,11 @@
     "osrc": [
       {
         "i": 0,
-        "t": "BFM.ru, May 2013"
+        "t": "Gazprom annual report, market capitalization at end-2018"
       },
       {
         "i": 1,
-        "t": "Lenta.ru, May 2016"
+        "t": "Gazprom 2017 annual report"
       }
     ]
   },

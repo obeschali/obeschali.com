@@ -1,21 +1,21 @@
 {
   "id": "novak-2018-benzin",
   "lang": "en",
-  "source_hash": "89976914d2e8",
+  "source_hash": "5f44a3770981",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-04.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Alexander Novak",
     "role": "Minister of Energy",
     "quote": "…by the end of the year, fuel price increases should be roughly in line with inflation.",
-    "head": "Gasoline rose 9.4% in 2018, while annual inflation was 4.3%",
-    "body": "These are Rosstat figures reported by TASS on January 10, 2019. In summer 2018, gas station prices rose much faster than overall inflation.",
+    "head": "Gasoline and diesel prices rose faster than inflation.",
+    "body": "Rosstat reported 2018 consumer-price increases of 9.4% for gasoline and 15% for diesel, against overall inflation of 4.3%. Both main road-fuel categories rose faster than the inflation-level increase Novak had forecast for fuel overall.",
     "meta_context": "Statement",
     "qsrc": [
       {
@@ -31,6 +31,10 @@
       {
         "i": 1,
         "t": "RBC, citing Rosstat data on 2018 prices"
+      },
+      {
+        "i": 2,
+        "t": "Rosstat, gasoline and diesel price indices for 2018"
       }
     ]
   },
@@ -38,5 +42,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "“Gasoline” is used for the consumer fuel price."
+  "notes": ""
 }

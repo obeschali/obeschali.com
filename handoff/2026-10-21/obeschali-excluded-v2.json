@@ -1,0 +1,890 @@
+[
+  {
+    "reason_ru": "Точная обрезка цитаты не подтверждена; материал дублирует более надёжную историю № 64.",
+    "record": {
+      "n": 4,
+      "id": "mutko-2017-doping",
+      "cat": "sport",
+      "kind": "denial",
+      "w": 4,
+      "who": "Виталий Мутко",
+      "role": "вице-премьер",
+      "date": "2017-09-12",
+      "place": "разговор с «Р-Спорт»",
+      "quote": "…мы никогда не соглашались и не согласимся с господином Маклареном, что есть какая-то государственная программа [поддержки допинга].",
+      "qsrc": [
+        {
+          "t": "РИА Новости",
+          "u": "https://ria.ru/20170912/1125623835.html"
+        }
+      ],
+      "head": "МОК отстранил Россию от Игр.",
+      "body": "5 декабря 2017 года МОК отстранил Олимпийский комитет России от Игр в Пхёнчхане; отдельных спортсменов допустили под олимпийским флагом. Мутко пожизненно отстранили от Олимпиад, но в 2019 году CAS отменил этот запрет.",
+      "odate": "2017-12-05",
+      "osrc": [
+        {
+          "t": "РБК",
+          "u": "https://www.rbc.ru/society/05/12/2017/5a26e87f9a794787da940353"
+        },
+        {
+          "t": "Решение исполкома МОК от 5 декабря 2017 года",
+          "u": "https://stillmed.olympic.org/media/Document%20Library/OlympicOrg/IOC/Who-We-Are/Commissions/Disciplinary-Commission/IOC-DC-Schmid/Decision-of-the-IOC-Executive-Board-05-12-2017.pdf"
+        },
+        {
+          "t": "Reuters о решении CAS отменить запрет для Мутко, 11 июля 2019 года",
+          "u": "https://www.euronews.com/2019/07/11/doping-cas-lifts-olympic-ban-on-former-russian-sports-minister-mutko"
+        }
+      ],
+      "en": {
+        "status": "reviewed",
+        "who": "Vitaly Mutko",
+        "role": "Deputy Prime Minister",
+        "quote": "…we have never agreed and will never agree with Mr. McLaren that there is any state-run [doping support] program.",
+        "head": "The IOC barred Russia from the Games.",
+        "body": "On December 5, 2017, the IOC suspended the Russian Olympic Committee from the PyeongChang Games; individual athletes were allowed to compete under the Olympic flag. Mutko received a lifetime ban from the Olympics, but in 2019 the Court of Arbitration for Sport (CAS) overturned that ban.",
+        "meta_context": "In an interview with R-Sport",
+        "qsrc": [
+          {
+            "i": 0,
+            "t": "RIA Novosti"
+          }
+        ],
+        "osrc": [
+          {
+            "i": 0,
+            "t": "RBC"
+          },
+          {
+            "i": 1,
+            "t": "IOC Executive Board decision, December 5, 2017"
+          },
+          {
+            "i": 2,
+            "t": "Reuters on CAS lifting Mutko’s ban, July 11, 2019"
+          }
+        ],
+        "extra_sources": {
+          "quote": [],
+          "outcome": []
+        },
+        "notes": "The Russian quote contains an initial ellipsis and an editorial bracket clarifying “state program”; preserve both. “State-run” is a contextual rendering of государственная, pending review against the full interview."
+      }
+    }
+  },
+  {
+    "reason_ru": "Индексация затем произошла; личное недовольство размером прибавки не показывает невыполнения условного заявления.",
+    "record": {
+      "n": 5,
+      "id": "medvedev-2016-deneg-net",
+      "cat": "obshchestvo",
+      "kind": "irony",
+      "w": 5,
+      "who": "Дмитрий Медведев",
+      "role": "председатель правительства",
+      "date": "2016-05-23",
+      "place": "Крым, встреча с жителями",
+      "quote": "Просто денег нет [на индексацию пенсий]. Найдем деньги — сделаем индексацию.",
+      "qsrc": [
+        {
+          "t": "Коммерсантъ",
+          "u": "https://www.kommersant.ru/doc/2995245"
+        },
+        {
+          "t": "РБК, репортаж о встрече в Феодосии",
+          "u": "https://www.rbc.ru/rbcfreenews/574418f99a7947ea1dfccde0"
+        }
+      ],
+      "head": "«Вы держитесь здесь, вам всего доброго».",
+      "body": "Фраза стала мемом. Пенсионерка Анна Буянова, с которой говорил Медведев, рассказала «Ленте», что обещанной индексации так и не дождалась. В апреле 2017 года её пенсия выросла с 8 058 до 8 500 рублей. Индексацией она это не считает.",
+      "odate": "2018-05-13",
+      "osrc": [
+        {
+          "t": "Lenta.ru",
+          "u": "https://lenta.ru/news/2018/05/13/mem_pensya/"
+        }
+      ],
+      "en": {
+        "status": "reviewed",
+        "who": "Dmitry Medvedev",
+        "role": "Prime Minister",
+        "quote": "There is simply no money [to index pensions]. If we find the money, we will do it.",
+        "head": "“Hang in there. All the best.”",
+        "body": "The phrase became a meme. Anna Buyanova, the pensioner Medvedev spoke with, told Lenta that she never received the promised indexation. In April 2017, her pension rose from 8,058 to 8,500 rubles. She does not consider that an indexation.",
+        "meta_context": "Meeting with residents in Crimea",
+        "qsrc": [
+          {
+            "i": 0,
+            "t": "Kommersant"
+          },
+          {
+            "i": 1,
+            "t": "RBC, report on the meeting in Feodosia"
+          }
+        ],
+        "osrc": [
+          {
+            "i": 0,
+            "t": "Lenta.ru"
+          }
+        ],
+        "extra_sources": {
+          "quote": [],
+          "outcome": []
+        },
+        "notes": "“Hang in there” is an idiomatic rendering of держитесь; review the full clip for nuance."
+      }
+    }
+  },
+  {
+    "reason_ru": "Фрагмент о сне не содержит самостоятельного обещания; удалить по прежнему прямому требованию автора проекта.",
+    "record": {
+      "n": 9,
+      "id": "medvedev-2011-letnee-vremya",
+      "cat": "obshchestvo",
+      "kind": "promise",
+      "w": 4,
+      "who": "Дмитрий Медведев",
+      "role": "президент России",
+      "date": "2011-02-08",
+      "place": "встреча с молодыми учёными",
+      "quote": "…это уменьшение сна на один час, но после этого неприятности закончатся.",
+      "qsrc": [
+        {
+          "t": "Sostav",
+          "u": "https://www.sostav.ru/news/2011/02/08/cod24/"
+        }
+      ],
+      "head": "Часы вернули назад.",
+      "body": "Медведев объявил, что весной 2011 года часы переведут в последний раз и страна останется на летнем времени. Но 22 июля 2014 года Путин подписал закон о возвращении зимнего времени с 26 октября. В феврале 2013-го Медведев предлагал сохранить порядок.",
+      "odate": "2014-07-22",
+      "osrc": [
+        {
+          "t": "Российская газета",
+          "u": "https://rg.ru/2014/07/22/vremya-site.html"
+        },
+        {
+          "t": "Интерфакс",
+          "u": "https://www.interfax.ru/russia/289186"
+        }
+      ],
+      "en": {
+        "status": "reviewed",
+        "who": "Dmitry Medvedev",
+        "role": "President of Russia",
+        "quote": "…that means losing an hour of sleep, but after that the problems will be over.",
+        "head": "The clocks were turned back.",
+        "body": "Medvedev announced that in spring 2011 the clocks would be changed for the last time and the country would remain on summer time. But on July 22, 2014, Putin signed a law restoring standard time from October 26. In February 2013, Medvedev had proposed keeping the arrangement.",
+        "meta_context": "Meeting with young scientists",
+        "qsrc": [
+          {
+            "i": 0,
+            "t": "Sostav"
+          }
+        ],
+        "osrc": [
+          {
+            "i": 0,
+            "t": "Rossiyskaya Gazeta"
+          },
+          {
+            "i": 1,
+            "t": "Interfax"
+          }
+        ],
+        "extra_sources": {
+          "quote": [],
+          "outcome": []
+        },
+        "notes": "The source quote begins mid-sentence, marked by an ellipsis in Russian; retain it. Terminology edited: “standard time” is the natural English equivalent in this context for Russia’s return from permanent summer time; “winter time” would sound literal and unclear."
+      }
+    }
+  },
+  {
+    "reason_ru": "Выплаты «Вагнеру» в целом не подтверждают и не опровергают связь государства именно с компаниями в Мали.",
+    "record": {
+      "n": 13,
+      "id": "putin-2022-wagner",
+      "cat": "mir",
+      "kind": "denial",
+      "w": 4,
+      "who": "Владимир Путин",
+      "role": "президент России",
+      "date": "2022-02-08",
+      "place": "пресс-конференция после переговоров с Макроном",
+      "quote": "Российское правительство, российское государство не имеет ничего общего с компаниями, которые работают в Мали.",
+      "qsrc": [
+        {
+          "t": "Интерфакс",
+          "u": "https://www.interfax.ru/russia/820748"
+        }
+      ],
+      "head": "Государство заплатило «Вагнеру» 86 миллиардов.",
+      "body": "27 июня 2023 года Путин сообщил: с мая 2022-го по май 2023-го государство выплатило «Вагнеру» 86,262 млрд рублей на денежное содержание и выплаты. Февральский вопрос касался «Вагнера» в Мали, поэтому эти данные не доказывают финансирование именно там.",
+      "odate": "2023-06-27",
+      "osrc": [
+        {
+          "t": "РИА Новости",
+          "u": "https://ria.ru/20230627/vagner-1880724094.html"
+        },
+        {
+          "t": "Ведомости",
+          "u": "https://www.vedomosti.ru/politics/news/2023/07/14/985287-putin-vagner-ne-suschestvuet"
+        }
+      ],
+      "en": {
+        "status": "reviewed",
+        "who": "Vladimir Putin",
+        "role": "President of Russia",
+        "quote": "The Russian government, the Russian state, has nothing to do with companies operating in Mali.",
+        "head": "The state paid Wagner 86 billion rubles.",
+        "body": "On June 27, 2023, Putin said that from May 2022 to May 2023 the state had paid Wagner 86.262 billion rubles for salaries and other payments. The February question concerned Wagner in Mali, so these figures do not establish that it was funded specifically there.",
+        "meta_context": "Press conference after talks with Macron",
+        "qsrc": [
+          {
+            "i": 0,
+            "t": "Interfax"
+          }
+        ],
+        "osrc": [
+          {
+            "i": 0,
+            "t": "RIA Novosti"
+          },
+          {
+            "i": 1,
+            "t": "Vedomosti"
+          }
+        ],
+        "extra_sources": {
+          "quote": [],
+          "outcome": []
+        },
+        "notes": "The Russian original says “companies operating in Mali” without naming Wagner in the quote; the story’s framing identifies Wagner. Keep this distinction explicit."
+      }
+    }
+  },
+  {
+    "reason_ru": "Юридически обязывающий меморандум и окончательный контракт — разные стадии; отсутствие контракта не опровергает подписания меморандума.",
+    "record": {
+      "n": 26,
+      "id": "miller-2025-sila-sibiri-2",
+      "cat": "infra",
+      "kind": "promise",
+      "w": 4,
+      "who": "Алексей Миллер",
+      "role": "председатель правления «Газпрома»",
+      "date": "2025-09-02",
+      "place": "Пекин, по итогам переговоров",
+      "quote": "Подписан главный, основополагающий документ — юридически обязывающий меморандум [о «Силе Сибири — 2»].",
+      "qsrc": [
+        {
+          "t": "Интерфакс",
+          "u": "https://www.interfax.ru/business/1045247"
+        }
+      ],
+      "head": "«Четко пока нет».",
+      "body": "20 мая 2026 года, после переговоров Путина и Си Цзиньпина, «Силы Сибири — 2» нет в опубликованном Кремлём списке подписанных документов. На вопрос о сроках Песков ответил: «Четко пока нет. Это коммерческая информация все-таки». По сообщениям СМИ, цена и условия поставок не согласованы.",
+      "odate": "2026-05-20",
+      "osrc": [
+        {
+          "t": "Lenta.ru",
+          "u": "https://lenta.ru/news/2026/05/20/poka-net/"
+        }
+      ],
+      "en": {
+        "status": "reviewed",
+        "who": "Alexei Miller",
+        "role": "Chairman of Gazprom’s Management Board",
+        "quote": "The main, foundational document has been signed—a legally binding memorandum [on Power of Siberia 2].",
+        "head": "“There is no clear timeline yet.”",
+        "body": "On May 20, 2026, after talks between Putin and Xi Jinping, Power of Siberia 2 was absent from the Kremlin’s published list of signed documents. Asked about timing, Peskov replied: “There is no clear timeline yet. This is commercial information, after all.” Media reports said the price and supply terms had not been agreed.",
+        "meta_context": "Beijing, following the talks",
+        "qsrc": [
+          {
+            "i": 0,
+            "t": "Interfax"
+          }
+        ],
+        "osrc": [
+          {
+            "i": 0,
+            "t": "Lenta.ru"
+          }
+        ],
+        "extra_sources": {
+          "quote": [],
+          "outcome": []
+        },
+        "notes": "The heading is a shortened rendering of Peskov’s phrase; quote text preserves its qualification."
+      }
+    }
+  },
+  {
+    "reason_ru": "Собственность Ротенберга не опровергает отрицания собственности Путина и его близких.",
+    "record": {
+      "n": 30,
+      "id": "putin-2021-dvorets",
+      "cat": "politika",
+      "kind": "denial",
+      "w": 4,
+      "who": "Владимир Путин",
+      "role": "президент России",
+      "date": "2021-01-25",
+      "place": "видеоконференция со студентами",
+      "quote": "Ничего из того, что там [в фильме Навального] указано в качестве моей собственности, ни мне, ни моим близким родственникам не принадлежит и никогда не принадлежало",
+      "qsrc": [
+        {
+          "t": "Интерфакс",
+          "u": "https://www.interfax.ru/russia/746736"
+        }
+      ],
+      "head": "30 января 2021 года предприниматель Аркадий Ротенберг через пресс-службу сообщил «Интерфаксу», что является бенефициаром этого комплекса.",
+      "body": "Через пять дней после заявления Путина Аркадий Ротенберг назвал себя бенефициаром комплекса и рассказал о планах открыть там отель. Путин отрицал собственность свою и семьи, а не утверждал, что у комплекса нет владельца. Прямого противоречия нет.",
+      "odate": "2021-01-30",
+      "osrc": [
+        {
+          "t": "Интерфакс",
+          "u": "https://www.interfax.ru/russia/748622"
+        },
+        {
+          "t": "РИА Новости",
+          "u": "https://ria.ru/20210130/dvorets-1595267723.html"
+        }
+      ],
+      "en": {
+        "status": "reviewed",
+        "who": "Vladimir Putin",
+        "role": "President of Russia",
+        "quote": "Nothing identified in that film as my property belongs, or has ever belonged, to me or my close relatives.",
+        "head": "On January 30, 2021, businessman Arkady Rotenberg told Interfax through his press service that he was the complex’s beneficiary.",
+        "body": "Five days after Putin’s statement, Arkady Rotenberg identified himself as the complex’s beneficiary and said he planned to open a hotel there. Putin denied that he or his family owned it; he did not claim that the complex had no owner. The two statements are not a direct contradiction.",
+        "meta_context": "Video conference with students",
+        "qsrc": [
+          {
+            "i": 0,
+            "t": "Interfax"
+          }
+        ],
+        "osrc": [
+          {
+            "i": 0,
+            "t": "Interfax"
+          },
+          {
+            "i": 1,
+            "t": "RIA Novosti"
+          }
+        ],
+        "extra_sources": {
+          "quote": [],
+          "outcome": []
+        },
+        "notes": "“Beneficiary” is retained because the story concerns the stated beneficial interest, not necessarily legal title."
+      }
+    }
+  },
+  {
+    "reason_ru": "Смерть Навального в 2024 году не проверяет высказывание Путина об отравлении 2020 года.",
+    "record": {
+      "n": 31,
+      "id": "putin-2020-navalny",
+      "cat": "politika",
+      "kind": "denial",
+      "w": 5,
+      "who": "Владимир Путин",
+      "role": "президент",
+      "date": "2020-12-17",
+      "place": "большая пресс-конференция",
+      "quote": "Если уж хотели [убить], наверное, довели бы до конца.",
+      "qsrc": [
+        {
+          "t": "РИА Новости",
+          "u": "https://ria.ru/20201217/navalnyy-1589675501.html"
+        },
+        {
+          "t": "РБК, репортаж с пресс-конференции",
+          "u": "https://www.rbc.ru/society/17/12/2020/5fdb27fd9a7947769dd1ca70"
+        }
+      ],
+      "head": "16 февраля 2024 года Навальный умер в колонии в посёлке Харп.",
+      "body": "Управление ФСИН по Ямалу сообщило, что после прогулки осуждённый «почувствовал себя плохо, практически сразу потеряв сознание», реанимация не помогла. Причину ведомство не назвало. В карточке нет утверждений о причине смерти: только цитата и дата события.",
+      "odate": "2024-02-16",
+      "osrc": [
+        {
+          "t": "Интерфакс",
+          "u": "https://www.interfax.ru/russia/946456"
+        }
+      ],
+      "en": {
+        "status": "reviewed",
+        "who": "Vladimir Putin",
+        "role": "President",
+        "quote": "If they had wanted to [kill him], they would probably have finished the job.",
+        "head": "Navalny died in a penal colony in the settlement of Kharp on February 16, 2024.",
+        "body": "The Yamalo-Nenets prison service said that after a walk the inmate “felt unwell and almost immediately lost consciousness”; resuscitation efforts failed. The agency did not state a cause of death. This entry makes no claim about the cause of death; it records the quote and the event date.",
+        "meta_context": "Annual press conference",
+        "qsrc": [
+          {
+            "i": 0,
+            "t": "RIA Novosti"
+          },
+          {
+            "i": 1,
+            "t": "RBC, report from the press conference"
+          }
+        ],
+        "osrc": [
+          {
+            "i": 0,
+            "t": "Interfax"
+          }
+        ],
+        "extra_sources": {
+          "quote": [],
+          "outcome": []
+        },
+        "notes": "The bracketed verb supplies an omitted object; no cause of death is implied."
+      }
+    }
+  },
+  {
+    "reason_ru": "Итоговый годовой рост цен не проверяет прогноз на два–три месяца; сопоставимого исходному окну надёжного результата нет.",
+    "record": {
+      "n": 33,
+      "id": "dvorkovich-2014-tsenyi",
+      "cat": "ekonomika",
+      "kind": "forecast",
+      "w": 3,
+      "who": "Аркадий Дворкович",
+      "role": "вице-премьер",
+      "date": "2014-08-18",
+      "place": "совещание",
+      "quote": "…мы рассчитываем, что в период 2-3 месяцев не будет существенного повышения цен [на продукты].",
+      "qsrc": [
+        {
+          "t": "Российская газета",
+          "u": "https://rg.ru/2014/08/19/rost.html"
+        }
+      ],
+      "head": "За год продукты подорожали на 16,7%.",
+      "body": "По данным Росстата, продукты в 2014 году подорожали на 16,7%, общая инфляция составила 11,4%. Уже 28 октября Дворкович признал, что с осени 2013 года цены на продукты выросли более чем на 10%, и связал это со слабым рублём и продовольственным эмбарго.",
+      "odate": "2015-01-27",
+      "osrc": [
+        {
+          "t": "РБК",
+          "u": "https://www.rbc.ru/rbcfreenews/54c798a09a7947a88f2ff871"
+        },
+        {
+          "t": "РБК",
+          "u": "https://www.rbc.ru/economics/29/10/2014/5450ed26cbb20fb9bcf05f54"
+        }
+      ],
+      "en": {
+        "status": "reviewed",
+        "who": "Arkady Dvorkovich",
+        "role": "Deputy Prime Minister",
+        "quote": "…we expect there to be no significant increase in [food] prices over the next two to three months.",
+        "head": "Food prices rose 16.7% in a year",
+        "body": "According to Rosstat, food prices rose 16.7% in 2014, while overall inflation was 11.4%. On October 28, Dvorkovich had already acknowledged that food prices had risen by more than 10% since autumn 2013, attributing the increase to the weak ruble and the food embargo.",
+        "meta_context": "Meeting",
+        "qsrc": [
+          {
+            "i": 0,
+            "t": "Rossiyskaya Gazeta"
+          }
+        ],
+        "osrc": [
+          {
+            "i": 0,
+            "t": "RBC"
+          },
+          {
+            "i": 1,
+            "t": "RBC"
+          }
+        ],
+        "extra_sources": {
+          "quote": [],
+          "outcome": []
+        },
+        "notes": ""
+      }
+    }
+  },
+  {
+    "reason_ru": "Выход за верхнюю границу прогноза на 0,42 процентного пункта слишком мал для содержательной истории; редакция прогноза требует уточнения.",
+    "record": {
+      "n": 42,
+      "id": "bank-rossii-inflyatsiya",
+      "cat": "ekonomika",
+      "kind": "forecast",
+      "w": 2,
+      "who": "Банк России (совет директоров)",
+      "role": "центральный банк",
+      "date": "2023-02-10",
+      "place": "заявление по итогам заседания",
+      "quote": "В базовом сценарии с учетом проводимой денежно-кредитной политики годовая инфляция составит 5-7% в 2023 году.",
+      "qsrc": [
+        {
+          "t": "Интерфакс",
+          "u": "https://www.interfax.ru/business/885627"
+        }
+      ],
+      "head": "Инфляция за 2023 год по данным Росстата составила 7,42%.",
+      "body": "ЦБ ожидал вернуть инфляцию к 4% в 2024 году. Прогноз был превышен на 0,42 пункта от верхней границы коридора.",
+      "odate": "2024-01-12",
+      "osrc": [
+        {
+          "t": "РИА Новости",
+          "u": "https://ria.ru/20240112/inflyatsiya-1921039058.html"
+        },
+        {
+          "t": "Интерфакс",
+          "u": "https://www.interfax.ru/business/940012"
+        },
+        {
+          "t": "Банк России, «Инфляция в России», ноябрь 2025 года, таблица ИПЦ",
+          "u": "https://www.cbr.ru/Collection/Collection/File/59483/CPD_2025-11.pdf"
+        }
+      ],
+      "en": {
+        "status": "reviewed",
+        "who": "Bank of Russia (Board of Directors)",
+        "role": "central bank",
+        "quote": "In the baseline scenario, taking into account the monetary policy being pursued, annual inflation will be 5–7% in 2023.",
+        "head": "Rosstat put 2023 inflation at 7.42%",
+        "body": "The Bank of Russia expected inflation to return to 4% in 2024. The 2023 result exceeded the forecast range’s upper bound by 0.42 percentage points.",
+        "meta_context": "Statement following a Board meeting",
+        "qsrc": [
+          {
+            "i": 0,
+            "t": "Interfax"
+          }
+        ],
+        "osrc": [
+          {
+            "i": 0,
+            "t": "RIA Novosti"
+          },
+          {
+            "i": 1,
+            "t": "Interfax"
+          },
+          {
+            "i": 2,
+            "t": "Bank of Russia, “Inflation in Russia,” November 2025, CPI table"
+          }
+        ],
+        "extra_sources": {
+          "quote": [],
+          "outcome": []
+        },
+        "notes": ""
+      }
+    }
+  },
+  {
+    "reason_ru": "12 млрд долларов и 1,5 трлн рублей относятся к неодинаковым составам расходов; без нормализации сравнение вводит в заблуждение.",
+    "record": {
+      "n": 57,
+      "id": "putin-2007-sochi",
+      "cat": "infra",
+      "kind": "promise",
+      "w": 4,
+      "who": "Владимир Путин",
+      "role": "президент",
+      "date": "2007-07-05",
+      "place": "публикация «Российской газеты»",
+      "quote": "…На это [на подготовку к Олимпиаде] мы выделяем крупную сумму в 12 миллиардов долларов.",
+      "qsrc": [
+        {
+          "t": "Российская газета",
+          "u": "https://rg.ru/2007/07/05/iolimpiada2014.html"
+        }
+      ],
+      "head": "Расходы на подготовку составили 1,5 трлн рублей.",
+      "body": "По отчёту «Олимпстроя», финансирование подготовки к Играм к 2013 году составило 1,524 трлн рублей с НДС против оценки 314 млрд в 2007-м. Чиновники оспаривали сравнение «в пять раз»: первоначальная сумма была прогнозом, а состав расходов в оценках различался.",
+      "odate": "2014-07-01",
+      "osrc": [
+        {
+          "t": "Ведомости",
+          "u": "https://www.vedomosti.ru/business/articles/2014/07/01/sochi-soschitan"
+        },
+        {
+          "t": "Коммерсантъ",
+          "u": "https://www.kommersant.ru/doc/2385252"
+        }
+      ],
+      "en": {
+        "status": "reviewed",
+        "who": "Vladimir Putin",
+        "role": "President",
+        "quote": "…We are allocating a substantial sum of $12 billion for this [Olympic preparations].",
+        "head": "Preparations cost 1.5 trillion rubles",
+        "body": "According to the Olympstroy report, funding for preparations for the Games reached 1.524 trillion rubles including VAT by 2013, compared with an estimate of 314 billion in 2007. Officials disputed the “fivefold” comparison: the initial figure was a forecast, and the estimates covered different sets of expenses.",
+        "meta_context": "Russian Gazette article",
+        "qsrc": [
+          {
+            "i": 0,
+            "t": "Rossiyskaya Gazeta"
+          }
+        ],
+        "osrc": [
+          {
+            "i": 0,
+            "t": "Vedomosti"
+          },
+          {
+            "i": 1,
+            "t": "Kommersant"
+          }
+        ],
+        "extra_sources": {
+          "quote": [],
+          "outcome": []
+        },
+        "notes": "The comparison caveat is retained to avoid implying directly comparable totals."
+      }
+    }
+  },
+  {
+    "reason_ru": "Предварительная оценка числа заложников во время теракта не является обещанием, прогнозом или устойчивым публичным утверждением.",
+    "record": {
+      "n": 60,
+      "id": "dzugaev-2004-beslan",
+      "cat": "obshchestvo",
+      "kind": "denial",
+      "w": 4,
+      "who": "Лев Дзугаев",
+      "role": "начальник информационно-аналитического управления при президенте Северной Осетии",
+      "date": "2004-09-02",
+      "place": "сообщение РБК",
+      "quote": "В Беслане, по уточненным данным, захвачены в заложники 354 человека.",
+      "qsrc": [
+        {
+          "t": "РБК",
+          "u": "https://www.rbc.ru/society/02/09/2004/5703bd999a7947afa08cbc30"
+        }
+      ],
+      "head": "Число заложников уточнили до 1128.",
+      "body": "По справке РИА Новости, первоначальная цифра 354 позже была пересмотрена до 1128 человек.",
+      "odate": "2010-08-28",
+      "osrc": [
+        {
+          "t": "РИА Новости",
+          "u": "https://ria.ru/20100901/269814063.html"
+        }
+      ],
+      "en": {
+        "status": "reviewed",
+        "who": "Lev Dzugayev",
+        "role": "Head of the Information and Analysis Directorate under the President of North Ossetia",
+        "quote": "According to revised figures, 354 people have been taken hostage in Beslan.",
+        "head": "The hostage count was revised to 1,128",
+        "body": "According to an RIA Novosti backgrounder, the initial figure of 354 was later revised to 1,128 people.",
+        "meta_context": "RBC report",
+        "qsrc": [
+          {
+            "i": 0,
+            "t": "RBC"
+          }
+        ],
+        "osrc": [
+          {
+            "i": 0,
+            "t": "RIA Novosti"
+          }
+        ],
+        "extra_sources": {
+          "quote": [],
+          "outcome": []
+        },
+        "notes": ""
+      }
+    }
+  },
+  {
+    "reason_ru": "У доктринального порога нет срока; результат за 2018 год выбран произвольно и не показывает, когда цель должна была быть достигнута.",
+    "record": {
+      "n": 73,
+      "id": "medvedev-2010-doktrina-prodbezopasnosti",
+      "cat": "ekonomika",
+      "kind": "promise",
+      "w": 3,
+      "who": "Дмитрий Медведев",
+      "role": "президент России",
+      "date": "2010-01-30",
+      "place": "указ № 120 «Об утверждении Доктрины продовольственной безопасности Российской Федерации»",
+      "quote": "…соли пищевой - не менее 85 процентов.",
+      "qsrc": [
+        {
+          "t": "Текст указа № 120",
+          "u": "https://rulaws.ru/amp/president/Ukaz-Prezidenta-RF-ot-30.01.2010-N-120/"
+        }
+      ],
+      "head": "В 2018 году своей соли — 64,2%, молока — 84,2%.",
+      "body": "Доктрина задаёт пороги доли отечественных продуктов на рынке: молоко — не менее 90%, соль — не менее 85%. Срока в документе нет. По проекту национального доклада Минсельхоза о ходе госпрограммы, за 2018 год соли было своей 64,2%, молока 84,2%, картофеля 94,9% (порог 95%).",
+      "odate": "2019-04-19",
+      "osrc": [
+        {
+          "t": "РИАМО, со ссылкой на «Известия»",
+          "u": "https://riamo.ru/news/obschestvo/do-nuzhnogo-urovnya-samoobespechennosti-v-rossii-ne-dotyanuli-moloko-kartofel-i-sol-xl/"
+        }
+      ],
+      "en": {
+        "status": "reviewed",
+        "who": "Dmitry Medvedev",
+        "role": "President of Russia",
+        "quote": "…at least 85 percent for table salt.",
+        "head": "In 2018, domestic salt accounted for 64.2% and milk for 84.2%",
+        "body": "The doctrine sets domestic-market share thresholds for food: at least 90% for milk and 85% for salt. It specifies no deadline. A draft Agriculture Ministry report on the state program gave 2018 domestic shares of 64.2% for salt, 84.2% for milk, and 94.9% for potatoes (against a 95% threshold).",
+        "meta_context": "Decree No. 120, “On Approving the Food Security Doctrine of the Russian Federation”",
+        "qsrc": [
+          {
+            "i": 0,
+            "t": "Text of Decree No. 120"
+          }
+        ],
+        "osrc": [
+          {
+            "i": 0,
+            "t": "RIAMO, citing Izvestia"
+          }
+        ],
+        "extra_sources": {
+          "quote": [],
+          "outcome": []
+        },
+        "notes": ""
+      }
+    }
+  },
+  {
+    "reason_ru": "Высказывание было условным («если начнём», «теоретически»); выполнение условия не подтверждено.",
+    "record": {
+      "n": 76,
+      "id": "sokolov-2013-vsm-2018",
+      "cat": "infra",
+      "kind": "forecast",
+      "w": 3,
+      "who": "Максим Соколов",
+      "role": "министр транспорта России",
+      "date": "2013-05-27",
+      "place": "совещание у президента в Сочи, о скоростной магистрали Москва — Казань",
+      "quote": "Если мы начнем готовить проектную документацию в этом году, то теоретически мы успеем реализовать этот проект к чемпионату мира 2018 года.",
+      "qsrc": [
+        {
+          "t": "Интерфакс",
+          "u": "https://www.interfax.ru/russia/309061"
+        }
+      ],
+      "head": "В 2026 году Минтранс хочет «определиться» с проектом к 2028–2029-му.",
+      "body": "Магистраль к чемпионату мира 2018 года не построена. 15 июня 2026 года министр транспорта Андрей Никитин на встрече с Путиным сказал о высокоскоростной магистрали до Казани: «Нам хорошо бы в 2028-2029 году уже определиться, срастить финмодель и начать двигаться дальше».",
+      "odate": "2026-06-15",
+      "osrc": [
+        {
+          "t": "Интерфакс",
+          "u": "https://www.interfax.ru/business/1095987"
+        }
+      ],
+      "en": {
+        "status": "reviewed",
+        "who": "Maxim Sokolov",
+        "role": "Transport Minister of Russia",
+        "quote": "If we start preparing the project documentation this year, then, in theory, we can complete the project by the 2018 FIFA World Cup.",
+        "head": "In 2026, the Transport Ministry said it hoped to “decide” on the project by 2028–29",
+        "body": "The high-speed line was not built for the 2018 World Cup. On June 15, 2026, Transport Minister Andrey Nikitin told Putin that, for the high-speed line to Kazan, “it would be good if by 2028–2029 we had decided, put the financial model together, and started moving forward.”",
+        "meta_context": "Meeting with the president in Sochi, on the Moscow–Kazan high-speed line",
+        "qsrc": [
+          {
+            "i": 0,
+            "t": "Interfax"
+          }
+        ],
+        "osrc": [
+          {
+            "i": 0,
+            "t": "Interfax"
+          }
+        ],
+        "extra_sources": {
+          "quote": [],
+          "outcome": []
+        },
+        "notes": "The quoted 2026 statement is kept distinct from Sokolov’s 2013 pledge."
+      }
+    }
+  },
+  {
+    "reason_ru": "Найден архив выпуска передачи, но точный фрагмент цитаты по оригинальной записи не установлен; поздние перепечатки недостаточны.",
+    "record": {
+      "n": 81,
+      "id": "simonyan-2021-ukraina-za-dva-dnya",
+      "cat": "mir",
+      "kind": "forecast",
+      "w": 5,
+      "who": "Маргарита Симоньян",
+      "role": "главный редактор RT",
+      "date": "2021-04-11",
+      "place": "ток-шоу Владимира Соловьёва",
+      "quote": "В горячей войне мы Украину победим за два дня.",
+      "qsrc": [
+        {
+          "t": "РИА СВ",
+          "u": "https://riasv.ru/politics/2022/06/13/ny-i-kak-pobedili-v-seti-pokazali-chto-simonian-zaiavila-o-voine-s-ykrainoi-god-nazad/"
+        },
+        {
+          "t": "Диалог.UA",
+          "u": "https://www.dialog.ua/russia/253556_1655048780"
+        }
+      ],
+      "head": "Война идёт уже почти 1700 дней.",
+      "body": "Вторжение началось 24 февраля 2022 года. В марте 2023-го Симоньян объяснила в эфире у Соловьёва: «Украину как таковую мы победили в первые 2–3 дня, когда взяли Гостомель».",
+      "odate": "2026-10-20",
+      "osrc": [
+        {
+          "t": "Бизнес-газета",
+          "u": "https://m.business-gazeta.ru/news/586710"
+        },
+        {
+          "t": "The Insider",
+          "u": "https://theins.ru/news/266403"
+        }
+      ],
+      "en": {
+        "status": "draft",
+        "who": "Margarita Simonyan",
+        "role": "Editor-in-Chief of RT",
+        "quote": "In a hot war, we will defeat Ukraine in two days.",
+        "head": "The war has now lasted almost 1,700 days.",
+        "body": "The invasion began on February 24, 2022. In March 2023, Simonyan said on Solovyov’s show: “We defeated Ukraine as such in the first 2–3 days, when we took Hostomel.”",
+        "meta_context": "Vladimir Solovyov’s talk show",
+        "qsrc": [
+          {
+            "i": 0,
+            "t": "RIA SV"
+          },
+          {
+            "i": 1,
+            "t": "Dialog.UA"
+          }
+        ],
+        "osrc": [
+          {
+            "i": 0,
+            "t": "Business Gazeta"
+          },
+          {
+            "i": 1,
+            "t": "The Insider"
+          }
+        ],
+        "extra_sources": {
+          "quote": [],
+          "outcome": []
+        },
+        "notes": ""
+      }
+    }
+  }
+]

@@ -1,26 +1,30 @@
 {
   "id": "mutko-2017-doping-lozanna",
   "lang": "en",
-  "source_hash": "aff0362f5f2a",
+  "source_hash": "4ca3dcd4acd8",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-07.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Vitaly Mutko",
     "role": "Deputy Prime Minister for Sports, Tourism, and Youth Policy",
-    "quote": "We never had a national doping system.",
-    "head": "On December 5, 2017, the IOC suspended the Russian Olympic Committee from the Games and banned Mutko from the Olympics for life.",
-    "body": "RIA also mentions a lifetime ban for former deputy sports minister Yuri Nagornykh. In 2019, CAS overturned Mutko’s lifetime Olympic ban (RIA Sport, July 11, 2019).",
+    "quote": "We have never had a national doping system, and no one will ever produce a single fact against the state system.",
+    "head": "Investigations found involvement by state bodies.",
+    "body": "An independent WADA investigation described an institutional doping cover-up involving Sports Ministry officials and other state bodies. On 5 December 2017, the IOC suspended the Russian Olympic Committee from the PyeongChang Games. Those findings substantially diverge from the categorical denial of a system; they do not by themselves establish Mutko’s personal guilt.",
     "meta_context": "Conversation with reporters in Lausanne",
     "qsrc": [
       {
         "i": 0,
         "t": "RIA Novosti"
+      },
+      {
+        "i": 1,
+        "t": "Sport Express, quoting R-Sport"
       }
     ],
     "osrc": [
@@ -39,6 +43,10 @@
       {
         "i": 3,
         "t": "Reuters on CAS lifting Mutko’s ban, July 11, 2019"
+      },
+      {
+        "i": 4,
+        "t": "WADA, McLaren report, part 2"
       }
     ]
   },
@@ -46,5 +54,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "The institutional sanction on the Russian Olympic Committee and Mutko’s personal ban are distinct."
+  "notes": ""
 }

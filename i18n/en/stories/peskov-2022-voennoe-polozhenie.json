@@ -1,21 +1,21 @@
 {
   "id": "peskov-2022-voennoe-polozhenie",
   "lang": "en",
-  "source_hash": "8de352e51cb6",
+  "source_hash": "3a99d6880567",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-03.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Dmitry Peskov",
     "role": "Presidential Press Secretary",
     "quote": "No, imposing martial law is not in the plans.",
-    "head": "Martial law in four regions",
-    "body": "On October 19, 2022, Putin signed a decree imposing martial law in the Donetsk and Luhansk “people’s republics” and the Kherson and Zaporizhzhia regions.",
+    "head": "Martial law was later introduced in four regions.",
+    "body": "On 19 October 2022, Putin imposed martial law in Donetsk, Luhansk, Kherson and Zaporizhzhia, which Russia had by then claimed as its own. Russia had not claimed these territories when Peskov spoke in May. The comparison shows a later change in policy and its geographical scope, not evidence of a concealed decision in May.",
     "meta_context": "Response to reporters, on martial law",
     "qsrc": [
       {
