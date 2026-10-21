@@ -803,7 +803,7 @@ const bodyGlue = (t) => numGlue(t).replace(/(^|[\s(«„“])([A-Za-zА-Яа-я�
 const SAVE = { get: (k) => { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} } };
 
 let cur = 0, flipped = false, seen = SAVE.get('obesh_seen') === '1', busy = false, numAnim = 0;
-let retSt = null, retTrack = true, retTimer = 0, retIsOpen = false, retPlan = null;
+let titled = !!location.hash.slice(1), retSt = null, retTrack = true, retTimer = 0, retIsOpen = false, retPlan = null;
 
 const SHORT_RU = /^(в|во|к|ко|с|со|у|о|об|от|на|за|по|из|до|не|ни|и|а|но|да|же|бы|ли|я|ты|мы|вы|он|без|для|над|под|при|про|что|как|или|чем|там|так|то|все|всё)$/i, SHORT_EN = /^(a|an|the|to|of|in|on|at|by|is|i|or|and|as|if|it|we|my|no)$/i;
 /* телефон: короткие слова и тире не остаются висеть в конце строки */
@@ -968,7 +968,7 @@ function render(i, instant) {
   $('#tm').dataset.gap = gapDays(s); paintTime(flipped ? gapDays(s) : 0);
   langLinks(s);
   if (ROUTE === 'story') {
-    document.title = fmt(T['page.title.story'], { who: s.who, quote: s.quote.replace(/^…/, '').slice(0, 80) });
+    if (titled) document.title = fmt(T['page.title.story'], { who: s.who, quote: s.quote.replace(/^…/, '').slice(0, 80) }); /* на чистом адресе заголовок остаётся сайтовым: так его видят поисковики */
     try { history.replaceState(null, '', HOME + '#' + s.id); } catch (e) {}
   } else paintBack();
   retDwell();
@@ -997,7 +997,7 @@ function swUpd() { $('#fsw').setAttribute('aria-label', flipped ? T['sw.nextp'] 
 function landResult() { flipped = true; app.classList.add('on'); cancelAnimationFrame(numAnim); paintTime(gapDays(D[cur])); markSeen(); updTag(); swUpd(); hintUpd(); }
 function go(d, to, o) {
   o = o || {};
-  if (busy) return; if (retIsOpen) retClose(true); retTrack = true; const nx = to !== undefined ? to : (cur + d + K) % K; if (nx === cur && !o.land) return; busy = true;
+  if (busy) return; if (retIsOpen) retClose(true); retTrack = true; titled = true; const nx = to !== undefined ? to : (cur + d + K) % K; if (nx === cur && !o.land) return; busy = true;
   if (mob()) {
     /* телефон: новая история — горизонтальный сдвиг, смена темы без промежуточных анимаций */
     const dir = o.dir || (d < 0 ? -1 : 1), dist = reduce ? 0 : 30;
@@ -1080,7 +1080,7 @@ function setRoute(r, push, idx) {
   $('#tabStories').classList.toggle('on', !ab); $('#openAbout').classList.toggle('on', ab);
   if (ab) { document.title = T['page.title.about']; $('.abs', o).scrollTop = 0; paintBack(); if (fine) { curEl.style.opacity = '0'; tagEl.style.opacity = '0'; arrEl.style.opacity = '1'; } }
   if (!ab && idx != null && idx !== cur) { if (push) { try { history.pushState(null, '', HOME + '#' + D[cur].id); } catch (e) {} } setFlip(false); render(idx); }
-  else if (!ab) { const s = D[cur]; document.title = fmt(T['page.title.story'], { who: s.who, quote: s.quote.replace(/^…/, '').slice(0, 80) }); if (push) { try { history.pushState(null, '', HOME + '#' + s.id); } catch (e) {} } else { try { history.replaceState(null, '', HOME + '#' + s.id); } catch (e) {} } }
+  else if (!ab) { const s = D[cur]; if (titled || push) { document.title = fmt(T['page.title.story'], { who: s.who, quote: s.quote.replace(/^…/, '').slice(0, 80) }); } if (push) { try { history.pushState(null, '', HOME + '#' + s.id); } catch (e) {} } else { try { history.replaceState(null, '', HOME + '#' + s.id); } catch (e) {} } }
   else if (push) { try { history.pushState(null, '', ABOUT_URL); } catch (e) {} }
   langLinks(D[cur]);
   if (push && ab) { const h = $('h1', o); h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }); }
