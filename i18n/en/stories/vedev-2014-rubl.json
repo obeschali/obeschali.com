@@ -1,21 +1,21 @@
 {
   "id": "vedev-2014-rubl",
   "lang": "en",
-  "source_hash": "3485db1367eb",
+  "source_hash": "953a2cce6370",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-04.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Alexei Vedev",
     "role": "Deputy Minister of Economic Development",
     "quote": "Our estimate for the average exchange rate in 2015 is now 49 rubles to the dollar.",
-    "head": "The 2015 average was 60.96 rubles per dollar, not the forecast 49",
-    "body": "Vedev forecast an average of 49 rubles per dollar for 2015. The Bank of Russia annual report gives the actual average official rate as 60.9579 rubles. Comparing the forecast with a single day’s rate—December 30, 2015—did not test the forecast.",
+    "head": "The 2015 average was 60.96 rubles per dollar.",
+    "body": "The Bank of Russia’s annual report gives an average official rate of 60.9579 rubles per dollar for 2015, about 12 rubles above Vedev’s forecast of 49. Both figures refer to the full-year average.",
     "meta_context": "Briefing",
     "qsrc": [
       {
@@ -30,15 +30,11 @@
     "osrc": [
       {
         "i": 0,
-        "t": "Kommersant"
+        "t": "Bank of Russia Annual Report for 2015, approved April 29, 2016"
       },
       {
         "i": 1,
-        "t": "RBC"
-      },
-      {
-        "i": 2,
-        "t": "Bank of Russia Annual Report for 2015, approved April 29, 2016"
+        "t": "Bank of Russia, 2015 annual report"
       }
     ]
   },

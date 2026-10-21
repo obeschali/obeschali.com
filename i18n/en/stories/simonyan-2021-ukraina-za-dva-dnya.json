@@ -1,38 +1,36 @@
 {
   "id": "simonyan-2021-ukraina-za-dva-dnya",
   "lang": "en",
-  "source_hash": "f5b0557641c8",
-  "status": "draft",
+  "source_hash": "ae3a2a10451b",
+  "status": "reviewed",
   "provenance": {
-    "translator": "Claude (draft, ждёт ChatGPT)",
-    "imported_at": "2026-10-20",
-    "reason": "new"
+    "translator": "ChatGPT",
+    "imported_at": "2026-10-21",
+    "file": "obeschali-restore-31-81.json",
+    "reason": "restore",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Margarita Simonyan",
     "role": "Editor-in-Chief of RT",
     "quote": "In a hot war, we will defeat Ukraine in two days.",
-    "head": "The war has now lasted almost 1,700 days.",
-    "body": "The invasion began on February 24, 2022. In March 2023, Simonyan said on Solovyov’s show: “We defeated Ukraine as such in the first 2–3 days, when we took Hostomel.”",
+    "head": "The war was still ongoing 1,700 days later.",
+    "body": "Russia launched its full-scale invasion of Ukraine on February 24, 2022. By October 21, 2026, 1,700 days had passed; UN human rights monitors documented strikes and civilian casualties in September 2026. Simonyan was predicting the outcome of a possible war, not announcing an official timetable for a military operation.",
     "meta_context": "Vladimir Solovyov’s talk show",
     "qsrc": [
       {
         "i": 0,
-        "t": "RIA SV"
+        "t": "Video excerpt from the April 11, 2021 broadcast"
       },
       {
         "i": 1,
-        "t": "Dialog.UA"
+        "t": "Archive of the full Solovyov broadcast"
       }
     ],
     "osrc": [
       {
         "i": 0,
-        "t": "Business Gazeta"
-      },
-      {
-        "i": 1,
-        "t": "The Insider"
+        "t": "UN Human Rights Monitoring Mission in Ukraine, September 2026 update"
       }
     ]
   },
@@ -40,5 +38,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": ""
+  "notes": "The video clip reproduces the statement; the full-broadcast archive is supplied for context. The 1,700-day count runs from February 24, 2022, to October 21, 2026."
 }

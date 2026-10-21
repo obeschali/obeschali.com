@@ -1,21 +1,21 @@
 {
   "id": "putin-2018-konstitutsiya-nbc",
   "lang": "en",
-  "source_hash": "48c2a971ebb1",
+  "source_hash": "a5ab4855a8d2",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-02.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Vladimir Putin",
     "role": "President of Russia",
     "quote": "I think I have already told you that I have never changed the Constitution. I have no such plans today [to change the Constitution].",
-    "head": "Amendment reset the presidential term limits",
-    "body": "On March 10, 2020, Putin backed an amendment in the State Duma that would allow him to run for office again, subject to a Constitutional Court ruling. The Duma approved it by 380 votes to 43. In the nationwide vote on July 1, 2020, 77.92% voted for the amendments, with turnout at 67.97%.",
+    "head": "A constitutional amendment reset the term count.",
+    "body": "Constitutional amendments adopted in 2020 allowed Putin’s previous presidential terms to be disregarded for future candidacies. In the 2018 interview he said he had no plans to change the Constitution at that time; his position subsequently changed.",
     "meta_context": "NBC interview",
     "qsrc": [
       {
@@ -38,5 +38,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "“Reset” is the established shorthand for the amendment’s effect on prior presidential terms."
+  "notes": ""
 }

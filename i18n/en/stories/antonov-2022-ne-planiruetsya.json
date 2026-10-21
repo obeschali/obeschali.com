@@ -1,26 +1,30 @@
 {
   "id": "antonov-2022-ne-planiruetsya",
   "lang": "en",
-  "source_hash": "d990a16efc4a",
+  "source_hash": "e5e91533465e",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-01.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Anatoly Antonov",
     "role": "Russian Ambassador to the United States",
     "quote": "…there is no “Russian invasion” of Ukraine … and none is planned.",
-    "head": "A “special military operation” began.",
-    "body": "On February 24, 2022, Putin announced the start of an operation in Ukraine. According to RBC, it began during the night of February 24.",
+    "head": "Russia invaded Ukraine four days later.",
+    "body": "On February 24, 2022, Putin announced what he called a “special military operation” in Ukraine, four days after the ambassador said no invasion was planned.",
     "meta_context": "Official statement by the embassy",
     "qsrc": [
       {
         "i": 0,
         "t": "Lenta.ru"
+      },
+      {
+        "i": 1,
+        "t": "Interfax, Antonov’s full statement"
       }
     ],
     "osrc": [
@@ -38,5 +42,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "The source has two ellipses around the quoted phrase; this preserves the fragmentary wording. The term “special military operation” reflects the Russian official euphemism; editorial review advised."
+  "notes": ""
 }

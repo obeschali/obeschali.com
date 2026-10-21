@@ -1,21 +1,21 @@
 {
   "id": "miller-2016-severny-potok-2",
   "lang": "en",
-  "source_hash": "f3ec72190301",
+  "source_hash": "380c4af84e2d",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-02.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Alexei Miller",
     "role": "Chairman of Gazprom’s Management Board",
     "quote": "The two strings of Nord Stream 2 will be commissioned by the end of 2019.",
-    "head": "Built, but never started",
-    "body": "Gazprom announced that construction of Nord Stream 2 was complete in September 2021, although it had been scheduled to launch in 2019. The pipeline needed certification to operate. On February 22, 2022, Germany halted the process; the pipeline never entered service.",
+    "head": "The pipeline was completed late and never entered service.",
+    "body": "Construction of Nord Stream 2 finished in September 2021, nearly two years after the promised start of operation. Germany suspended certification on February 22, 2022. The pipeline did not enter commercial service.",
     "meta_context": "Press conference in Vienna",
     "qsrc": [
       {

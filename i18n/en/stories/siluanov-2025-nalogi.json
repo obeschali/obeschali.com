@@ -1,21 +1,21 @@
 {
   "id": "siluanov-2025-nalogi",
   "lang": "en",
-  "source_hash": "7ac8acb73e61",
+  "source_hash": "6f110c7b678d",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-02.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Anton Siluanov",
     "role": "Minister of Finance",
     "quote": "…on taxes, we discussed the issue last year [in 2024] and agreed that, as a baseline, we would leave taxes unchanged.",
-    "head": "VAT at 22%",
-    "body": "On November 28, 2025, Putin signed a law raising VAT from 20% to 22% from January 1, 2026. According to the Federal Tax Service, the increase brought 426 billion rubles to the budget in the first half of 2026.",
+    "head": "VAT rose to 22% the following year.",
+    "body": "In June 2025 Siluanov described a provisional understanding to leave taxes broadly unchanged. In November, Putin signed a law raising the main VAT rate from 20% to 22% on 1 January 2026. This was a later change in tax policy; it does not establish that a rise had already been decided in June.",
     "meta_context": "St. Petersburg International Economic Forum, Sberbank breakfast",
     "qsrc": [
       {
@@ -31,6 +31,10 @@
       {
         "i": 1,
         "t": "Vedomosti"
+      },
+      {
+        "i": 2,
+        "t": "Federal Tax Service, Law No. 425-FZ and the 2026 VAT rate"
       }
     ]
   },
@@ -38,5 +42,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "Keep “as a baseline” to reflect базово rather than an unconditional pledge."
+  "notes": ""
 }

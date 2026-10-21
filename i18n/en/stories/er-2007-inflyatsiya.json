@@ -1,21 +1,21 @@
 {
   "id": "er-2007-inflyatsiya",
   "lang": "en",
-  "source_hash": "29c0b725a143",
+  "source_hash": "c627840f608a",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-08.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "United Russia",
     "role": "political party; platform for the State Duma election",
     "quote": "…bringing inflation down to 5 percent in 2011.",
-    "head": "Prices rose 6.1% in 2011",
-    "body": "Rosstat reported official inflation of 6.1% for 2011 (December on December). The platform’s target was 5%.",
+    "head": "Inflation was 6.1% in 2011.",
+    "body": "Rosstat recorded a 6.1% increase in consumer prices from December 2010 to December 2011. The party programme’s target for 2011 was 5%. Both figures are full-year measures.",
     "meta_context": "Eighth United Russia congress, election platform",
     "qsrc": [
       {

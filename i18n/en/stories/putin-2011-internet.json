@@ -1,21 +1,21 @@
 {
   "id": "putin-2011-internet",
   "lang": "en",
-  "source_hash": "7e39afbf7c9b",
+  "source_hash": "c0a556f1d7c7",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-03.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Vladimir Putin",
     "role": "Prime Minister",
     "quote": "We are not going to cut anything [on the internet].",
-    "head": "Register of banned websites",
-    "body": "On July 28, 2012, a law establishing a register of websites containing prohibited information was adopted; it took effect on November 1. Roskomnadzor gained a mechanism to restrict access after notice and an opportunity to remove the material. The law prompted protests against censorship.",
+    "head": "A register for restricting access to websites was introduced.",
+    "body": "A law creating a register of online resources with prohibited information was adopted in July 2012 and took effect that November. It established a procedure for restricting access to listed sites. The measure is a concrete form of filtering, although Putin’s remark did not define which kinds of regulation he ruled out.",
     "meta_context": "Response to State Duma deputies",
     "qsrc": [
       {
@@ -42,5 +42,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "“Cut anything” preserves the colloquial wording; the original is an informal verb meaning to trim/censor."
+  "notes": ""
 }

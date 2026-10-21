@@ -1,21 +1,21 @@
 {
   "id": "putin-2012-nalogi",
   "lang": "en",
-  "source_hash": "61ea0ec0c35e",
+  "source_hash": "d579567ed69d",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-02.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Vladimir Putin",
     "role": "Presidential candidate",
     "quote": "We will not increase the tax burden on non-resource sectors.",
-    "head": "Corporate profit tax: 25%; VAT: 22%",
-    "body": "On July 12, 2024, Putin signed a law introducing progressive personal income tax rates from January 1, 2025 (15%, 18%, 20% and 22% on annual income above 2.4 million rubles) and raising the corporate profit tax from 20% to 25%. On November 28, 2025, he signed a law raising VAT to 22% from 2026.",
+    "head": "Corporate income tax rose to 25%; VAT to 22%.",
+    "body": "The corporate income-tax rate rose from 20% to 25% in 2025, and the standard VAT rate from 20% to 22% in 2026. Both taxes also affect non-resource industries. These changes came many years after the article, so the comparison concerns a long-term policy pledge, not an immediate reversal.",
     "meta_context": "Article “Our Economic Objectives”",
     "qsrc": [
       {
@@ -38,5 +38,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "The Russian phrase “non-resource sectors” refers to sectors outside the extractive industries."
+  "notes": ""
 }

@@ -1,30 +1,30 @@
 {
   "id": "putin-2020-navalny",
   "lang": "en",
-  "source_hash": "24fbe10eeedd",
+  "source_hash": "2b2fb786323a",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-03.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-restore-31-81.json",
+    "reason": "restore",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Vladimir Putin",
     "role": "President",
-    "quote": "If they had wanted to [kill him], they would probably have finished the job.",
-    "head": "Navalny died in a penal colony in the settlement of Kharp on February 16, 2024.",
-    "body": "The Yamalo-Nenets prison service said that after a walk the inmate “felt unwell and almost immediately lost consciousness”; resuscitation efforts failed. The agency did not state a cause of death. This entry makes no claim about the cause of death; it records the quote and the event date.",
+    "quote": "If they had wanted to, they would probably have seen it through.",
+    "head": "Navalny died in a penal colony in February 2024.",
+    "body": "Putin was addressing allegations that Russian security services were involved in Navalny’s 2020 poisoning. Navalny’s death in custody on February 16, 2024 was a later event in his life; it does not establish who carried out the poisoning or what Putin intended by his remark.",
     "meta_context": "Annual press conference",
     "qsrc": [
       {
         "i": 0,
-        "t": "RIA Novosti"
+        "t": "Kommersant, report from the press conference"
       },
       {
         "i": 1,
-        "t": "RBC, report from the press conference"
+        "t": "Current Time, report from the press conference"
       }
     ],
     "osrc": [
@@ -38,5 +38,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "The bracketed verb supplies an omitted object; no cause of death is implied."
+  "notes": "The Russian quote is a continuous verbatim fragment. The later death is not evidence about the 2020 poisoning."
 }

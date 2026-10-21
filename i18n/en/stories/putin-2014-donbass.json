@@ -1,21 +1,21 @@
 {
   "id": "putin-2014-donbass",
   "lang": "en",
-  "source_hash": "5f880e937b40",
+  "source_hash": "9fd1ce8cf13d",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-02.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Vladimir Putin",
     "role": "President of Russia",
     "quote": "There are no military forces, no Russian instructors in southeastern Ukraine.",
-    "head": "“People handling military matters”",
-    "body": "At his annual press conference on December 17, 2015, Putin said: “We have never said that there are no people there who are involved in resolving certain matters in the military sphere.” The Kremlin clarified the meaning of his words the next day.",
+    "head": "Putin later acknowledged people handling military matters.",
+    "body": "On December 17, 2015, Putin said there were people in Donbas dealing with “certain matters in the military sphere.” He did not specify their number or status, but the remark qualified his earlier categorical denial of Russian military personnel or instructors there.",
     "meta_context": "Interview with TF1 and Europe 1 in Sochi",
     "qsrc": [
       {
@@ -38,5 +38,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "The later quote is a fragment; wording is kept close to the Russian."
+  "notes": ""
 }

@@ -1,21 +1,21 @@
 {
   "id": "press-sluzhb-telegram",
   "lang": "en",
-  "source_hash": "9347df3de983",
+  "source_hash": "5300376cfe1e",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-06.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Roskomnadzor press service",
     "role": "Federal Service for Supervision of Communications",
     "quote": "We confirm that at present there is no need to restrict Telegram’s operation in Russia.",
-    "head": "Telegram calls were restricted; 22 months later, all traffic was slowed",
-    "body": "In August 2025, Roskomnadzor restricted calls on Telegram and WhatsApp, citing fraud. In February 2026, RBC reported, citing government agencies, that Telegram was being slowed. The original statement concerned the need for restrictions at that time, not the future.",
+    "head": "Calls were later restricted and Telegram was slowed.",
+    "body": "In March 2024 the regulator said restricting Telegram was unnecessary “at present”. It restricted calls in the app in August 2025 and announced further restrictions in February 2026. This was a later policy change, not evidence that restrictions were considered necessary in March 2024.",
     "meta_context": "Response to TASS",
     "qsrc": [
       {
@@ -31,6 +31,14 @@
       {
         "i": 1,
         "t": "RIA Novosti"
+      },
+      {
+        "i": 2,
+        "t": "Interfax, call restrictions"
+      },
+      {
+        "i": 3,
+        "t": "Interfax, regulator statement in February 2026"
       }
     ]
   },
@@ -38,5 +46,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "“At present” is essential to the scope of the denial."
+  "notes": ""
 }

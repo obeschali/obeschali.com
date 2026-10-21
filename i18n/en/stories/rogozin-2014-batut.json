@@ -1,21 +1,21 @@
 {
   "id": "rogozin-2014-batut",
   "lang": "en",
-  "source_hash": "5a6f419061b9",
+  "source_hash": "e28f1e385f17",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-01.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Dmitry Rogozin",
     "role": "Deputy Prime Minister",
     "quote": "Having analyzed the sanctions against our space industry, I suggest that the United States use a trampoline to get its astronauts to the ISS.",
-    "head": "“The trampoline is working.”",
-    "body": "On May 30, 2020, a Falcon 9 rocket carrying the Crew Dragon spacecraft launched from Cape Canaveral. It was the first crewed flight from US soil aboard an American spacecraft in nine years. At a press conference, Elon Musk recalled Rogozin’s joke and said: “The trampoline is working.”",
+    "head": "An American spacecraft carried astronauts to the ISS.",
+    "body": "On May 30, 2020, Crew Dragon launched from Florida with two astronauts. It was the first crewed launch from US soil on an American spacecraft in nine years. Musk later answered Rogozin’s joke by saying that the “trampoline is working.”",
     "meta_context": "Twitter",
     "qsrc": [
       {
@@ -31,6 +31,10 @@
       {
         "i": 0,
         "t": "TASS"
+      },
+      {
+        "i": 1,
+        "t": "NASA, Crew Dragon Demo-2 launch"
       }
     ]
   },
@@ -38,5 +42,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "“Space industry” is a concise rendering of космопром; review the quote against Rogozin’s original post if a verbatim English quotation is required."
+  "notes": ""
 }

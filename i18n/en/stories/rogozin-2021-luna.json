@@ -1,21 +1,21 @@
 {
   "id": "rogozin-2021-luna",
   "lang": "en",
-  "source_hash": "54b2a4d84d43",
+  "source_hash": "7a90ae0dda2a",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-05.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Dmitry Rogozin",
     "role": "Director General of Roscosmos",
     "quote": "Luna 25, the first lunar lander, will launch from Vostochny in October [2021].",
-    "head": "The launch slipped by 22 months; the landing failed",
-    "body": "Luna 25 launched on August 11, 2023. Contact was lost on August 19, and on August 20 Roscosmos said the spacecraft had crashed into the Moon after entering an off-design orbit. The mission launched later than promised and did not achieve a landing.",
+    "head": "Luna 25 launched late and crashed.",
+    "body": "Luna 25 launched on August 11, 2023, roughly 22 months after the promised October 2021 date. On August 20, Roscosmos said it had collided with the Moon after entering an unintended orbit. The delayed launch and failed landing are separate outcomes.",
     "meta_context": "Briefing to Putin",
     "qsrc": [
       {
@@ -27,6 +27,10 @@
       {
         "i": 0,
         "t": "Lenta.ru"
+      },
+      {
+        "i": 1,
+        "t": "Roscosmos, preliminary Luna 25 accident findings"
       }
     ]
   },

@@ -1,32 +1,40 @@
 {
   "id": "putin-2005-konstitutsiya",
   "lang": "en",
-  "source_hash": "6de72025d6ec",
+  "source_hash": "17f7f145a249",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-01.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Vladimir Putin",
     "role": "President of Russia",
-    "quote": "Therefore, under no circumstances do I intend to change the Constitution.",
-    "head": "The presidential term was extended to six years.",
-    "body": "On December 30, 2008, a law was signed changing the terms of office: six years for the president and five for the State Duma. Previously, both terms were four years. The law applies to those elected after it entered into force.",
+    "quote": "…under no circumstances do I intend to change the Constitution.",
+    "head": "Putin signed constitutional amendments in 2020.",
+    "body": "As president, Putin signed a constitutional amendment law on March 14, 2020. After the nationwide vote, he signed a decree publishing the revised Constitution; the changes took effect on July 4. One provision allowed him to seek office again without counting his earlier presidential terms. This directly tests his stated personal intention not to change the Constitution.",
     "meta_context": "Fox News interview",
     "qsrc": [
       {
         "i": 0,
         "t": "RIA Novosti"
+      },
+      {
+        "i": 1,
+        "t": "RBC, Fox News interview transcript"
       }
     ],
     "osrc": [
       {
         "i": 0,
-        "t": "Rossiyskaya Gazeta"
+        "t": "Constitutional amendment law of March 14, 2020"
+      },
+      {
+        "i": 1,
+        "t": "Putin’s decree publishing the amended Constitution"
       }
     ]
   },

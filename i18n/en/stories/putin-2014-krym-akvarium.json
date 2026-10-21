@@ -1,21 +1,21 @@
 {
   "id": "putin-2014-krym-akvarium",
   "lang": "en",
-  "source_hash": "51b0109f9606",
+  "source_hash": "ac7f2f879891",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-03.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Vladimir Putin",
     "role": "President",
     "quote": "Russia never planned any annexations or any military action in Crimea. Never.",
-    "head": "Putin said he had ordered the security services to begin “work on returning Crimea”",
-    "body": "On March 8, 2015, Putin said he had ordered “work on returning Crimea” after a meeting on February 22–23, 2014. During the Direct Line on April 17, he denied plans to annex Crimea, but by then had acknowledged that Russian forces had blocked Ukrainian units.",
+    "head": "Putin later described an earlier order to “return Crimea.”",
+    "body": "In an interview broadcast in March 2015, Putin said that after a meeting on the night of February 22–23, 2014, he ordered work to begin on “returning Crimea.” That places preparations for the Russian operation before his April claim that annexation or military action had never been planned.",
     "meta_context": "Direct Line",
     "qsrc": [
       {
@@ -42,5 +42,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "“Annexation” follows the source wording; legal and political terminology should be reviewed in context."
+  "notes": ""
 }

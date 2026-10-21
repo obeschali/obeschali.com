@@ -1,21 +1,21 @@
 {
   "id": "sienko-2015-armata",
   "lang": "en",
-  "source_hash": "98ca366bd746",
+  "source_hash": "42709b747cf0",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-05.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Oleg Sienko",
     "role": "CEO of Uralvagonzavod",
-    "quote": "…2,300 units [of equipment on the Armata platform] by 2020.",
-    "head": "Deputy prime minister: “Why flood the army with Armatas?”",
-    "body": "In July 2018, Deputy Prime Minister Borisov called the Armata expensive and asked why the army should be equipped with it in large numbers when upgraded T-72s were sufficient. In March 2024, Rostec head Chemezov also called the tank expensive and said the military was unlikely to use it.",
+    "quote": "The armaments programme, among others, approved 2,300 units by 2020.",
+    "head": "Series deliveries of the Armata tank slipped to 2021.",
+    "body": "In 2015 the head of Uralvagonzavod spoke of 2,300 vehicles on the Armata platform by 2020, while acknowledging in the same interview that deliveries might slip toward 2025. In 2020, Rostec said series deliveries of the T-14 tank would begin only in 2021. This points to a missed original deadline; the source does not establish the exact number built on the entire platform.",
     "meta_context": "Interview with Echo of Moscow",
     "qsrc": [
       {
@@ -31,6 +31,10 @@
       {
         "i": 1,
         "t": "Lenta.ru"
+      },
+      {
+        "i": 2,
+        "t": "Rostec, on series deliveries starting in 2021"
       }
     ]
   },
@@ -38,5 +42,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "The object and platform are editorial clarifications in brackets."
+  "notes": ""
 }

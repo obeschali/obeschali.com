@@ -1,21 +1,21 @@
 {
   "id": "slyusar-2019-su57",
   "lang": "en",
-  "source_hash": "d7f8772bc0bb",
+  "source_hash": "fbe7058dab3a",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-06.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Yury Slyusar",
     "role": "President of the United Aircraft Corporation",
     "quote": "The first production Su-57 aircraft will be delivered to the Aerospace Forces this year.",
-    "head": "The date slipped: in August 2020, Deputy Prime Minister Borisov promised the first production fighter “by the end of the year.”",
-    "body": "Interfax reported that the aircraft crashed during a test flight on the eve of its handover, pushing the date from the end of 2019. Whether the aircraft was delivered by the end of 2020 has not been checked for this entry.",
+    "head": "The first production Su-57 was delivered in 2020.",
+    "body": "United Aircraft Corporation says the first Su-57 from the initial production batch was delivered to the Defence Ministry in 2020. An aircraft intended for delivery at the end of 2019 crashed during a test flight. Delivery therefore followed the promised year.",
     "meta_context": "RIA Novosti interview",
     "qsrc": [
       {
@@ -27,6 +27,10 @@
       {
         "i": 0,
         "t": "Interfax"
+      },
+      {
+        "i": 1,
+        "t": "United Aircraft Corporation, first Su-57 delivery"
       }
     ]
   },
@@ -34,5 +38,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "The Russian source explicitly says the 2020 handover was not checked; retain that limitation."
+  "notes": ""
 }

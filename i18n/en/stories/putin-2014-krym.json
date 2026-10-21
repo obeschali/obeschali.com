@@ -1,21 +1,21 @@
 {
   "id": "putin-2014-krym",
   "lang": "en",
-  "source_hash": "8debcbe8fde3",
+  "source_hash": "c222eb034cf0",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-03.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Vladimir Putin",
     "role": "President",
     "quote": "No, [Crimea’s accession] is not under consideration.",
-    "head": "Treaty signed to incorporate Crimea into Russia",
-    "body": "On March 17, 2014, Putin signed a decree recognizing Crimea as an independent state; on March 18, he ordered the signing of a treaty to incorporate the Republic of Crimea into Russia and create new federal entities. The referendum in Crimea took place on March 16.",
+    "head": "A treaty to annex Crimea was signed two weeks later.",
+    "body": "On March 18, 2014, Putin signed a treaty purporting to incorporate Crimea into Russia. At his March 4 press conference he had said annexation was not under consideration; the subsequent decision marked a rapid change in the stated position.",
     "meta_context": "Meeting with journalists",
     "qsrc": [
       {
@@ -31,6 +31,10 @@
       {
         "i": 0,
         "t": "Lenta.ru"
+      },
+      {
+        "i": 1,
+        "t": "Federal Treasury, treaty signed March 18, 2014"
       }
     ]
   },
@@ -38,5 +42,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "“Accession” renders присоединение without adopting a legal characterization."
+  "notes": ""
 }
