@@ -1,0 +1,124 @@
+[
+  {
+    "n": 31,
+    "id": "putin-2020-navalny",
+    "cat": "politika",
+    "kind": "denial",
+    "w": 5,
+    "who": "Владимир Путин",
+    "role": "президент",
+    "date": "2020-12-17",
+    "place": "большая пресс-конференция",
+    "quote": "Если бы уж хотели, наверное, довели бы до конца.",
+    "qsrc": [
+      {
+        "t": "Коммерсантъ, репортаж с пресс-конференции",
+        "u": "https://www.kommersant.ru/doc/4617318"
+      },
+      {
+        "t": "Настоящее Время, репортаж с пресс-конференции",
+        "u": "https://www.currenttime.tv/a/putin-about-navalny-shamalov/31005518.html"
+      }
+    ],
+    "head": "В феврале 2024 года Навальный умер в колонии.",
+    "body": "Путин говорил о возможной причастности российских спецслужб к отравлению Навального в 2020 году. Смерть Навального в заключении 16 февраля 2024 года — последующее событие в его судьбе, а не доказательство того, кто организовал отравление или что имел в виду Путин.",
+    "odate": "2024-02-16",
+    "osrc": [
+      {
+        "t": "Интерфакс",
+        "u": "https://www.interfax.ru/russia/946456"
+      }
+    ],
+    "en": {
+      "status": "reviewed",
+      "who": "Vladimir Putin",
+      "role": "President",
+      "quote": "If they had wanted to, they would probably have seen it through.",
+      "head": "Navalny died in a penal colony in February 2024.",
+      "body": "Putin was addressing allegations that Russian security services were involved in Navalny’s 2020 poisoning. Navalny’s death in custody on February 16, 2024 was a later event in his life; it does not establish who carried out the poisoning or what Putin intended by his remark.",
+      "meta_context": "Annual press conference",
+      "qsrc": [
+        {
+          "i": 0,
+          "t": "Kommersant, report from the press conference"
+        },
+        {
+          "i": 1,
+          "t": "Current Time, report from the press conference"
+        }
+      ],
+      "osrc": [
+        {
+          "i": 0,
+          "t": "Interfax"
+        }
+      ],
+      "extra_sources": {
+        "quote": [],
+        "outcome": []
+      },
+      "notes": "The Russian quote is a continuous verbatim fragment. The later death is not evidence about the 2020 poisoning."
+    }
+  },
+  {
+    "n": 81,
+    "id": "simonyan-2021-ukraina-za-dva-dnya",
+    "cat": "mir",
+    "kind": "forecast",
+    "w": 5,
+    "who": "Маргарита Симоньян",
+    "role": "главный редактор RT",
+    "date": "2021-04-11",
+    "place": "ток-шоу Владимира Соловьёва",
+    "quote": "В горячей войне мы Украину победим за два дня.",
+    "qsrc": [
+      {
+        "t": "Видеофрагмент эфира от 11.04.2021",
+        "u": "https://www.youtube.com/watch?v=UVpnnVrpG60"
+      },
+      {
+        "t": "Архив полного выпуска «Вечера с Владимиром Соловьёвым»",
+        "u": "https://soloviev.show/video/vecher-s-vladimirom-solovevym-efir-ot-11-04-2021"
+      }
+    ],
+    "head": "Война продолжалась и спустя 1700 дней.",
+    "body": "Россия начала полномасштабное вторжение в Украину 24 февраля 2022 года. К 21 октября 2026 года прошло 1700 дней; мониторинговая миссия ООН зафиксировала удары и жертвы среди гражданских в сентябре 2026-го. Симоньян предсказывала исход возможной войны, а не объявляла официальный срок военной операции.",
+    "odate": "2026-10-21",
+    "osrc": [
+      {
+        "t": "Мониторинговая миссия ООН по правам человека в Украине, отчёт за сентябрь 2026 года",
+        "u": "https://ukraine.ohchr.org/en/Protection-of-Civilians-in-Armed-Conflict-September-2026"
+      }
+    ],
+    "en": {
+      "status": "reviewed",
+      "who": "Margarita Simonyan",
+      "role": "Editor-in-Chief of RT",
+      "quote": "In a hot war, we will defeat Ukraine in two days.",
+      "head": "The war was still ongoing 1,700 days later.",
+      "body": "Russia launched its full-scale invasion of Ukraine on February 24, 2022. By October 21, 2026, 1,700 days had passed; UN human rights monitors documented strikes and civilian casualties in September 2026. Simonyan was predicting the outcome of a possible war, not announcing an official timetable for a military operation.",
+      "meta_context": "Vladimir Solovyov’s talk show",
+      "qsrc": [
+        {
+          "i": 0,
+          "t": "Video excerpt from the April 11, 2021 broadcast"
+        },
+        {
+          "i": 1,
+          "t": "Archive of the full Solovyov broadcast"
+        }
+      ],
+      "osrc": [
+        {
+          "i": 0,
+          "t": "UN Human Rights Monitoring Mission in Ukraine, September 2026 update"
+        }
+      ],
+      "extra_sources": {
+        "quote": [],
+        "outcome": []
+      },
+      "notes": "The video clip reproduces the statement; the full-broadcast archive is supplied for context. The 1,700-day count runs from February 24, 2022, to October 21, 2026."
+    }
+  }
+]
