@@ -1,21 +1,21 @@
 {
   "id": "peskov-2024-youtube",
   "lang": "en",
-  "source_hash": "298f7b43a3c0",
+  "source_hash": "061c6b81a843",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-06.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Dmitry Peskov",
     "role": "Presidential Press Secretary",
-    "quote": "No, there were no such plans [to block YouTube].",
-    "head": "Slowdown announced; eight months later Roskomnadzor said the service was unavailable",
-    "body": "In July 2024, Khinshtein said a decision had been made to slow YouTube; Roskomnadzor said it had concerns about the service. Peskov attributed outages to Google equipment. On March 1, 2025, Roskomnadzor said YouTube was unavailable in Russia. Slowing a service is not the same as blocking it.",
+    "quote": "No, there were no such plans.",
+    "head": "YouTube became effectively unavailable in Russia.",
+    "body": "Peskov said there were no plans to restrict access to YouTube. Two weeks later, lawmaker Alexander Khinshtein announced measures to slow the service; on 1 March 2025 the communications regulator said YouTube was unavailable in Russia. This documents a substantial restriction in practice, without establishing that a formal blocking plan existed in July 2024.",
     "meta_context": "Response to reporters",
     "qsrc": [
       {
@@ -25,6 +25,10 @@
       {
         "i": 1,
         "t": "Kommersant"
+      },
+      {
+        "i": 2,
+        "t": "Interfax, Peskov’s answer"
       }
     ],
     "osrc": [
@@ -42,5 +46,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "Transliterate Хинштейн as Khinshtein? Correct English transliteration is Khinshtein/Khinshtein; editorial check name romanization."
+  "notes": ""
 }

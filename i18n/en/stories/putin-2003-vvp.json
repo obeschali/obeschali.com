@@ -1,32 +1,44 @@
 {
   "id": "putin-2003-vvp",
   "lang": "en",
-  "source_hash": "ed4b891562a9",
+  "source_hash": "cb485dc589aa",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-05.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Vladimir Putin",
     "role": "President of Russia",
-    "quote": "“Over the next decade, we must at least double the country’s GDP.”",
-    "head": "The target was missed by the 2013 deadline; in 2015 Peskov called it “effectively achieved,” citing Kudrin’s estimate of roughly 94% growth in 2000–2014.",
-    "body": "In March 2015, Peskov said the GDP-doubling target had effectively been achieved. Kudrin said the country had come close over 15 years, after growth in 2000–2007. The result depends on the baseline: those estimates start in 2000, while the pledge was made in 2003.",
+    "quote": "Over the course of a decade, we must at least double the country’s gross domestic product.",
+    "head": "Real GDP rose by roughly half over the following decade.",
+    "body": "The World Bank’s constant-price series puts Russian GDP at about $921 billion in 2003 and $1.38 trillion in 2013: roughly 50% growth, rather than 100%. Later claims that it had “almost doubled” used 2000 as the starting year and a longer period; they do not test the decade starting in 2003.",
     "meta_context": "Address to the Federal Assembly",
     "qsrc": [
       {
         "i": 0,
         "t": "RIA Novosti"
+      },
+      {
+        "i": 1,
+        "t": "Full text of the 2003 presidential address, Garant"
       }
     ],
     "osrc": [
       {
         "i": 0,
         "t": "TASS"
+      },
+      {
+        "i": 1,
+        "t": "World Bank, Russia real GDP"
+      },
+      {
+        "i": 2,
+        "t": "Statizoid, annual real GDP series"
       }
     ]
   },
@@ -34,5 +46,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "Distinguish the original ten-year deadline from later claims using a 2000 baseline."
+  "notes": ""
 }

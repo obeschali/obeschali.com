@@ -1,21 +1,21 @@
 {
   "id": "peskov-2022-vtorzhenie",
   "lang": "en",
-  "source_hash": "cebc96d25064",
+  "source_hash": "2c3e35ebde84",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-05.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Dmitry Peskov",
     "role": "Presidential Press Secretary",
     "quote": "…[Russia is] the last country in Europe that wants to talk about, or even utter, the word “war.”",
-    "head": "Russia began its military operation in Ukraine on February 24, 2022",
-    "body": "Five days earlier, on February 15, Peskov called reports of an “attack” “manic informational madness” (RIA Novosti). On February 24, he said Russian forces were conducting a “special operation, not a war” (Interfax).",
+    "head": "Russia invaded Ukraine four days later.",
+    "body": "Russian forces invaded Ukraine on 24 February 2022. Peskov’s remark about not wanting even to say the word “war” was not a specific pledge to avoid force. The contrast is between official rhetoric and state action four days later.",
     "meta_context": "Russia 1 broadcast",
     "qsrc": [
       {
@@ -38,5 +38,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "The ellipsis and bracket retain the excerpted construction."
+  "notes": ""
 }

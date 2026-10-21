@@ -1,26 +1,30 @@
 {
   "id": "siluanov-2016-pensii",
   "lang": "en",
-  "source_hash": "da0e2d8488e3",
+  "source_hash": "c041907b723f",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-04.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Anton Siluanov",
     "role": "Minister of Finance",
-    "quote": "These scenarios were neither considered nor worked through.",
-    "head": "On June 14, 2018, the government announced a higher retirement age from 2019 and a VAT increase from 18% to 20%.",
-    "body": "Medvedev proposed raising the retirement age to 65 for men by 2028 and 63 for women by 2034. The VAT increase was to take effect on January 1, 2019; Siluanov estimated the additional revenue at more than 600 billion rubles a year. The bill raising VAT passed its third reading on July 24, 2018.",
+    "quote": "When preparing the three-year budget, these scenarios were not taken into account or examined.",
+    "head": "Pension reform was proposed within the same budget period.",
+    "body": "“These scenarios” referred to raising the retirement age in the preparation of the 2017–2019 budget. In June 2018 the government proposed an increase starting in 2019. The later proposal does not show that the scenario was studied in 2016; it shows a policy shift within the period then under discussion.",
     "meta_context": "Budget discussion",
     "qsrc": [
       {
         "i": 0,
         "t": "Lenta.ru"
+      },
+      {
+        "i": 1,
+        "t": "Novaya Gazeta, citing RNS"
       }
     ],
     "osrc": [
@@ -42,5 +46,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "The quote is context-poor in isolation; review its antecedent in the cited source."
+  "notes": ""
 }

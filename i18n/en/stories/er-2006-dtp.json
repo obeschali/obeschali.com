@@ -1,21 +1,21 @@
 {
   "id": "er-2006-dtp",
   "lang": "en",
-  "source_hash": "3b8387e334ba",
+  "source_hash": "49d7de0ef629",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-08.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "United Russia",
     "role": "political party",
     "quote": "…reduce the number of people killed or injured in road crashes to two-thirds of the 2004 level by 2012.",
-    "head": "By 2012, road deaths had fallen by about one-fifth",
-    "body": "More than 34,000 people died on Russian roads in 2004, compared with 27,991 in 2012. That was a decrease of about 18%, not one-third.",
+    "head": "Road deaths fell by less than the targeted one-third.",
+    "body": "More than 34,000 people died on Russian roads in 2004, compared with 27,991 in 2012, a fall of about 18%. A reduction by a factor of 1.5 would be about one-third. This card tests only the deaths component; it does not provide a comparable injury series.",
     "meta_context": "Program statement “The Russia We Choose”",
     "qsrc": [
       {
@@ -38,5 +38,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "English wording clarifies the intended 1.5-fold reduction (to two-thirds of the baseline), avoiding the ambiguous phrase “1.5 times fewer.”"
+  "notes": ""
 }

@@ -1,21 +1,21 @@
 {
   "id": "rogozin-2014-vostochny",
   "lang": "en",
-  "source_hash": "e2405cf7c7f4",
+  "source_hash": "a0ce7beb5a4e",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-02.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Dmitry Rogozin",
     "role": "Deputy Prime Minister",
     "quote": "2018 will see the first crewed launch [from Vostochny].",
-    "head": "The target moved to 2025 or later",
-    "body": "In August 2015, Izvestia reported that the first crewed launch from Vostochny had been postponed to no earlier than 2025; Roscosmos replied that the decree setting 2018 had not been revoked. The first uncrewed launch, scheduled for December 2015, took place on April 28, 2016.",
+    "head": "No crewed launch took place from Vostochny in 2018.",
+    "body": "Vostochny hosted its first uncrewed launch in April 2016. The crewed launch forecast for 2018 did not take place by that deadline. Later plans shifted; a new target date is not evidence that a launch occurred.",
     "meta_context": "Cosmonaut Training Center, Star City",
     "qsrc": [
       {
@@ -31,6 +31,10 @@
       {
         "i": 1,
         "t": "Kommersant"
+      },
+      {
+        "i": 2,
+        "t": "Roscosmos, Vostochny first launch and revised crewed-launch plan"
       }
     ]
   },

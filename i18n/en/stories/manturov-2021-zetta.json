@@ -1,21 +1,21 @@
 {
   "id": "manturov-2021-zetta",
   "lang": "en",
-  "source_hash": "585557d4b0d9",
+  "source_hash": "679a5d226a9b",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-06.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Denis Manturov",
     "role": "Minister of Industry and Trade",
     "quote": "[Serial production of the Zetta electric car] will begin by the end of the year. It will all depend on completion of development work.",
-    "head": "On December 30, 2021, Manturov gave a different timeline: “the first mass-produced electric car will appear in Russia in the next year or two.”",
-    "body": "Manturov had expected Zetta production in 2021. In March 2025, Interfax reported that Russia’s overall electric-car production plan for 2024 had been met by roughly a quarter. Those are industry-wide figures, not figures for Zetta; the fate of this specific project is not confirmed here.",
+    "head": "Zetta did not enter series production in the stated year.",
+    "body": "Manturov expected series production of the Zetta by the end of 2021, subject to completion of development work. By year-end he spoke instead of a first Russian series-produced EV in “the next year or two”. Zetta representatives said in 2024 that the project was still alive, but series production had not begun. The development condition matters to the comparison.",
     "meta_context": "Response to reporters",
     "qsrc": [
       {
@@ -31,6 +31,10 @@
       {
         "i": 1,
         "t": "Interfax"
+      },
+      {
+        "i": 2,
+        "t": "Motor.ru, Zetta representatives"
       }
     ]
   },
@@ -38,5 +42,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "The outcome does not claim the industry-wide figure is evidence about Zetta."
+  "notes": ""
 }

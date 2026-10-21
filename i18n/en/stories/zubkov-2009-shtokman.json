@@ -1,21 +1,21 @@
 {
   "id": "zubkov-2009-shtokman",
   "lang": "en",
-  "source_hash": "7ffd103f075a",
+  "source_hash": "7c3bf8c3ddbd",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-06.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Viktor Zubkov",
     "role": "First Deputy Prime Minister and Chairman of Gazprom’s Board of Directors",
     "quote": "The [Shtokman field] project is being pushed back somewhat, but it will nevertheless go ahead.",
-    "head": "Gazprom froze the project in August 2012",
-    "body": "Gazprom board member Vsevolod Cherepanov said the costs were “too high.” The investment decision was deferred indefinitely; Vedomosti noted that production had originally been expected to start in 2013.",
+    "head": "Development of the field was put on hold.",
+    "body": "In August 2012, Gazprom postponed the Shtokman investment decision indefinitely, citing high costs. As late as April 2026, the Murmansk governor was proposing that development resume. The project should not be described as permanently cancelled, but the promised development had still not taken place.",
     "meta_context": "Lenta.ru review",
     "qsrc": [
       {
@@ -35,6 +35,10 @@
       {
         "i": 2,
         "t": "Delovoy Peterburg, report on the project suspension"
+      },
+      {
+        "i": 3,
+        "t": "Kommersant, proposal to resume project in 2026"
       }
     ]
   },

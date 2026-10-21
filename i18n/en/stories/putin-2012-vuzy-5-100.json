@@ -1,32 +1,40 @@
 {
   "id": "putin-2012-vuzy-5-100",
   "lang": "en",
-  "source_hash": "8b97d0036475",
+  "source_hash": "6d79d688a12e",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-07.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Vladimir Putin",
     "role": "President of Russia",
     "quote": "…ensure that by 2020 at least five Russian universities enter the world’s top 100.",
-    "head": "By the end of 2020, none of the 21 universities in the 5-100 program had made the list",
-    "body": "Twenty-one universities took part, with spending estimated at 80 billion rubles. By the end of 2020, none of the participants had entered the top 100 of the QS, THE, or ARWU rankings. Moscow State University made the top 100 but was not in the program. The Accounts Chamber judged the target unmet; the Education Ministry disputed that assessment.",
+    "head": "One Russian university, rather than five, made an overall top 100.",
+    "body": "Moscow State University ranked 84th in the 2020 QS World University Rankings and was the only Russian university in its overall top 100. No Project 5-100 participant entered the overall top 100 in QS, THE or ARWU by the end of 2020. The decree’s target applied to all Russian universities, so MSU counts: one rather than at least five. Subject rankings are excluded.",
     "meta_context": "Decree No. 599, “On Measures to Implement State Policy in Education and Science”",
     "qsrc": [
       {
         "i": 0,
         "t": "Text of Decree No. 599"
+      },
+      {
+        "i": 1,
+        "t": "Decree No. 599, copy hosted by Kazan Federal University"
       }
     ],
     "osrc": [
       {
         "i": 0,
         "t": "Kommersant"
+      },
+      {
+        "i": 1,
+        "t": "QS World University Rankings 2020, full table"
       }
     ]
   },
@@ -34,5 +42,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "“THE” is the Times Higher Education ranking."
+  "notes": ""
 }

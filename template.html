@@ -943,7 +943,7 @@ function render(i, instant) {
   const plE = document.getElementById('pl'); if (plE) plE.style.width = ((cur + 1) / K * 100).toFixed(2) + '%';
   const mt = metaOf(s);
   const ctx = EN ? [ru(s.date)].concat(s.mt !== 'quote' ? [docLabel(s)] : [], s.mc ? [s.mc] : []).join(', ') + '.' : ru(s.date) + (s.place ? ', ' + s.place : '') + '.';
-  $('#ctx').dataset.ctx = ctx; balanceCtx();
+  $('#ctx').dataset.ctx = s.cx || ctx; balanceCtx(); /* пояснение редакции, если есть; иначе дата и место */
   qOrig = false; paintQuote();
   $$('[data-kind]').forEach((e) => { e.textContent = KIND[s.kind] || ''; });
   $$('[data-when]').forEach((e) => { const pl = EN ? [].concat(s.mt !== 'quote' ? [docLabel(s)] : [], s.mc ? [s.mc] : []).join(' · ') : (s.place || ''); e.innerHTML = '<span class="dt">' + esc(ru(s.date)) + '</span>' + (pl ? '<span class="pl">' + esc(bodyGlue(pl)) + '</span>' : ''); });

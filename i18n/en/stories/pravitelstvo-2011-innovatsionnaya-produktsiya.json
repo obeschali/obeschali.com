@@ -1,21 +1,21 @@
 {
   "id": "pravitelstvo-2011-innovatsionnaya-produktsiya",
   "lang": "en",
-  "source_hash": "2b5e8fca2f96",
+  "source_hash": "c080572754a1",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-08.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Government of Russia",
     "role": "Strategy for Innovative Development Through 2020",
     "quote": "Increase the share of innovative products in total industrial output to 25–35 percent by 2020 (from 4.9 percent in 2010).",
-    "head": "6.1% in 2019; the share had fallen since 2015",
-    "body": "According to HSE University’s Institute for Statistical Studies and Economics of Knowledge, innovative products accounted for 6.1% of industrial shipments in 2019, 1.8 percentage points less than in 2015. The strategy’s target was 25–35% by 2020.",
+    "head": "Innovative products accounted for 6.4% in 2020.",
+    "body": "The government strategy aimed for innovative products to make up 25–35% of industrial output by 2020. HSE researchers, using Rosstat data, put innovative goods and services at 6.4% of industrial sales in 2020. This is a closely related indicator, although its stated denominator is not worded identically to the target.",
     "meta_context": "Government Order No. 2227-r",
     "qsrc": [
       {
@@ -27,6 +27,10 @@
       {
         "i": 0,
         "t": "Institute for Statistical Studies and Economics of Knowledge, HSE University"
+      },
+      {
+        "i": 1,
+        "t": "HSE ISSEK, 2020 data"
       }
     ]
   },

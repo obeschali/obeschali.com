@@ -1,21 +1,21 @@
 {
   "id": "uek-2011-universalnaya-karta",
   "lang": "en",
-  "source_hash": "7beb111d17bd",
+  "source_hash": "06d4607473dd",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-01.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "OJSC Universal Electronic Card",
     "role": "Universal Electronic Card operator",
     "quote": "…[the universal electronic card] will be issued from January 1, 2012 through December 31, 2013, inclusive, upon citizens’ applications.",
-    "head": "The card program was shut down in 2017.",
-    "body": "Issuance and distribution of the Universal Electronic Card ended on January 1, 2017 (under a law dated December 28, 2016, No. 471-FZ). The planned issuance of 120 million cards “never materialized.” The card also ceased to serve as a compulsory medical insurance policy or an SNILS certificate.",
+    "head": "The card rollout on application began a year late.",
+    "body": "The original plan promised cards on application from January 2012. In December 2012, St Petersburg authorities announced a January 2013 start under the then-current federal rules, a one-year delay. The legal chapter governing the cards was repealed effective January 1, 2017, ending issuance. The quotation makes no claim about issuing 120 million cards.",
     "meta_context": "Operator’s official website",
     "qsrc": [
       {
@@ -31,6 +31,14 @@
       {
         "i": 1,
         "t": "Law No. 210-FZ, Chapter 6 repealed effective January 1, 2017"
+      },
+      {
+        "i": 2,
+        "t": "Federal Law No. 210-FZ, Rospatent"
+      },
+      {
+        "i": 3,
+        "t": "St Petersburg administration, notice of 2013 card rollout"
       }
     ]
   },
@@ -38,5 +46,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "“SNILS” is retained as the Russian pension insurance account identifier; consider adding an explanatory gloss for English readers."
+  "notes": ""
 }

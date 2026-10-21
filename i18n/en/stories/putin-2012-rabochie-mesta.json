@@ -1,21 +1,21 @@
 {
   "id": "putin-2012-rabochie-mesta",
   "lang": "en",
-  "source_hash": "9448fa2acc55",
+  "source_hash": "45d475d46709",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-09.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Vladimir Putin",
     "role": "President of Russia",
     "quote": "Create and modernize 25 million high-productivity jobs by 2020.",
-    "head": "19.5 million by 2018. The deadline had not yet passed, but progress was uneven.",
-    "body": "According to Rosstat, there were 16.4 million such jobs in 2012, a peak of 18.3 million in 2014, 15.9 million in 2016, and 19.5 million in 2018. This source does not give the 2020 result, so this is an interim figure, not a verdict.",
+    "head": "The 2020 count was 21.95 million, short of 25 million.",
+    "body": "The decree set a target of creating and modernising 25 million high-productivity jobs by 2020. Rosstat data used by FinExpertiza put the 2020 count at 21.95 million, about 3.05 million short. The statistical measure classifies jobs using a pay threshold rather than measuring each worker’s output directly.",
     "meta_context": "Decree No. 596, “On Long-Term State Economic Policy”",
     "qsrc": [
       {
@@ -27,6 +27,10 @@
       {
         "i": 0,
         "t": "News.ru, citing Rosstat"
+      },
+      {
+        "i": 1,
+        "t": "RBC, FinExpertiza analysis of Rosstat data"
       }
     ]
   },
@@ -34,5 +38,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "Explicitly retain the source’s limitation that the final 2020 outcome is not provided."
+  "notes": ""
 }

@@ -1,21 +1,21 @@
 {
   "id": "perminov-2006-glonass",
   "lang": "en",
-  "source_hash": "b2c179cd4471",
+  "source_hash": "69f9c32289fd",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-06.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Anatoly Perminov",
     "role": "Head of Roscosmos",
     "quote": "We have no doubt that in 2009 we will complete the GLONASS system with 24 satellites.",
-    "head": "The full 24-satellite constellation was assembled only in 2011",
-    "body": "According to an RIA Novosti backgrounder, 22 satellites were operational in orbit in 2010; the full 24-satellite constellation was reached in 2011 after six launches that year. The deadline slipped by about two years.",
+    "head": "The full constellation was achieved only in 2011.",
+    "body": "Published GLONASS chronology lists 22 operational satellites in 2010 and a full constellation of 24 in 2011. The 2009 deadline was missed. This comparison concerns the number of satellites, not the quality of navigation coverage.",
     "meta_context": "Statement",
     "qsrc": [
       {

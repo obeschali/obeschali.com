@@ -1,21 +1,21 @@
 {
   "id": "putin-2018-prodolzhitelnost-zhizni",
   "lang": "en",
-  "source_hash": "8f9cdfcdccbc",
+  "source_hash": "f4ab4fbe776e",
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-08.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Vladimir Putin",
     "role": "President of Russia",
     "quote": "…raise life expectancy to 78 years (and to 80 by 2030).",
-    "head": "It was 73.2 years in 2024; the 78-year target moved to 2030",
-    "body": "Rosstat put life expectancy at 73.24 years for July 2023–June 2024. A new national-goals decree issued in May 2024 set a target of 78 years by 2030 and 81 by 2036. In December 2019, Rosstat’s medium scenario had projected 75.5 years for 2024.",
+    "head": "Life expectancy was 72.84 years in 2024.",
+    "body": "Rosstat’s preliminary annual figure for 2024 was 72.84 years, below the 78-year target. A new 2024 decree moved the 78-year goal to 2030. This uses a calendar-year figure rather than a rolling twelve-month estimate.",
     "meta_context": "Decree No. 204, “On National Goals and Strategic Objectives…”",
     "qsrc": [
       {
@@ -26,7 +26,7 @@
     "osrc": [
       {
         "i": 0,
-        "t": "Interfax"
+        "t": "Rosstat, preliminary 2024 figure"
       }
     ]
   },
@@ -34,5 +34,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "The source’s period and later target are stated explicitly."
+  "notes": ""
 }

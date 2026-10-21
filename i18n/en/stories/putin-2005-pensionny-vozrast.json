@@ -5,10 +5,10 @@
   "status": "reviewed",
   "provenance": {
     "translator": "ChatGPT",
-    "imported_at": "2026-10-19",
-    "file": "stories-batch-01.json",
-    "reason": "new",
-    "reviewed_at": "2026-10-19"
+    "imported_at": "2026-10-21",
+    "file": "obeschali-final-v2.json",
+    "reason": "dataset-v2",
+    "reviewed_at": "2026-10-21"
   },
   "en": {
     "who": "Vladimir Putin",
@@ -46,5 +46,5 @@
     "quote": [],
     "outcome": []
   },
-  "notes": "“Retirement age” is used consistently for пенсионный возраст."
+  "notes": ""
 }
