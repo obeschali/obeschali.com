@@ -583,6 +583,37 @@ html:root .tgq{display:inline-flex;margin:8px 0 0 var(--kw)}
 html:root .tgq[hidden]{display:none}
 html:root .src span[aria-hidden]::after{content:"\2060"}
 }
+
+/* возвращение читателя: полоса в потоке под шапкой, сдвигает историю вниз и ничего не перекрывает */
+#app{--rh:0px}
+.stage{top:calc(var(--hd) + var(--rh));transition:top .55s cubic-bezier(.2,.7,.2,1)}
+#app.rtfit .stage{top:var(--hd);transition:none}
+.ret{position:absolute;left:0;right:0;top:var(--hd);height:var(--rh);overflow:hidden;z-index:2;visibility:hidden;background:var(--bg);color:var(--ink);transition:height .55s cubic-bezier(.2,.7,.2,1),background .5s ease,color .5s ease}
+.ret.open{visibility:visible}
+.rt-i{box-sizing:border-box;padding:14px max(var(--px),env(safe-area-inset-right)) 16px max(var(--px),env(safe-area-inset-left));border-bottom:1px solid color-mix(in srgb,var(--ink) 30%,transparent);opacity:0;transition:opacity .35s ease .1s}
+.ret.open .rt-i{opacity:1}
+.rt-top{display:flex;justify-content:space-between;align-items:center;height:24px}
+.rt-lab{font:500 11px/16px var(--mono);letter-spacing:.12em;text-transform:uppercase;opacity:.72}
+.rt-x{width:44px;height:44px;margin:-10px -14px -10px 0;display:grid;place-items:center;font:400 24px/1 Onest,sans-serif;color:var(--ink);transition:background .16s,color .16s}
+.rt-x:active{background:var(--ink);color:var(--bg)}
+.rt-tx{margin:6px 0 0;font-weight:700;font-size:19px;line-height:1.18;letter-spacing:-.025em;text-wrap:balance}
+.rt-bt{display:flex;align-items:center;gap:2px;margin-top:12px}
+.rt-go,.rt-again{min-height:48px;display:inline-flex;align-items:center;justify-content:center;font:600 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;transition:background .18s,color .18s,text-decoration-color .18s}
+.rt-go{flex:1 1 auto;padding:0 18px;background:var(--ink);color:var(--bg);box-shadow:inset 0 0 0 2px var(--ink)}
+.rt-again{padding:0 14px;color:var(--ink);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px;text-decoration-color:color-mix(in srgb,var(--ink) 50%,transparent)}
+.rt-go:active{background:transparent;color:var(--ink)}
+.rt-again:active{background:var(--ink);color:var(--bg);text-decoration-color:transparent}
+.rt-go:focus-visible,.rt-again:focus-visible,.rt-x:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+@media (hover:hover){.rt-go:hover{background:transparent;color:var(--ink)}.rt-again:hover,.rt-x:hover{background:var(--ink);color:var(--bg);text-decoration-color:transparent}}
+@media (max-width:350px){.rt-bt{flex-direction:column;align-items:stretch}.rt-go{flex:none}}
+@media (min-width:761px){
+  .rt-i{height:64px;display:flex;align-items:center;gap:24px;padding-top:0;padding-bottom:0}
+  .rt-top,.rt-bt{display:contents}
+  .rt-lab{order:1;flex:none}.rt-tx{order:2;margin:0;flex:1;min-width:0;text-wrap:initial}
+  .rt-go{order:3;flex:none;min-height:48px}.rt-again{order:4;flex:none}
+  .rt-x{order:5;flex:none;margin:0 -12px 0 0}
+}
+@media (max-width:760px){#app.rt-open #q{overflow-y:auto;justify-content:flex-start}}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9YFSQS3QNW"></script>
@@ -613,6 +644,12 @@ gtag('js',new Date());gtag('config','G-9YFSQS3QNW',{allow_google_signals:false,a
       <button class="hb" type="button" aria-label="Все обещания" data-ta="nav.all" id="openMenu2"><i></i><i></i><i></i></button>
     </div>
   </header>
+
+  <div class="ret" id="ret" aria-hidden="true"><div class="rt-i" id="retI" role="region" data-ta="ret.aria">
+    <div class="rt-top"><span class="rt-lab" id="retLab"></span><button class="rt-x" type="button" id="retX" data-ta="ret.close"><span aria-hidden="true">×</span></button></div>
+    <p class="rt-tx" id="retTx"></p>
+    <div class="rt-bt"><button class="rt-go" type="button" id="retGo"></button><button class="rt-again" type="button" id="retAgain"></button></div>
+  </div></div>
 
   <main class="stage" id="stage">
     <section class="layer" id="q" aria-label="Цитата">
@@ -766,6 +803,7 @@ const bodyGlue = (t) => numGlue(t).replace(/(^|[\s(«„“])([A-Za-zА-Яа-я�
 const SAVE = { get: (k) => { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} } };
 
 let cur = 0, flipped = false, seen = SAVE.get('obesh_seen') === '1', busy = false, numAnim = 0;
+let retSt = null, retTrack = true, retTimer = 0, retIsOpen = false, retPlan = null;
 
 const SHORT_RU = /^(в|во|к|ко|с|со|у|о|об|от|на|за|по|из|до|не|ни|и|а|но|да|же|бы|ли|я|ты|мы|вы|он|без|для|над|под|при|про|что|как|или|чем|там|так|то|все|всё)$/i, SHORT_EN = /^(a|an|the|to|of|in|on|at|by|is|i|or|and|as|if|it|we|my|no)$/i;
 /* телефон: короткие слова и тире не остаются висеть в конце строки */
@@ -833,7 +871,8 @@ function balanceCtx() {
   s1.textContent = w.slice(0, best).join(' '); s2.textContent = w.slice(best).join(' ');
   e.appendChild(s1); e.appendChild(s2);
 }
-function fitQuote() {
+function fitQuote() { app.classList.add('rtfit'); try { fitQuote0(); } finally { app.classList.remove('rtfit'); } }
+function fitQuote0() {
   const L = $('#q'), qt = $('#qt'), m = mob();
   if (qtMob !== m) paintQuote();
   const small = window.innerWidth <= 360 || window.innerHeight <= 600;
@@ -932,6 +971,7 @@ function render(i, instant) {
     document.title = fmt(T['page.title.story'], { who: s.who, quote: s.quote.replace(/^…/, '').slice(0, 80) });
     try { history.replaceState(null, '', HOME + '#' + s.id); } catch (e) {}
   } else paintBack();
+  retDwell();
   requestAnimationFrame(() => { fitQuote(); fitResult(); fitReceipt(); setTimeout(() => { fitQuote(); fitResult(); fitReceipt(); }, 120); });
 }
 function paintTime(d) {
@@ -946,7 +986,7 @@ function countUp() {
   numAnim = requestAnimationFrame(step);
 }
 function setFlip(v) {
-  if (flipped === v) return; flipped = v; app.classList.toggle('on', v);
+  if (flipped === v) return; if (v && retIsOpen) retClose(true); flipped = v; app.classList.toggle('on', v); retRead(D[cur].id, v ? 1 : 0, v);
   if (v) { countUp(); markSeen(); } else { cancelAnimationFrame(numAnim); paintTime(0); }
   updTag(); swUpd(); hintUpd();
 }
@@ -957,7 +997,7 @@ function swUpd() { $('#fsw').setAttribute('aria-label', flipped ? T['sw.nextp'] 
 function landResult() { flipped = true; app.classList.add('on'); cancelAnimationFrame(numAnim); paintTime(gapDays(D[cur])); markSeen(); updTag(); swUpd(); hintUpd(); }
 function go(d, to, o) {
   o = o || {};
-  if (busy) return; const nx = to !== undefined ? to : (cur + d + K) % K; if (nx === cur && !o.land) return; busy = true;
+  if (busy) return; if (retIsOpen) retClose(true); retTrack = true; const nx = to !== undefined ? to : (cur + d + K) % K; if (nx === cur && !o.land) return; busy = true;
   if (mob()) {
     /* телефон: новая история — горизонтальный сдвиг, смена темы без промежуточных анимаций */
     const dir = o.dir || (d < 0 ? -1 : 1), dist = reduce ? 0 : 30;
@@ -1126,7 +1166,7 @@ if (fine) {
     const t = e.target, c = (q) => !!(t && t.closest && t.closest(q));
     const chrome = anyOpen() || c('.hd');
     const zone = !chrome;
-    const over = c('a,button,.mi,.ov');
+    const over = c('a,button,.mi,.ov,.ret');
     const ed = zone && !over ? edgeOf(e) : 0;
     arrEl.style.opacity = chrome ? '1' : '0'; arrEl.classList.toggle('ah', c('.hd'));
     arrEl.style.transform = 'translate(' + e.clientX + 'px,' + e.clientY + 'px)';
@@ -1170,12 +1210,69 @@ $('#tgOrig').addEventListener('click', (e) => { e.stopPropagation(); setOrig(!$(
 $$('.lg a').forEach((a) => a.addEventListener('click', () => { try { sessionStorage.setItem('obesh_flip', D[cur].id + ':' + (flipped ? '1' : '0')); } catch (e) {} }));
 if (EN) { applyUI(); $('#r').setAttribute('aria-label', String(T['cursor.next']).replace(/\s*[→←]\s*/g, '')); }
 
+
+/* возвращение читателя. Один ключ localStorage: последняя история (id), состояние (0 — обещание, 1 — что было дальше),
+   прочитанные id, время последнего визита, время последнего отказа и размер архива на тот момент отдельно для RU и EN (так отличаем новые истории по id) */
+const RET_KEY = 'obesh_v1', RET_HOURS = 6, RET_MIN = 3, RET_DECLINE_DAYS = 14;
+function retLoad() { try { const j = JSON.parse(SAVE.get(RET_KEY) || 'null'); if (j && j.v === 1 && Array.isArray(j.seen)) return j; } catch (e) {} return null; }
+function retSave(p) { const tot = Object.assign({}, retSt && typeof retSt.tot === 'object' ? retSt.tot : {}); tot[LANG] = K;
+  retSt = Object.assign({ v: 1, last: '', st: 0, seen: [], visit: 0, decl: 0 }, retSt || {}, p, { visit: Date.now(), tot: tot }); SAVE.set(RET_KEY, JSON.stringify(retSt)); }
+function retRead(id, st, mark) {
+  if (!retTrack || ROUTE !== 'story') return;
+  const seenIds = ((retSt && retSt.seen) || []).slice(); if (mark && seenIds.indexOf(id) < 0) seenIds.push(id);
+  retSave({ last: id, st: st, seen: seenIds });
+}
+function retDwell() { clearTimeout(retTimer); if (!retTrack) return; const id = D[cur].id; retTimer = setTimeout(() => { if (D[cur].id === id) retRead(id, flipped ? 1 : 0, true); }, 3000); }
+/* решение: что показать (или null). Только чистый адрес, 3+ прочитанные, 6+ часов, не чаще раза за сессию, не раньше чем через 14 дней после отказа */
+function retDecide(s, hash) {
+  if (!s || hash || ROUTE !== 'story') return null;
+  const ids = D.map((x) => x.id), uniq = s.seen.filter((id, i) => ids.indexOf(id) >= 0 && s.seen.indexOf(id) === i), now = Date.now();
+  if (uniq.length < RET_MIN || now - s.visit < RET_HOURS * 36e5 || (s.decl && now - s.decl < RET_DECLINE_DAYS * 864e5)) return null;
+  try { if (sessionStorage.getItem('obesh_ret')) return null; } catch (e) {}
+  const t0 = s.tot && typeof s.tot === 'object' ? s.tot[LANG] : 0, fresh = ids.filter((id) => uniq.indexOf(id) < 0), added = t0 ? Math.max(0, K - t0) : 0;
+  if (fresh.length <= added) return fresh.length ? { mode: 'new', id: fresh[0], st: 0 } : null; /* дочитал: новое — по id, нового нет — молчим */
+  if (ids.indexOf(s.last) >= 0) return { mode: 'go', id: s.last, st: s.st ? 1 : 0 };
+  return { mode: 'lost', id: fresh[0], st: 0 }; /* потерянный id: первая доступная непрочитанная */
+}
+function retShow(p) {
+  const x = D[D.findIndex((q) => q.id === p.id)], nw = p.mode === 'new';
+  $('#retLab').textContent = nw ? T['ret.new_hi'] : T['ret.hi'];
+  $('#retTx').textContent = nw ? T['ret.new_tx'] : fmt(T[p.mode === 'lost' ? 'ret.lost' : 'ret.stop'], { of: x.of });
+  $('#retGo').textContent = nw ? T['ret.new_go'] : T['ret.go']; $('#retAgain').textContent = T['ret.again'];
+  retPlan = p; retIsOpen = true; retTrack = false; clearTimeout(retTimer);
+  try { sessionStorage.setItem('obesh_ret', '1'); } catch (e) {}
+  const r = $('#ret'); r.classList.add('open'); r.setAttribute('aria-hidden', 'false');
+  app.classList.add('rt-open'); app.style.setProperty('--rh', $('#retI').offsetHeight + 'px');
+}
+function retClose(decline) {
+  if (!retIsOpen) return; retIsOpen = false; retTrack = true;
+  const r = $('#ret'); app.style.setProperty('--rh', '0px'); app.classList.remove('rt-open'); r.setAttribute('aria-hidden', 'true');
+  setTimeout(() => { if (!retIsOpen) r.classList.remove('open'); }, 600);
+  if (decline) retSave({ decl: Date.now() });
+  retDwell();
+}
+function retInit(hash) {
+  $$('#retI,#retX').forEach((e) => { const k = e.dataset.ta; if (k && T[k] != null) e.setAttribute('aria-label', T[k]); });
+  const p = retDecide(retSt, hash); if (!p) return;
+  const run = () => setTimeout(() => { if (!anyOpen() && !retIsOpen) retShow(p); }, 700);
+  (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(run);
+}
+$('#retX').addEventListener('click', () => retClose(true));
+$('#retAgain').addEventListener('click', () => { retClose(true); if (cur !== 0) go(0, 0, { dir: -1 }); });
+$('#retGo').addEventListener('click', () => {
+  const p = retPlan; retClose(false); if (!p) return;
+  const i = D.findIndex((x) => x.id === p.id); if (i < 0) return;
+  if (i === cur) { if (p.st) setFlip(true); return; }
+  go(0, i, { dir: 1, land: !!p.st && mob() });
+  if (p.st && !mob()) setTimeout(() => setFlip(true), 450);
+});
 /* старт */
 buildMenu();
 const h0 = location.hash.slice(1); const i0 = D.findIndex((s) => s.id === h0);
+retSt = retLoad(); const retS0 = retSt && JSON.parse(JSON.stringify(retSt)); if (h0 && retSt) retTrack = false; /* прямая ссылка: сохранённое не трогаем, пока читатель не пошёл дальше сам */
 if (EN && h0 && i0 < 0 && ALT && ALT.ru) location.replace(ALT.ru + '#' + h0);
 render(i0 >= 0 ? i0 : 0); hintUpd();
-visited = ROUTE === 'story'; setRoute(ROUTE, false);
+visited = ROUTE === 'story'; setRoute(ROUTE, false); retInit(h0);
 try { const f = sessionStorage.getItem('obesh_flip'); if (f) { sessionStorage.removeItem('obesh_flip'); const a = f.split(':'); if (a[1] === '1' && a[0] === D[cur].id) setTimeout(() => setFlip(true), 150); } } catch (e) {}
 (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(() => { balanceCtx(); fitQuote(); fitResult(); fitReceipt(); });
 if (document.fonts && document.fonts.addEventListener) document.fonts.addEventListener("loadingdone", () => { fitQuote(); fitResult(); fitReceipt(); });
