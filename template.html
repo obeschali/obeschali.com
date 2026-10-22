@@ -501,12 +501,12 @@ html.zm{--hd:88px}
   .pgb i{font-style:normal;font-size:18px;line-height:1;display:inline-block;transition:transform .2s}
   .pgb:active{background:var(--ink);color:var(--bg)}
   .pgb:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}
-  .fsw{display:flex;align-items:stretch;position:absolute;left:0;right:0;bottom:var(--bar);height:var(--fsw);border-top:2px solid var(--ink);background:var(--bg);color:var(--ink);text-align:left;z-index:3;transition:background .5s,color .5s,border-color .5s}
+  .fsw{display:flex;align-items:stretch;position:absolute;left:14px;right:14px;bottom:calc(var(--bar) + 2px);height:calc(var(--fsw) - 8px);border-top:0;box-shadow:inset 0 0 0 2px var(--ink);background:var(--bg);color:var(--ink);text-align:left;z-index:3;transition:background .5s,color .5s,border-color .5s}
   .fsw .swt{flex:1;min-width:0;padding:0 var(--fpad);display:flex;flex-direction:column;justify-content:center}
-  .fsw .swm{font-weight:700;font-size:min(21px,calc((100vw - var(--fsw) - 2 * var(--fpad)) / 11.6));letter-spacing:-.03em;line-height:1.1;white-space:nowrap}
+  .fsw .swm{font-weight:700;font-size:min(21px,calc((100vw - 28px - var(--fsw) - 2 * var(--fpad)) / 11.6));letter-spacing:-.03em;line-height:1.1;white-space:nowrap}
   .fsw .swb,#app.on .fsw .swn{display:none}
   #app.on .fsw .swb{display:block}
-  .fsw .swc{flex:none;width:var(--fsw);display:grid;place-items:center;background:var(--ink);color:var(--bg);transition:background .18s,color .18s}
+  .fsw .swc{flex:none;width:calc(var(--fsw) - 12px);margin:2px;display:grid;place-items:center;background:var(--ink);color:var(--bg);transition:background .18s,color .18s}
   .fsw .swa{display:grid;transition:transform .25s}
   .fsw .ica,#app.on .fsw .icq{display:none}
   #app.on .fsw .ica{display:block}
