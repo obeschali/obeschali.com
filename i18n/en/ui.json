@@ -635,14 +635,14 @@
     },
     "quote.show_original": {
       "source_hash": "18677b1ab986",
-      "en": "Show original quote",
+      "en": "View original",
       "status": "draft",
       "imported_at": "2026-10-19",
       "translator": "ChatGPT"
     },
     "quote.hide_original": {
       "source_hash": "7ee918752826",
-      "en": "Hide original quote",
+      "en": "Back to English",
       "status": "draft",
       "imported_at": "2026-10-19",
       "translator": "ChatGPT"
@@ -681,6 +681,30 @@
       "status": "draft",
       "imported_at": "2026-10-19",
       "translator": "ChatGPT"
+    },
+    "quote.translated_label": {
+      "source_hash": "ede0b2429435",
+      "intent": "Подпись над английской цитатой: текст переведён с русского.",
+      "en": "Translated from Russian",
+      "status": "draft",
+      "imported_at": "2026-10-22",
+      "translator": "Claude"
+    },
+    "quote.show_aria": {
+      "source_hash": "dd9758843dd3",
+      "intent": "Подпись для скринридера у кнопки «Показать оригинал»: показать русский оригинал цитаты.",
+      "en": "View the original quote in Russian",
+      "status": "draft",
+      "imported_at": "2026-10-22",
+      "translator": "Claude"
+    },
+    "quote.hide_aria": {
+      "source_hash": "8ba1b0505cf8",
+      "intent": "Подпись для скринридера: вернуться к английскому переводу цитаты.",
+      "en": "Back to the English translation",
+      "status": "draft",
+      "imported_at": "2026-10-22",
+      "translator": "Claude"
     }
   }
 }
