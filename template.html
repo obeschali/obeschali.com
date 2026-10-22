@@ -922,7 +922,7 @@ const TYPO = {
   mob: { lhBig: [44, 1.02], lhMid: [32, 1.07], lhSmall: 1.14 },
   ls: (c) => (c >= 56 ? -0.02 : (c >= 36 ? -0.014 : (c >= 26 ? -0.006 : 0))),
   ragMin: 0.33, ragLines: 7, /* в цитате 7+ строк ни одна строка, кроме последней, не короче трети колонки */
-  pair: 'px', pairPx: 3 /* EN: перевод и оригинал — 'min' (один кегль), 'px' (кегли отличаются не больше чем на pairPx), 'free' (каждый по максимуму) */
+  pair: 'free', pairPx: 3 /* EN: перевод и оригинал — 'min' (один кегль), 'px' (кегли отличаются не больше чем на pairPx), 'free' (каждый по максимуму) */
 };
 function ragOk(ws, W) {
   const rows = new Map(); ws.forEach((w) => { const r = w.getBoundingClientRect(), k = Math.round(r.top / 4); const o = rows.get(k) || { l: 1e9, r: 0 }; o.l = Math.min(o.l, r.left); o.r = Math.max(o.r, r.right); rows.set(k, o); });
