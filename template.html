@@ -915,12 +915,14 @@ function balanceCtx() {
 }
 function fitQuote() { app.classList.add('rtfit'); try { fitQuote0(); } finally { app.classList.remove('rtfit'); } }
 /* ТИПОГРАФИКА: таблицы подбора кегля цитаты (PT Serif). Менять только здесь. */
+const steps1 = (hi, lo) => Array.from({ length: hi - lo + 1 }, (_, i) => hi - i);
 const TYPO = {
-  ladder: { desk: [84, 80, 76, 72, 68, 64, 60, 56, 52, 48, 44, 40, 36, 33, 30], mob: [76, 72, 68, 64, 60, 56, 53, 50, 47, 45, 43, 41, 39, 37, 35, 33, 31, 29, 27, 25, 23, 22], small: [60, 54, 48, 44, 40, 37, 34, 31, 29, 27, 25, 23, 21, 19, 17, 16, 15, 14] },
+  ladder: { desk: steps1(84, 30), mob: steps1(76, 22), small: steps1(60, 14) }, /* кегль подбирается с шагом 1 px: цитата занимает максимум места */
   desk: { lhBig: [56, 1.04], lhMid: [0, 1.1], lhSmall: 1.1 },
   mob: { lhBig: [44, 1.02], lhMid: [32, 1.07], lhSmall: 1.14 },
   ls: (c) => (c >= 56 ? -0.02 : (c >= 36 ? -0.014 : (c >= 26 ? -0.006 : 0))),
-  ragMin: 0.4, ragLines: 6 /* в цитате 6+ строк ни одна строка, кроме последней, не короче 40% колонки */
+  ragMin: 0.33, ragLines: 7, /* в цитате 7+ строк ни одна строка, кроме последней, не короче трети колонки */
+  pair: 'px', pairPx: 3 /* EN: перевод и оригинал — 'min' (один кегль), 'px' (кегли отличаются не больше чем на pairPx), 'free' (каждый по максимуму) */
 };
 function ragOk(ws, W) {
   const rows = new Map(); ws.forEach((w) => { const r = w.getBoundingClientRect(), k = Math.round(r.top / 4); const o = rows.get(k) || { l: 1e9, r: 0 }; o.l = Math.min(o.l, r.left); o.r = Math.max(o.r, r.right); rows.set(k, o); });
@@ -949,21 +951,19 @@ function fitQuote0() {
   };
   let sz = pick();
   if (!$('#qo').hidden) { /* один кегль для перевода и оригинала: берём меньший */
-    const keep = qOrig; qOrig = !keep; paintQuote(); const sz2 = pick(); qOrig = keep; paintQuote(); sz = Math.min(sz, sz2);
+    const mode = TY ? TYPO.pair : 'min';
+    if (mode !== 'free') {
+      const keep = qOrig; qOrig = !keep; paintQuote(); const sz2 = pick(); qOrig = keep; paintQuote();
+      sz = mode === 'min' ? Math.min(sz, sz2) : Math.min(sz, sz2 + TYPO.pairPx);
+    }
   }
   setSz(sz);
   if (overflows(L) && !m) { qt.style.fontSize = '30px'; }
 }
 function fitResult() {
   const L = $('#r'), m = mob(), small = window.innerWidth <= 360;
-  if (m) {
-    const n = $('#hl').textContent.length, T_ = small ? [[32, 38], [50, 32], [80, 27], [115, 24], [999, 21]] : [[32, 46], [50, 38], [80, 33], [115, 29], [999, 25]];
-    const f = (T_.find((x) => n <= x[0]) || T_[T_.length - 1])[1];
-    $('#hl').style.fontSize = f + 'px'; $('#body').style.fontSize = (small ? 15 : 17) + 'px'; $('#tm').style.paddingTop = '';
-    return;
-  }
   const tiers = m
-    ? (small ? [[30, 15], [26, 14], [24, 13.5], [22, 13], [20, 12.5], [18, 12]] : [[36, 17], [32, 16], [30, 15], [28, 15], [26, 14.5], [24, 14], [22, 13.5], [20, 13], [18, 12.5], [17, 12]])
+    ? (small ? [[46, 15], [42, 15], [38, 15], [34, 15], [32, 15], [30, 15], [28, 15], [26, 15], [24, 14.5], [22, 14]] : [[60, 17], [56, 17], [52, 17], [48, 17], [46, 17], [44, 17], [42, 17], [40, 17], [38, 17], [36, 17], [34, 17], [32, 17], [30, 17], [28, 17], [26, 16.5], [25, 16], [24, 15.5]])
     : [[80, 30], [72, 28], [64, 26], [58, 24], [52, 22], [46, 21], [42, 20], [38, 19], [34, 18], [30, 17], [28, 16], [26, 15], [24, 15]];
   // измеряем в «включённом» состоянии, без анимации
   const R = $('#r'), hl = $('#hl'), bd = $('#body');
@@ -973,7 +973,7 @@ function fitResult() {
   for (let i = 0; i < tiers.length; i++) {
     hl.style.fontSize = tiers[i][0] + 'px'; bd.style.fontSize = tiers[i][1] + 'px';
     if (!m) $('#tm').style.paddingTop = (tiers[i][0] * 0.1555 - 32 * 0.1755).toFixed(2) + 'px'; else $('#tm').style.paddingTop = '';
-    if (!overflows(L, m ? 6 : 14)) break;
+    if (!overflows(L, m ? 14 : 14)) break;
   }
   R.style.opacity = prevOp; R.style.transition = prevTr; bd.style.transition = bT; bd.style.transform = bX; tr.forEach((s) => { s.style.transition = ''; });
   void R.offsetWidth;
@@ -1199,7 +1199,7 @@ $('#fsw').addEventListener('click', () => { if (anyOpen()) return; fwd(); });
 $('#tgQ').addEventListener('click', (e) => {
   e.stopPropagation(); const qt = $('#qt'), still = matchMedia('(prefers-reduced-motion: reduce)').matches;
   qt.setAttribute('aria-live', 'polite'); qt.classList.add('qf');
-  setTimeout(() => { qOrig = !qOrig; paintQuote(); qoUI(); qt.classList.remove('qf'); setTimeout(() => qt.removeAttribute('aria-live'), 900); }, still ? 0 : 150);
+  setTimeout(() => { qOrig = !qOrig; paintQuote(); qoUI(); fitQuote(); qt.classList.remove('qf'); setTimeout(() => qt.removeAttribute('aria-live'), 900); }, still ? 0 : 150);
 });
 $('#br').addEventListener('click', (e) => { if (!mob() || e.target.closest('.tg')) return; $('#br').classList.toggle('xp'); setRch(); });
 document.addEventListener('wheel', (e) => { if (anyOpen()) return; const now = Date.now(); if (Math.abs(e.deltaY) < 30 || now - wt < 800) return; wt = now; if (e.deltaY > 0) next(); else prev(); }, { passive: true });
