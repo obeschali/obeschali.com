@@ -94,7 +94,19 @@ a{color:inherit}
 .lab{font:500 13px/16px var(--mono);letter-spacing:.16em;text-transform:uppercase;opacity:.8}
 .ctx{margin-top:14px;font-size:28px;line-height:1.28;font-weight:500;letter-spacing:-.015em;max-width:1000px}
 .mark{display:block;align-self:flex-start;flex:none;height:48px;width:auto;margin:22px 0 10px;fill:var(--ink)}
-.qt{margin:0;font-weight:700;line-height:.98;letter-spacing:-.045em;text-wrap:balance;hyphens:none}
+.qt{margin:0;font-weight:700;line-height:.98;letter-spacing:-.045em;text-wrap:balance;hyphens:none;transition:opacity .16s}
+.qt.qf{opacity:0}
+@media (prefers-reduced-motion:reduce){.qt{transition:none}}
+.qo{display:flex;flex-wrap:wrap;align-items:center;gap:0 14px;margin-top:8px;flex:none}
+.qo[hidden]{display:none}
+.qol{font-size:14px;line-height:1.3;opacity:.62}
+.qob{display:inline-flex;align-items:center;gap:8px;min-height:44px;min-width:44px;font:500 15px var(--sans,inherit);color:var(--ink);cursor:pointer;-webkit-tap-highlight-color:transparent;transition:opacity .16s}
+.qob .qou{opacity:.78;border-bottom:1.5px dotted currentColor;padding-bottom:1px;transition:opacity .16s}
+.qob .bdg{margin:0;vertical-align:baseline;font-size:10px}
+.qob .bdg[hidden]{display:none}
+.qob:hover .qou{opacity:1;border-bottom-style:solid}
+.qob:active{opacity:.55}
+.qob:focus-visible{outline:2px solid var(--ink);outline-offset:2px;border-radius:2px}
 .qt .w{display:inline-block;white-space:nowrap}
 
 /* нижний блок */
@@ -466,7 +478,7 @@ html.zm{--hd:88px}
 @media (max-width:360px){.by{padding:10px 16px 12px}.br .rq{font-size:13px}}
 
 /* ===== телефон: первый экран, кнопка «Что было дальше», тихое листание ===== */
-.fsw,.tgq,.bgl{display:none}
+.fsw,.bgl{display:none}
 .nt,.nt *{transition:none!important}
 @media (max-width:760px){
   :root{--fsw:76px;--bar:52px;--fpad:20px}
@@ -505,8 +517,6 @@ html.zm{--hd:88px}
   .bym .srcs{order:4;margin-top:2px}
   .bym .meta{font-size:11px;line-height:15px;letter-spacing:.12em;text-wrap:balance}
   .bym .dash{width:18px;margin:0 9px 3px}
-  .tgq{display:inline-flex;height:26px;padding:0 9px;font-size:10px;gap:0;margin-top:-4px}
-  .tgq[hidden]{display:none}
 }
 @media (hover:hover) and (max-width:760px){
   .fsw:hover{background:var(--ink);color:var(--bg)}
@@ -552,7 +562,6 @@ html:root .bym .meta .kind{opacity:.62;font-weight:500!important}
 html:root .bym .meta [data-when]{opacity:.9}
 html:root .bym .srcs{margin-top:8px;display:grid;grid-template-columns:var(--kw) 1fr;align-items:baseline}
 html:root .bym .sv{display:block}
-html:root .tgq{margin-top:0}
 /* экран «что было дальше» */
 html:root .tm{padding-top:0}
 html:root .hl{font-size:36px;line-height:1.04;margin-top:16px;font-weight:700}
@@ -578,12 +587,10 @@ html:root .src span[aria-hidden]{display:inline;white-space:nowrap;margin-left:0
 html:root .src span[aria-hidden]::before{content:"\00a0"}
 html:root .src .bdg{white-space:nowrap}
 html:root .bym .rmetaq{display:block}
-html:root .tgq{display:inline-flex;margin:8px 0 0 var(--kw)}
 }
 @media (max-width:360px){html:root{--kw:80px}}
 
 @media (max-width:760px){
-html:root .tgq[hidden]{display:none}
 html:root .src span[aria-hidden]::after{content:"\2060"}
 }
 
@@ -660,8 +667,9 @@ gtag('js',new Date());gtag('config','G-9YFSQS3QNW',{allow_google_signals:false,a
       <div class="ctx" id="ctx"></div>
       <svg class="mark" aria-hidden="true" viewBox="0 0 92 64"><polygon points="0,64 0,30 24,0 40,0 40,64"/><polygon points="52,64 52,30 76,0 92,0 92,64"/></svg>
       <p class="qt" id="qt"></p>
+      <div class="qo" id="qo" hidden><span class="qol" id="qoL"></span><button class="qob" type="button" id="tgQ"><span class="qou" id="qoT"></span><span class="bdg" id="qoB" aria-hidden="true">RU</span></button></div>
       <div class="bym" id="bym">
-        <div class="rmetaq"><div class="meta"><b class="kind" data-kind></b><span class="dash"></span><span data-when></span></div><button class="tg tgq" type="button" id="tgQ" aria-pressed="false" hidden><span id="tgQL">RU</span></button></div>
+        <div class="rmetaq"><div class="meta"><b class="kind" data-kind></b><span class="dash"></span><span data-when></span></div></div>
         <div class="who" data-who></div>
         <div class="role" data-role></div>
         <div class="srcs" data-qsrc></div>
@@ -832,6 +840,12 @@ function paintQuote() {
   const text = qOrig && s.ru && s.ru.quote ? s.ru.quote : s.quote;
   $('#qt').innerHTML = (m ? wordsM : words)(text).map((t) => '<span class="w">' + esc(t) + '</span>').join(' ');
 }
+function qoUI() {
+  const q = $('#qt'); $('#qoL').textContent = T[qOrig ? 'quote.original_label' : 'quote.translated_label'] || '';
+  $('#qoT').textContent = T[qOrig ? 'quote.hide_original' : 'quote.show_original'] || ''; $('#qoB').hidden = qOrig;
+  $('#tgQ').setAttribute('aria-label', T[qOrig ? 'quote.hide_aria' : 'quote.show_aria'] || '');
+  if (qOrig) q.lang = 'ru'; else q.removeAttribute('lang');
+}
 function words(text) {
   text = numGlue(text);
   const out = []; text.split(' ').forEach((t) => {
@@ -880,19 +894,25 @@ function fitQuote0() {
   if (qtMob !== m) paintQuote();
   const small = window.innerWidth <= 360 || window.innerHeight <= 600;
   const cand = m ? (small ? [60, 54, 48, 44, 40, 37, 34, 31, 29, 27, 25, 23, 21, 19, 17, 16, 15, 14] : [76, 70, 64, 58, 52, 48, 45, 42, 40, 38, 36, 34, 32, 30, 28, 26, 24, 22]) : [84, 76, 70, 62, 56, 50, 46, 42, 38, 34, 30];
-  const minC = Math.max(window.innerWidth <= 1100 ? 0 : 0, 0);
-  for (let i = 0; i < cand.length; i++) {
-    qt.style.fontSize = cand[i] + 'px';
-    qt.style.lineHeight = m ? (cand[i] >= 44 ? 1 : (cand[i] >= 32 ? 1.06 : 1.12)) : '';
-    $('.mark', L).style.height = m ? (small ? 22 : 30) + 'px' : Math.max(small || window.innerHeight <= 660 ? 14 : 22, Math.round(cand[i] * 0.56)) + 'px';
-    if (!m) $('.mark', L).style.marginBottom = Math.round(cand[i] * 0.1) + 'px';
-    if (!overflows(L)) { const ws = $$('.w', qt); const wide = ws.some((w) => w.offsetWidth > qt.clientWidth + 1); if (!wide) break; }
+  const setSz = (c) => {
+    qt.style.fontSize = c + 'px';
+    qt.style.lineHeight = m ? (c >= 44 ? 1 : (c >= 32 ? 1.06 : 1.12)) : '';
+    $('.mark', L).style.height = m ? (small ? 22 : 30) + 'px' : Math.max(small || window.innerHeight <= 660 ? 14 : 22, Math.round(c * 0.56)) + 'px';
+    if (!m) $('.mark', L).style.marginBottom = Math.round(c * 0.1) + 'px';
+  };
+  const pick = () => {
+    for (let i = 0; i < cand.length; i++) {
+      setSz(cand[i]);
+      if (!overflows(L)) { const ws = $$('.w', qt); const wide = ws.some((w) => w.offsetWidth > qt.clientWidth + 1); if (!wide) return cand[i]; }
+    }
+    return cand[cand.length - 1];
+  };
+  let sz = pick();
+  if (!$('#qo').hidden) { /* один кегль для перевода и оригинала: берём меньший */
+    const keep = qOrig; qOrig = !keep; paintQuote(); const sz2 = pick(); qOrig = keep; paintQuote(); sz = Math.min(sz, sz2);
   }
-  $('.mark', L).style.height = m ? (small ? 22 : 30) + 'px' : Math.max(small || window.innerHeight <= 660 ? 14 : 22, Math.round(parseFloat(qt.style.fontSize) * 0.56)) + 'px';
-  if (!m) { const mk = $('.mark', L); mk.style.marginBottom = Math.round(parseFloat(qt.style.fontSize) * 0.1) + 'px'; }
-  if (overflows(L) && !m) {
-    qt.style.fontSize = '30px';
-  }
+  setSz(sz);
+  if (overflows(L) && !m) { qt.style.fontSize = '30px'; }
 }
 function fitResult() {
   const L = $('#r'), m = mob(), small = window.innerWidth <= 360;
@@ -960,7 +980,7 @@ function render(i, instant) {
   $('#rrole').textContent = ', ' + (EN ? s.role : s.role.charAt(0).toLowerCase() + s.role.slice(1));
   swUpd();
   setOrig(false); const hasO = EN && s.ru && s.ru.quote;
-  $('#tgQ').hidden = !hasO; $('#tgQL').textContent = 'RU'; $('#tgQ').setAttribute('aria-pressed', 'false');
+  $('#qo').hidden = !hasO; qoUI();
   $('#tgOrig').hidden = !hasO; $('#rqoT').textContent = hasO ? '«' + s.ru.quote.replace(/«/g, '„').replace(/»/g, '“') + '»' : '';
   $$('[data-who]').forEach((e) => { e.textContent = s.who; });
   $$('[data-role]').forEach((e) => { e.textContent = bodyGlue(s.role); });
@@ -1136,7 +1156,11 @@ let wt = 0;
   p.addEventListener('click', (e) => { const x = e.target.closest('.cp'); if (!x) return; const a = x.getAttribute('data-a'); const done = () => { const t = x.textContent; x.textContent = T['about.copied']; setTimeout(() => { x.textContent = T['about.copy']; }, 1500); };
     if (navigator.clipboard) navigator.clipboard.writeText(a).then(done, () => {}); }); })();
 $('#fsw').addEventListener('click', () => { if (anyOpen()) return; fwd(); });
-$('#tgQ').addEventListener('click', (e) => { e.stopPropagation(); qOrig = !qOrig; paintQuote(); $('#tgQL').textContent = qOrig ? 'EN' : 'RU'; $('#tgQ').setAttribute('aria-pressed', qOrig ? 'true' : 'false'); if (T['quote.show_original']) $('#tgQ').setAttribute('aria-label', qOrig ? (T['quote.hide_original'] || '') : T['quote.show_original']); fitQuote(); });
+$('#tgQ').addEventListener('click', (e) => {
+  e.stopPropagation(); const qt = $('#qt'), still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  qt.setAttribute('aria-live', 'polite'); qt.classList.add('qf');
+  setTimeout(() => { qOrig = !qOrig; paintQuote(); qoUI(); qt.classList.remove('qf'); setTimeout(() => qt.removeAttribute('aria-live'), 900); }, still ? 0 : 150);
+});
 $('#br').addEventListener('click', (e) => { if (!mob() || e.target.closest('.tg')) return; $('#br').classList.toggle('xp'); setRch(); });
 document.addEventListener('wheel', (e) => { if (anyOpen()) return; const now = Date.now(); if (Math.abs(e.deltaY) < 30 || now - wt < 800) return; wt = now; if (e.deltaY > 0) next(); else prev(); }, { passive: true });
 let ty = 0, tx = 0;
