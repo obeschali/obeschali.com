@@ -989,8 +989,10 @@ function fitResult() {
     if (!m) $('#tm').style.paddingTop = (tiers[i][0] * 0.1555 - 32 * 0.1755).toFixed(2) + 'px'; else $('#tm').style.paddingTop = '';
     if (!overflows(L, m ? 14 : 14)) break;
   }
-  R.style.opacity = prevOp; R.style.transition = prevTr; bd.style.transition = bT; bd.style.transform = bX; tr.forEach((s) => { s.style.transition = ''; });
+  /* прозрачность возвращаем при выключенных переходах и только потом возвращаем сами переходы: иначе слой «догорает» из opacity 1 и мелькает */
+  R.style.opacity = prevOp; bd.style.transition = 'none'; bd.style.transform = bX;
   void R.offsetWidth;
+  R.style.transition = prevTr; bd.style.transition = bT; tr.forEach((s) => { s.style.transition = ''; });
 }
 /* нижний блок «Что было дальше»: цитата подгоняется по размеру */
 function setRch() { const by = $('#by'); const was = by.style.opacity; by.style.opacity = '0'; app.style.setProperty('--rch', by.offsetHeight + 'px'); by.style.opacity = was; }
@@ -1099,9 +1101,12 @@ function go(d, to, o) {
   const done = () => { L.forEach((e) => { if (e) { e.style.transition = ''; e.style.opacity = ''; } }); busy = false; };
   out(0);
   setTimeout(() => {
+    /* как на телефоне: пока подставляем новый текст, переходы выключены, иначе прошлый «ответ» догорает, а новый мелькает */
+    app.classList.add('nt');
     cancelAnimationFrame(numAnim); flipped = false; app.classList.remove('on'); render(nx);
     hintUpd();
-    requestAnimationFrame(() => { L.forEach((e) => { if (e) e.style.transition = 'opacity .35s ease'; }); out(''); L.forEach((e) => { if (e) e.style.opacity = ''; }); setTimeout(done, 380); });
+    void app.offsetWidth;
+    requestAnimationFrame(() => { app.classList.remove('nt'); L.forEach((e) => { if (e) e.style.transition = 'opacity .35s ease'; }); out(''); L.forEach((e) => { if (e) e.style.opacity = ''; }); setTimeout(done, 380); });
   }, reduce ? 0 : 200);
 }
 const next = () => go(1), prev = () => go(-1);
