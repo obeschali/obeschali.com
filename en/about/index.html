@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="ty-serif">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -28,6 +28,8 @@
 <link rel="alternate" hreflang="x-default" href="https://obeschali.com/about/">
 <link rel="preload" href="/fonts/onest-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/onest-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/pt-serif-cyrillic-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/pt-serif-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/jetbrains-mono-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/jetbrains-mono-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
@@ -35,6 +37,11 @@
 @font-face{font-family:'Onest';font-style:normal;font-weight:100 900;font-display:swap;src:url(/fonts/onest-cyrillic-wght-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
 @font-face{font-family:'Onest';font-style:normal;font-weight:100 900;font-display:swap;src:url(/fonts/onest-latin-ext-wght-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 @font-face{font-family:'Onest';font-style:normal;font-weight:100 900;font-display:swap;src:url(/fonts/onest-latin-wght-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+/* PT Serif: слова (цитаты). Подключён вместе с блоком «ТИПОГРАФИКА» ниже */
+@font-face{font-family:'PT Serif';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/pt-serif-cyrillic-400-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'PT Serif';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/pt-serif-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'PT Serif';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/pt-serif-cyrillic-700-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'PT Serif';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/pt-serif-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:100 800;font-display:swap;src:url(/fonts/jetbrains-mono-cyrillic-wght-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
 @font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:100 800;font-display:swap;src:url(/fonts/jetbrains-mono-latin-ext-wght-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 @font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:100 800;font-display:swap;src:url(/fonts/jetbrains-mono-latin-wght-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -638,6 +645,18 @@ html:root .src span[aria-hidden]::after{content:"\2060"}
   .rt-x{order:5;flex:none;margin:0 -12px 0 0}
 }
 @media (max-width:760px){#app.rt-open #q{overflow-y:auto;justify-content:flex-start}}
+
+/* ===== ТИПОГРАФИКА: слова — PT Serif, всё остальное — Onest =====
+   Всё, что относится к этому эксперименту, собрано здесь и в JS-блоке TYPO (ниже).
+   Откат одним словом: убрать class="ty-serif" у <html> (строка 2) — сайт вернётся к Onest везде.
+   Размеры и трекинг цитаты на первом экране считает fitQuote() по таблицам TYPO. */
+html.ty-serif{--serif:'PT Serif',Georgia,'Times New Roman',serif}
+html.ty-serif .qt{font-family:var(--serif);font-weight:700;line-height:1.04;letter-spacing:-.018em;font-variant-numeric:lining-nums}
+html.ty-serif .rq{font-family:var(--serif);font-weight:400;font-size:27px;line-height:1.32;letter-spacing:0}
+html.ty-serif .mi .w span{font-family:var(--serif);font-size:14.5px}
+html.ty-serif .pv .q{font-family:var(--serif);line-height:1.08;letter-spacing:-.018em}
+@media (max-width:760px){html.ty-serif .rq{font-size:16.5px;line-height:1.34;letter-spacing:0}}
+/* ===== /ТИПОГРАФИКА ===== */
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9YFSQS3QNW"></script>
@@ -816,9 +835,15 @@ const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({'&':'&amp;','<':'&lt;',
 const pad = (n) => String(n).padStart(2, '0');
 const wrapN = (text, cw, w) => { const ws = String(text).split(' '); let lines = 1, x = 0; const sp = cw * 0.45; ws.forEach((t) => { const L = t.length * cw; if (x > 0 && x + sp + L > w) { lines++; x = L; } else x += (x > 0 ? sp : 0) + L; }); return lines; };
 /* подпись нижнего блока: тип материала + дата и контекст, капсом. Тип и номер определяет сборка по русскому полю place */
-const docLabel = (s) => s.mt === 'quote' ? T['doctype.quote'] : (s.mn ? fmt(T['doctype.' + s.mt + '_numbered'] || T['doctype.' + s.mt], { number: s.mn }) : T['doctype.' + s.mt]);
+const docNum = (n) => (EN ? String(n).replace(/\u0440/g, 'r') : n); /* «2227-р» в английской строке пишем латиницей: кириллическая р выглядит как P */
+const docLabel = (s) => s.mt === 'quote' ? T['doctype.quote'] : (s.mn ? fmt(T['doctype.' + s.mt + '_numbered'] || T['doctype.' + s.mt], { number: docNum(s.mn) }) : T['doctype.' + s.mt]);
+/* Не повторять вид документа: если пояснение редакции (mc) уже начинается с него или содержит его («Decree No. 596, “On…”»), отдельный ярлык не нужен */
+const dnorm = (x) => String(x || '').toLowerCase().replace(/\u0440/g, 'r').replace(/[^a-z0-9а-яё]/g, '');
+const docDup = (s) => s.mt !== 'quote' && !!s.mc && dnorm(s.mc).indexOf(dnorm(docLabel(s))) >= 0;
+const docPart = (s) => (s.mt === 'quote' || docDup(s) ? [] : [docLabel(s)]);
 function metaOf(s) {
   const ctx = s.mc || '';
+  if (docDup(s)) return { rl: ctx.toLocaleUpperCase(LANG), rd: ru(s.date).toLocaleUpperCase(LANG) }; /* пояснение уже называет документ: не дублируем */
   return { rl: docLabel(s).toLocaleUpperCase(LANG), rd: (ru(s.date) + (ctx ? ' \u00B7 ' + ctx : '')).toLocaleUpperCase(LANG) };
 }
 /* название источника: последнее слово, стрелка и метка языка не разрываются */
@@ -903,21 +928,36 @@ function balanceCtx() {
   e.appendChild(s1); e.appendChild(s2);
 }
 function fitQuote() { app.classList.add('rtfit'); try { fitQuote0(); } finally { app.classList.remove('rtfit'); } }
+/* ТИПОГРАФИКА: таблицы подбора кегля цитаты (PT Serif). Менять только здесь. */
+const TYPO = {
+  ladder: { desk: [84, 80, 76, 72, 68, 64, 60, 56, 52, 48, 44, 40, 36, 33, 30], mob: [76, 72, 68, 64, 60, 56, 53, 50, 47, 45, 43, 41, 39, 37, 35, 33, 31, 29, 27, 25, 23, 22], small: [60, 54, 48, 44, 40, 37, 34, 31, 29, 27, 25, 23, 21, 19, 17, 16, 15, 14] },
+  desk: { lhBig: [56, 1.04], lhMid: [0, 1.1], lhSmall: 1.1 },
+  mob: { lhBig: [44, 1.02], lhMid: [32, 1.07], lhSmall: 1.14 },
+  ls: (c) => (c >= 56 ? -0.02 : (c >= 36 ? -0.014 : (c >= 26 ? -0.006 : 0))),
+  ragMin: 0.4, ragLines: 6 /* в цитате 6+ строк ни одна строка, кроме последней, не короче 40% колонки */
+};
+function ragOk(ws, W) {
+  const rows = new Map(); ws.forEach((w) => { const r = w.getBoundingClientRect(), k = Math.round(r.top / 4); const o = rows.get(k) || { l: 1e9, r: 0 }; o.l = Math.min(o.l, r.left); o.r = Math.max(o.r, r.right); rows.set(k, o); });
+  const a = Array.from(rows.values()); if (a.length < TYPO.ragLines) return true;
+  return a.slice(0, -1).every((o) => (o.r - o.l) >= W * TYPO.ragMin);
+}
 function fitQuote0() {
   const L = $('#q'), qt = $('#qt'), m = mob();
   if (qtMob !== m) paintQuote();
   const small = window.innerWidth <= 360 || window.innerHeight <= 600;
-  const cand = m ? (small ? [60, 54, 48, 44, 40, 37, 34, 31, 29, 27, 25, 23, 21, 19, 17, 16, 15, 14] : [76, 70, 64, 58, 52, 48, 45, 42, 40, 38, 36, 34, 32, 30, 28, 26, 24, 22]) : [84, 76, 70, 62, 56, 50, 46, 42, 38, 34, 30];
+  const TY = document.documentElement.classList.contains('ty-serif');
+  const cand = TY ? TYPO.ladder[m ? (small ? 'small' : 'mob') : 'desk'] : (m ? (small ? [60, 54, 48, 44, 40, 37, 34, 31, 29, 27, 25, 23, 21, 19, 17, 16, 15, 14] : [76, 70, 64, 58, 52, 48, 45, 42, 40, 38, 36, 34, 32, 30, 28, 26, 24, 22]) : [84, 76, 70, 62, 56, 50, 46, 42, 38, 34, 30]);
   const setSz = (c) => {
     qt.style.fontSize = c + 'px';
-    qt.style.lineHeight = m ? (c >= 44 ? 1 : (c >= 32 ? 1.06 : 1.12)) : '';
+    if (TY) { const t = TYPO[m ? 'mob' : 'desk']; qt.style.lineHeight = String(c >= t.lhBig[0] ? t.lhBig[1] : (c >= t.lhMid[0] ? t.lhMid[1] : t.lhSmall)); qt.style.letterSpacing = TYPO.ls(c) + 'em'; }
+    else { qt.style.lineHeight = m ? (c >= 44 ? 1 : (c >= 32 ? 1.06 : 1.12)) : ''; qt.style.letterSpacing = ''; }
     $('.mark', L).style.height = m ? (small ? 22 : 30) + 'px' : Math.max(small || window.innerHeight <= 660 ? 14 : 22, Math.round(c * 0.56)) + 'px';
     if (!m) $('.mark', L).style.marginBottom = Math.round(c * 0.1) + 'px';
   };
   const pick = () => {
     for (let i = 0; i < cand.length; i++) {
       setSz(cand[i]);
-      if (!overflows(L)) { const ws = $$('.w', qt); const wide = ws.some((w) => w.offsetWidth > qt.clientWidth + 1); if (!wide) return cand[i]; }
+      if (!overflows(L)) { const ws = $$('.w', qt); const wide = ws.some((w) => w.offsetWidth > qt.clientWidth + 1); if (!wide && (!TY || i === cand.length - 1 || ragOk(ws, qt.clientWidth))) return cand[i]; }
     }
     return cand[cand.length - 1];
   };
@@ -979,11 +1019,11 @@ function render(i, instant) {
   $$('[data-k]').forEach((e) => { e.textContent = String(K); });
   const plE = document.getElementById('pl'); if (plE) plE.style.width = ((cur + 1) / K * 100).toFixed(2) + '%';
   const mt = metaOf(s);
-  const ctx = EN ? [ru(s.date)].concat(s.mt !== 'quote' ? [docLabel(s)] : [], s.mc ? [s.mc] : []).join(', ') + '.' : ru(s.date) + (s.place ? ', ' + s.place : '') + '.';
+  const ctx = EN ? [ru(s.date)].concat(docPart(s), s.mc ? [s.mc] : []).join(', ') + '.' : ru(s.date) + (s.place ? ', ' + s.place : '') + '.';
   $('#ctx').dataset.ctx = s.cx || ctx; balanceCtx(); /* пояснение редакции, если есть; иначе дата и место */
   qOrig = false; paintQuote();
   $$('[data-kind]').forEach((e) => { e.textContent = KIND[s.kind] || ''; });
-  $$('[data-when]').forEach((e) => { const pl = EN ? [].concat(s.mt !== 'quote' ? [docLabel(s)] : [], s.mc ? [s.mc] : []).join(' · ') : (s.place || ''); e.innerHTML = '<span class="dt">' + esc(ru(s.date)) + '</span>' + (pl ? '<span class="pl">' + esc(bodyGlue(pl)) + '</span>' : ''); });
+  $$('[data-when]').forEach((e) => { const pl = EN ? [].concat(docPart(s), s.mc ? [s.mc] : []).join(' · ') : (s.place || ''); e.innerHTML = '<span class="dt">' + esc(ru(s.date)) + '</span>' + (pl ? '<span class="pl">' + esc(bodyGlue(pl)) + '</span>' : ''); });
   $('#rl').textContent = mt.rl; $('#rd').textContent = mt.rd;
   $('#od').textContent = ru(s.odate).toLocaleUpperCase(LANG);
   $('#rwho').textContent = s.who.split(' ').slice(-1)[0].toLocaleUpperCase(LANG) + ', ' + s.date.slice(0, 4);
