@@ -536,14 +536,14 @@
     "ret.stop": {
       "source_hash": "a28e597a837b",
       "en": "You left off here: {of}",
-      "status": "draft",
+      "status": "reviewed",
       "imported_at": "2026-10-21",
       "translator": "Claude (draft, ждёт ChatGPT)"
     },
     "ret.lost": {
       "source_hash": "30260a8b68b8",
       "en": "Pick up here: {of}",
-      "status": "draft",
+      "status": "reviewed",
       "imported_at": "2026-10-21",
       "translator": "Claude (draft, ждёт ChatGPT)"
     },
