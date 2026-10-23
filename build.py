@@ -120,6 +120,22 @@ def switch_html(lang):
     a = lambda l, href: f'<a href="{href}" data-lang="{l}" hreflang="{l}" lang="{l}"' + (' aria-current="true"' if l == lang else '') + f'>{l.upper()}</a>'
     return f'<div class="lg" role="group" aria-label="{aria}" data-ta="lang.switch_aria">{a("ru", "/" if lang == "ru" else "/")}{a("en", "/en/")}</div>'
 
+def localize_static(idx, T):
+    """В шаблоне подписи интерфейса русские, и скрипт подменяет их на язык страницы уже после запуска. Чтобы английская страница
+    не мелькала по-русски (и без скрипта читалась по-английски), подставляем нужный язык сразу при сборке."""
+    def t_text(m):
+        k = m.group(2)
+        return m.group(1) + html.escape(str(T[k]), quote=False) + m.group(3) if k in T else m.group(0)
+    idx = re.sub(r'(<[^>]*\bdata-t="([\w.]+)"[^>]*>)[^<]*(</)', t_text, idx)
+    def t_aria(m):
+        tag, k = m.group(0), m.group(1)
+        if k not in T: return tag
+        v = html.escape(str(T[k]), quote=True)
+        return re.sub(r'aria-label="[^"]*"', 'aria-label="' + v.replace('\\', '\\\\') + '"', tag) if 'aria-label="' in tag else tag
+    idx = re.sub(r'<[^>]*\bdata-ta="([\w.]+)"[^>]*>', t_aria, idx)
+    if 'about.back_start' in T: idx = re.sub(r'(<b data-abt>)[^<]*(</b>)', lambda m: m.group(1) + html.escape(T['about.back_start'], quote=False) + m.group(2), idx)
+    return idx
+
 def render_index(lang, data, T, route):
     """Одна и та же страница-приложение: route='story' (корень языка) или 'about' (/about/)."""
     pre = '' if lang == 'ru' else 'en/'
@@ -149,6 +165,7 @@ def render_index(lang, data, T, route):
         idx = re.sub(r'<!--SUP-->.*?<!--/SUP-->|<!--SUPB-->.*?<!--/SUPB-->', '', idx, flags=re.S)
     if CONTACT: idx = idx.replace('@@CONTACT@@', html.escape(CONTACT, quote=True))
     else: idx = re.sub(r'\s*<a class="btn" href="@@CONTACT@@".*?</a>', '', idx, flags=re.S)
+    if lang != 'ru': idx = localize_static(idx, T)
     return idx
 
 def build_lang(lang, data, T, outdir):

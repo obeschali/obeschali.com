@@ -687,7 +687,7 @@ document.documentElement.classList.add('bt');setTimeout(function(){document.docu
   </div></div>
 
   <main class="stage" id="stage">
-    <section class="layer" id="q" aria-label="Цитата">
+    <section class="layer" id="q" aria-label="Цитата" data-ta="doctype.quote">
       <div class="lab" data-t="label.context">Контекст</div>
       <div class="ctx" id="ctx"></div>
       <svg class="mark" aria-hidden="true" viewBox="0 0 92 64"><polygon points="0,64 0,30 24,0 40,0 40,64"/><polygon points="52,64 52,30 76,0 92,0 92,64"/></svg>
@@ -700,7 +700,7 @@ document.documentElement.classList.add('bt');setTimeout(function(){document.docu
         <div class="srcs" data-qsrc></div>
       </div>
     </section>
-    <section class="layer" id="r" aria-label="Что было дальше">
+    <section class="layer" id="r" aria-label="Что было дальше" data-ta="sw.next">
       <div class="rg">
         <div class="tmr"><div class="tm" id="tm"></div><div class="od" id="od"></div></div>
         <div class="tc">
@@ -755,7 +755,7 @@ document.documentElement.classList.add('bt');setTimeout(function(){document.docu
 
   <div class="ov about" id="about" role="region" aria-label="О проекте" data-ta="about.aria" aria-hidden="true">
     <div class="abs">
-      <a class="rl ab-back" href="@@HOME@@"><span class="ar" aria-hidden="true">←</span><span><b data-abt>Вернуться к истории</b><span class="n" data-abn hidden></span></span></a>
+      <a class="rl ab-back" href="@@HOME@@"><span class="ar" aria-hidden="true">←</span><span><b data-abt>Смотреть обещания</b><span class="n" data-abn hidden></span></span></a>
       <div class="ab-top"><h1 class="rv" style="--d:1" data-t="about.title">Власть многое обещает. Здесь&nbsp;— о&nbsp;том, что было дальше.</h1></div>
       <div class="ab-cols">
         <div class="abc rv" style="--d:2"><span class="no" aria-hidden="true">01</span><p data-t="about.p1">«Обещали.» — проект о публичных словах и реальных последствиях. В каждой истории сначала звучит обещание, прогноз или заверение, а потом мы смотрим, что произошло.</p></div>
@@ -773,7 +773,7 @@ document.documentElement.classList.add('bt');setTimeout(function(){document.docu
         </div>
       </div>
     </div>
-    <a class="abret ab-back" href="@@HOME@@"><span class="swt"><b data-abt>Вернуться к истории</b><span class="n" data-abn hidden></span></span><span class="swc"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M20 12H4M11 5l-7 7 7 7"/></svg></span></a>
+    <a class="abret ab-back" href="@@HOME@@"><span class="swt"><b data-abt>Смотреть обещания</b><span class="n" data-abn hidden></span></span><span class="swc"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M20 12H4M11 5l-7 7 7 7"/></svg></span></a>
   </div>
 </div>
 <div class="cur" id="cur"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M4 12h16M13 5l7 7-7 7"/></svg></div>
@@ -839,8 +839,16 @@ function metaOf(s) {
   return { rl: docLabel(s).toLocaleUpperCase(LANG), rd: (ru(s.date) + (ctx ? ' \u00B7 ' + ctx : '')).toLocaleUpperCase(LANG) };
 }
 /* название источника: последнее слово, стрелка и метка языка не разрываются */
-const srcTitle = (t) => { const k = t.lastIndexOf(' '); return k < 0 ? '<span class="nw">' + esc(t) : esc(t.slice(0, k + 1)) + '<span class="nw">' + esc(t.slice(k + 1)); };
-const srcHtml = (list, label, wrap) => (label ? '<small class="sl">' + label + '</small>' : '') + '<span class="sv">' + list.slice(0, 4).map((s, i) => '<a class="src" href="' + esc(s.u) + '" target="_blank" rel="noopener noreferrer"' + (EN ? ' hreflang="' + (s.l || 'ru') + '"' : '') + '><span class="st">' + (wrap ? srcTitle(s.t) : esc(s.t)) + '</span><span aria-hidden="true">↗</span>' + (EN ? '<span class="bdg">' + (s.l || 'ru').toUpperCase() + '</span>' : '') + (wrap ? '</span>' : '') + '</a>').join('') + '</span>';
+/* ссылка-источник. Подчёркиваются только слова, стрелка ↗ всегда вне подчёркивания (одинаково на всех экранах).
+   wrap: последнее слово и стрелка склеены, чтобы стрелка не оставалась одна на строке */
+const srcLink = (s, wrap) => {
+  const t = s.t, k = wrap ? t.lastIndexOf(' ') : -1, bdg = EN ? '<span class="bdg">' + (s.l || 'ru').toUpperCase() + '</span>' : '';
+  const body = wrap
+    ? (k < 0 ? '' : '<span class="st">' + esc(t.slice(0, k + 1)) + '</span>') + '<span class="nw"><span class="st">' + esc(k < 0 ? t : t.slice(k + 1)) + '</span><span aria-hidden="true">↗</span>' + bdg + '</span>'
+    : '<span class="st">' + esc(t) + '</span><span aria-hidden="true">↗</span>' + bdg;
+  return '<a class="src" href="' + esc(s.u) + '" target="_blank" rel="noopener noreferrer"' + (EN ? ' hreflang="' + (s.l || 'ru') + '"' : '') + '>' + body + '</a>';
+};
+const srcHtml = (list, label, wrap) => (label ? '<small class="sl">' + label + '</small>' : '') + '<span class="sv">' + list.slice(0, 4).map((s) => srcLink(s, wrap)).join('') + '</span>';
 const bodyGlue = (t) => numGlue(t).replace(/(^|[\s(«„“])([A-Za-zА-Яа-яЁё]{1,2}) (?=\S)/g, '$1$2' + NB).replace(/ (—|–) /g, NB + '— ');
 const SAVE = { get: (k) => { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} } };
 
