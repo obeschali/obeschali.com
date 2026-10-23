@@ -24,14 +24,14 @@
     },
     "nav.prev_aria": {
       "source_hash": "9993430ad5b9",
-      "en": "Previous story",
+      "en": "Previous promise",
       "status": "draft",
       "imported_at": "2026-10-19",
       "translator": "ChatGPT"
     },
     "nav.next_aria": {
       "source_hash": "208e45ac3ff1",
-      "en": "Next story",
+      "en": "Next promise",
       "status": "draft",
       "imported_at": "2026-10-19",
       "translator": "ChatGPT"
@@ -534,16 +534,16 @@
       "translator": "Claude (draft, ждёт ChatGPT)"
     },
     "ret.stop": {
-      "source_hash": "a3736570ab52",
-      "en": "You left off at the promise about {of}",
-      "status": "reviewed",
+      "source_hash": "a28e597a837b",
+      "en": "You left off here: {of}",
+      "status": "draft",
       "imported_at": "2026-10-21",
       "translator": "Claude (draft, ждёт ChatGPT)"
     },
     "ret.lost": {
-      "source_hash": "b0e665e538c0",
-      "en": "Pick up with the promise about {of}",
-      "status": "reviewed",
+      "source_hash": "30260a8b68b8",
+      "en": "Pick up here: {of}",
+      "status": "draft",
       "imported_at": "2026-10-21",
       "translator": "Claude (draft, ждёт ChatGPT)"
     },
