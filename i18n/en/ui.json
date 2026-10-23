@@ -459,21 +459,21 @@
     "about.back_story": {
       "source_hash": "a17d5f63583d",
       "en": "Back to the promise",
-      "status": "draft",
+      "status": "reviewed",
       "imported_at": "2026-10-20",
       "translator": "Claude (временный перевод, на проверку ChatGPT)"
     },
     "about.back_start": {
       "source_hash": "c84729f44908",
       "en": "Browse the promises",
-      "status": "draft",
+      "status": "reviewed",
       "imported_at": "2026-10-20",
       "translator": "Claude (временный перевод, на проверку ChatGPT)"
     },
     "about.back_n": {
       "source_hash": "c284a32772df",
       "en": "No. {n}",
-      "status": "draft",
+      "status": "reviewed",
       "imported_at": "2026-10-20",
       "translator": "Claude (временный перевод, на проверку ChatGPT)"
     },
@@ -529,70 +529,70 @@
     "ret.hi": {
       "source_hash": "d4f1eb146993",
       "en": "Welcome back",
-      "status": "draft",
+      "status": "reviewed",
       "imported_at": "2026-10-21",
       "translator": "Claude (draft, ждёт ChatGPT)"
     },
     "ret.stop": {
-      "source_hash": "44326fa73535",
-      "en": "You stopped at the story about {of}",
-      "status": "draft",
+      "source_hash": "a3736570ab52",
+      "en": "You left off at the promise about {of}",
+      "status": "reviewed",
       "imported_at": "2026-10-21",
       "translator": "Claude (draft, ждёт ChatGPT)"
     },
     "ret.lost": {
-      "source_hash": "ea189e8c45ac",
-      "en": "Pick up with the story about {of}",
-      "status": "draft",
+      "source_hash": "b0e665e538c0",
+      "en": "Pick up with the promise about {of}",
+      "status": "reviewed",
       "imported_at": "2026-10-21",
       "translator": "Claude (draft, ждёт ChatGPT)"
     },
     "ret.go": {
       "source_hash": "80d0720aa921",
       "en": "Continue reading →",
-      "status": "draft",
+      "status": "reviewed",
       "imported_at": "2026-10-21",
       "translator": "Claude (draft, ждёт ChatGPT)"
     },
     "ret.again": {
       "source_hash": "729ae78da5cc",
       "en": "Start over",
-      "status": "draft",
+      "status": "reviewed",
       "imported_at": "2026-10-21",
       "translator": "Claude (draft, ждёт ChatGPT)"
     },
     "ret.close": {
       "source_hash": "3bd03e2d1208",
       "en": "Close",
-      "status": "draft",
+      "status": "reviewed",
       "imported_at": "2026-10-21",
       "translator": "Claude (draft, ждёт ChatGPT)"
     },
     "ret.new_hi": {
       "source_hash": "2842acada886",
       "en": "New in the archive",
-      "status": "draft",
+      "status": "reviewed",
       "imported_at": "2026-10-21",
       "translator": "Claude (draft, ждёт ChatGPT)"
     },
     "ret.new_tx": {
-      "source_hash": "f60ba8271f4b",
-      "en": "New stories are here",
-      "status": "draft",
+      "source_hash": "b4e1efa2c384",
+      "en": "New promises have been added",
+      "status": "reviewed",
       "imported_at": "2026-10-21",
       "translator": "Claude (draft, ждёт ChatGPT)"
     },
     "ret.new_go": {
       "source_hash": "bb886f00790f",
-      "en": "Read new stories →",
-      "status": "draft",
+      "en": "Read new promises →",
+      "status": "reviewed",
       "imported_at": "2026-10-21",
       "translator": "Claude (draft, ждёт ChatGPT)"
     },
     "ret.aria": {
       "source_hash": "e44c40c65b1d",
       "en": "Back to reading",
-      "status": "draft",
+      "status": "reviewed",
       "imported_at": "2026-10-21",
       "translator": "Claude (draft, ждёт ChatGPT)"
     },
